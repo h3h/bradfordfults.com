@@ -1,0 +1,11 @@
+<header class="page-header">
+     <h1 class="project-name"> <a class="header-link" href="{{ site.baseurl }}/"> {{ site.title }}</a></h1>
+
+     {% if site.description %}
+     <p class="project-tagline">{{site.description}}</p>
+     {% endif %}
+
+     {% if site.twitter_username %}
+     <h3><a class="header-link" href="https://twitter.com/{{site.twitter_username}}">follow @{{site.twitter_username}}</a></h3>
+     {% endif %}
+</header>

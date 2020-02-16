@@ -1,0 +1,23 @@
+# Site settings
+title: "Bradford Fults"
+description: "Texan sense and charm."
+baseurl: ''
+url: ''
+# google_analytics: 'UA-XXXXXX-X'
+# twitter_username: 'twitter_username'
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - assets
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+permalink: "/:title/"
+
+plugins: [jekyll-paginate]
+
+paginate: 10

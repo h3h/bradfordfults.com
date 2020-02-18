@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<ul class="post-index">
+{% for post in paginator.posts reversed %}
+    <li>
+        <h3 class="post-title" itemprop="name headline"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    </li>
+{% endfor %}
+</ul>
+
+<div class="pagination">
+    {% if paginator.next_page %}
+    <h2><a href="{{ paginator.next_page_path }}" class="next">- more posts -</a></h2> {% endif %} {% if paginator.previous_page %}
+    <h2><a href="{{ paginator.previous_page_path }}" class="previous">- previous page -</a></h2> {% endif %}
+</div>

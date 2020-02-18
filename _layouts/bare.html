@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="bare">
+
+  {% include head.html %}
+
+  <style type="text/css">
+  .bare {
+    height: 80%;
+  }
+  .bare  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .bare h1 {
+    cursor: default;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    text-align: center;
+  }
+  
+  .toggler {
+    cursor: pointer;
+    font-size: 28px;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+  }
+  </style>
+  <body>
+
+    <section class="main-content">
+      <div class="toggler" id="theme-toggler">&ofcir;</div>
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+  </body>
+
+    {% include scripts.html %}
+
+</html>

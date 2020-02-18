@@ -1,3 +1,6 @@
+---
+---
+
 @import 'palette';
 @import 'normalize.css';
 
@@ -8,19 +11,51 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: $color-light-bg-base;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 a:link {
-  color: #62a2c9;
   text-decoration: none;
 }
-a:visited {
-  color: #477693;
+
+body.theme-light {
+  background-color: $color-light-bg-base;
+  color: $color-light-text-base;
+
+  a:link {
+
+  }
+
+  a:visited {
+  }
+
+  a:hover,
+  a:active {
+  }
+
+  h1 {
+    color: $color-light-text-highlight;
+  }
 }
-a:hover,
-a:active {
-  color: #666;
+
+body.theme-dark {
+  background-color: $color-dark-bg-base;
+  color: $color-dark-text-base;
+
+  a:link {
+
+  }
+
+  a:visited {
+  }
+
+  a:hover,
+  a:active {
+  }
+
+  h1 {
+    color: $color-dark-text-highlight;
+  }
 }
 
 .page-header {
@@ -95,9 +130,8 @@ a.header-link:active {
   max-width: 100%;
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  font-family: "Roboto Slab", Georgia, serif;
   margin-bottom: 1rem;
-  font-weight: normal;
-  color: #5F7585;
 
   @media screen and (min-width:64em) {
     margin-top: 2rem;

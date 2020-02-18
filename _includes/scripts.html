@@ -1,0 +1,43 @@
+<script type="text/javascript">
+function hasClass(ele,cls) {
+  return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+
+function addClass(ele,cls) {
+  if (!this.hasClass(ele,cls)) ele.className += (ele.className.length==0?'':" ")+cls;
+}
+
+function removeClass(ele,cls,clsReplace) {
+  if (hasClass(ele,cls)) {
+    if (clsReplace) { clsReplace = ' '+clsReplace }
+    else { clsReplace = ' ' }
+    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)')
+    ele.className=ele.className.replace(reg,clsReplace)
+  }
+}
+
+// -- Theme Setter on Load --
+
+if (true || window.localStorage && localStorage.getItem('theme') === 'dark') {
+  addClass(document.body, "theme-dark");
+}
+else {
+  addClass(document.body, "theme-light");
+}
+
+// -- Theme Toggler --
+
+document.addEventListener("DOMContentLoaded", function() {
+  var elToggle = document.getElementById("theme-toggler")
+  if (elToggle) {
+    elToggle.addEventListener("click", function() {
+      if (hasClass(document.body, "theme-light")) {
+        removeClass(document.body, "theme-light", "theme-dark")
+      }
+      else {
+        removeClass(document.body, "theme-dark", "theme-light")
+      }
+    })
+  }
+})
+</script>

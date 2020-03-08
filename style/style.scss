@@ -18,6 +18,18 @@ a:link {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", Georgia, serif;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width:64em) {
+    margin-top: 2rem;
+  }
+  @media screen and (max-width:64em) {
+    margin-top: 0.25rem;
+  }
+}
+
 body.theme-light {
   background-color: $color-light-bg-base;
   color: $color-light-text-base;
@@ -43,19 +55,29 @@ body.theme-dark {
   color: $color-dark-text-base;
 
   a:link {
-
+    color: $color-dark-text-highlight;
   }
 
   a:visited {
+    color: $color-dark-text-highlight;
   }
 
   a:hover,
   a:active {
+    color: $color-dark-punch;
   }
 
   h1 {
     color: $color-dark-text-highlight;
   }
+}
+
+.toggler {
+  cursor: pointer;
+  font-size: 28px;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
 }
 
 .page-header {
@@ -77,18 +99,6 @@ body.theme-dark {
   @media screen and (max-width:42em) {
     font-size: 1.75rem;
   }
-}
-a.header-link:link,
-a.header-link:visited {
-  color: #666;
-  text-decoration: none;
-  transition: 0.4s;
-}
-a.header-link:hover,
-a.header-link:active {
-  text-shadow: 1px 1px 8px #93c9bc;
-  transition: 0.3s;
-  text-decoration: none;
 }
 
 .project-tagline {
@@ -129,18 +139,6 @@ a.header-link:active {
 .main-content img {
   max-width: 100%;
 }
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  font-family: "Roboto Slab", Georgia, serif;
-  margin-bottom: 1rem;
-
-  @media screen and (min-width:64em) {
-    margin-top: 2rem;
-  }
-  @media screen and (max-width:64em) {
-    margin-top: 0.25rem;
-  }
-}
-
 .main-content p {
   margin-bottom: 1em;
 }

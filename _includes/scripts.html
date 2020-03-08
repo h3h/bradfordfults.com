@@ -18,7 +18,7 @@ function removeClass(ele,cls,clsReplace) {
 
 // -- Theme Setter on Load --
 
-if (true || window.localStorage && localStorage.getItem('theme') === 'dark') {
+if (window.localStorage && localStorage.getItem('theme') === 'dark') {
   addClass(document.body, "theme-dark");
 }
 else {
@@ -32,9 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
   if (elToggle) {
     elToggle.addEventListener("click", function() {
       if (hasClass(document.body, "theme-light")) {
+        if (window.localStorage) localStorage.setItem('theme', 'dark');
         removeClass(document.body, "theme-light", "theme-dark")
       }
       else {
+        if (window.localStorage) localStorage.setItem('theme', 'light');
         removeClass(document.body, "theme-dark", "theme-light")
       }
     })

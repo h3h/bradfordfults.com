@@ -1,0 +1,23 @@
+article.content {
+  font-family: "Gelasio", Georgia, Times, serif;
+  font-size: 16pt;
+  padding: 1rem 3rem;
+
+  body.theme-dark & { background-color: darken($color-dark-bg-base, 10%); }
+  body.theme-light & { background-color: lighten($color-light-bg-base, 10%); }
+
+  b,
+  strong {
+    font-weight: 600;
+  }
+}
+
+p.salutation {
+  font-family: "Rancho", "Gelasio", Georgia, serif;
+  font-size: 2.65em;
+  margin: 0 0 -1.25rem;
+  padding: 0;
+
+  body.theme-dark & { color: $color-dark-punch; }
+  body.theme-light & { color: $color-light-punch; }
+}

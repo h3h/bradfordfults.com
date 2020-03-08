@@ -1,0 +1,12 @@
+nav.main {
+  padding: 0.5rem 1rem;
+}
+
+nav.main p.headshot {
+  width: 128px;
+
+  img {
+    border-radius: 128px;
+    max-width: 100%;
+  }
+}

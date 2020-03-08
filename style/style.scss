@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   transition: background-color 0.5s, color 0.5s;
 }
@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", Georgia, serif;
   margin-bottom: 1rem;
 
+  body.theme-light & a:hover,
+  body.theme-light & a:active {
+    color: inherit;
+  }
+
   @media screen and (min-width:64em) {
     margin-top: 2rem;
   }
@@ -30,47 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-body.theme-light {
-  background-color: $color-light-bg-base;
-  color: $color-light-text-base;
-
-  a:link {
-
-  }
-
-  a:visited {
-  }
-
-  a:hover,
-  a:active {
-  }
-
-  h1 {
-    color: $color-light-text-highlight;
-  }
-}
-
-body.theme-dark {
-  background-color: $color-dark-bg-base;
-  color: $color-dark-text-base;
-
-  a:link {
-    color: $color-dark-text-highlight;
-  }
-
-  a:visited {
-    color: $color-dark-text-highlight;
-  }
-
-  a:hover,
-  a:active {
-    color: $color-dark-punch;
-  }
-
-  h1 {
-    color: $color-dark-text-highlight;
-  }
-}
+@import 'themes';
 
 .toggler {
   cursor: pointer;
@@ -82,13 +47,14 @@ body.theme-dark {
 
 .page-header {
   box-sizing: border-box;
-  color: #666;
+  margin: 1rem auto;
   text-align: center;
 }
 
 .project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+  line-height: 0.9em;
+  margin: 0 auto;
+  padding: 0;
 
   @media screen and (min-width:64em) {
     font-size: 3.25rem;
@@ -102,9 +68,9 @@ body.theme-dark {
 }
 
 .project-tagline {
-  margin-bottom: 2rem;
   font-weight: normal;
-  opacity: 0.7;
+  margin: 0.1rem auto 2rem;
+
   @media screen and (min-width:64em) {
     font-size: 1.25rem;
   }
@@ -117,6 +83,12 @@ body.theme-dark {
 }
 
 .main-content {
+  display: flex;
+
+  & > * {
+    border: 1px solid red;
+  }
+
   @media screen and (min-width:64em) {
     max-width: 64rem;
     padding: 1.25rem 6rem 0.5rem;
@@ -146,8 +118,6 @@ body.theme-dark {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
-  color: #383e41;
-  background-color: #f3f6fa;
   border-radius: 0.3rem;
 }
 .main-content pre {
@@ -155,9 +125,7 @@ body.theme-dark {
   margin-top: 0;
   margin-bottom: 1rem;
   font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  color: #567482;
   word-wrap: normal;
-  background-color: #f3f6fa;
   border: solid 1px #dce6f0;
   border-radius: 0.3rem;
 }
@@ -165,7 +133,6 @@ body.theme-dark {
   padding: 0;
   margin: 0;
   font-size: 0.9rem;
-  color: #567482;
   word-break: normal;
   white-space: pre;
   background: transparent;
@@ -205,7 +172,6 @@ body.theme-dark {
 .main-content blockquote {
   padding: 0 1rem;
   margin-left: 0;
-  color: #5F6B70;
   border-left: 0.3rem solid #dce6f0;
 }
 .main-content blockquote >:first-child {
@@ -244,40 +210,23 @@ body.theme-dark {
   height: 2px;
   padding: 0;
   margin: 1rem 0;
-  background-color: #eff0f1;
   border: 0;
 }
 
 .site-footer {
-  border-top: solid 1px #eff0f1;
-  color: #bbb;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  text-align: right;
-}
-.site-footer a:link,
-.site-footer a:visited {
-  color: #999;
-}
-.site-footer a:hover,
-.site-footer a:active {
-  color: #333;
-  text-decoration: none;
-}
-@media screen and (min-width:42em) {
-  .site-footer {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (max-width:42em) {
-  .site-footer {
-    color: #E5E5E5;
+  @media screen and (max-width:42em) {
     font-size: 0.8rem;
   }
-  .site-footer a:link,
-  .site-footer a:visited {
-    color: #CDCDCD;
+  @media screen and (min-width:42em) {
+    font-size: 0.75rem;
   }
+  @media screen and (min-width:64em) {
+    max-width: 64rem;
+  }
+  border-top: solid 1px #eff0f1;
+  margin: 2rem auto;
+  padding-top: 2rem;
+  text-align: right;
 }
 
 ul.post-index {
@@ -303,11 +252,9 @@ ul.post-index li {
 }
 .post-title a:link,
 .post-title a:visited {
-  color: #5F7585;
 }
 .post-title a:hover,
 .post-title a:active {
-  color: #5F634F;
 }
 .post-header .post-link {
   text-decoration: none;
@@ -338,3 +285,6 @@ ul.post-index li {
 label:hover {
   cursor: pointer;
 }
+
+@import 'article';
+@import 'nav';

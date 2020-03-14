@@ -22,11 +22,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", Georgia, serif;
   margin-bottom: 1rem;
 
-  body.theme-light & a:hover,
-  body.theme-light & a:active {
-    color: inherit;
-  }
-
   @media screen and (min-width:64em) {
     margin-top: 2rem;
   }
@@ -68,25 +63,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-tagline {
+  font-size: 1rem;
   font-weight: normal;
-  margin: 0.1rem auto 2rem;
-
-  @media screen and (min-width:64em) {
-    font-size: 1.25rem;
-  }
-  @media screen and (min-width:42em) and (max-width:64em) {
-    font-size: 1.15rem;
-  }
-  @media screen and (max-width:42em) {
-    font-size: 1rem;
-  }
+  margin: 0.25rem auto 2rem;
 }
 
 .main-content {
   display: flex;
 
   & > * {
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 
   @media screen and (min-width:64em) {
@@ -223,7 +209,6 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (min-width:64em) {
     max-width: 64rem;
   }
-  border-top: solid 1px #eff0f1;
   margin: 2rem auto;
   padding-top: 2rem;
   text-align: right;

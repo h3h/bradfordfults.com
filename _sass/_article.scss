@@ -1,18 +1,33 @@
 article.content {
+  border-radius: 0.5rem;
   font-family: "Gelasio", Georgia, Times, serif;
   font-size: 16pt;
+  margin-right: 2rem;
   padding: 1rem 3rem;
 
-  body.theme-dark & { background-color: darken($color-dark-bg-base, 10%); }
-  body.theme-light & { background-color: lighten($color-light-bg-base, 10%); }
+  body.theme-dark & {
+    background-color: darken($color-dark-bg-base, 10%);
+    box-shadow: 3px 3px 5px 0px darken($color-dark-text-base, 60%);
 
-  b,
-  strong {
-    font-weight: 600;
+    ::selection {
+      background-color: $color-dark-punch;
+    }
+  }
+  body.theme-light & {
+    background-color: lighten($color-light-bg-base, 10%);
+    box-shadow: 3px 3px 5px 0px lighten($color-light-text-base, 50%);
+
+    ::selection {
+      background-color: $color-light-punch;
+    }
   }
 }
 
-p.salutation {
+article.content li {
+  margin: 0.8333rem 0;
+}
+
+article.content p.salutation {
   font-family: "Rancho", "Gelasio", Georgia, serif;
   font-size: 2.65em;
   margin: 0 0 -1.25rem;

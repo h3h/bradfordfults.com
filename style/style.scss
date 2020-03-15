@@ -76,12 +76,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-content {
   display: flex;
+  flex-direction: column-reverse;
 
   @media screen and (min-width:64em) {
+    flex-direction: row-reverse;
+    font-size: 1.15rem;
+    margin: 0 auto;
     max-width: 64rem;
     padding: 1.25rem 6rem 0.5rem;
-    margin: 0 auto;
-    font-size: 1.15rem;
   }
   @media screen and (min-width:42em) and (max-width:64em) {
     padding: 1.15rem 4rem 0.5rem;
@@ -90,6 +92,15 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (max-width:42em) {
     padding: 1rem 0.5rem 0.5rem;
     font-size: 1rem;
+  }
+
+  article {
+    padding: 0 0.75rem;
+
+    @media screen and (min-width:64em) {
+      margin-right: 2rem;
+      padding: 1rem 3rem;
+    }
   }
 }
 

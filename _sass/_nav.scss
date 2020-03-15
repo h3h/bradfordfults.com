@@ -1,6 +1,12 @@
 nav.main {
-  flex: initial;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
   padding: 0.5rem 1rem;
+
+  @media screen and (min-width:64em) {
+    flex-direction: column;
+  }
 }
 
 nav.main p.headshot {
@@ -9,5 +15,9 @@ nav.main p.headshot {
   img {
     border-radius: 128px;
     max-width: 100%;
+  }
+
+  @media screen and (max-width:64em) {
+    margin-right: 1rem;
   }
 }

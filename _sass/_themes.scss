@@ -16,6 +16,10 @@ body.theme-light {
     color: $color-light-text-highlight;
   }
 
+  .page-header {
+    background-image: url(/img/texas-dark.svg);
+  }
+
   .project-tagline,
   .site-footer {
     color: lighten($color-light-text-base, 20%);
@@ -38,6 +42,10 @@ body.theme-dark {
 
   h1 {
     color: $color-dark-text-highlight;
+  }
+
+  .page-header {
+    background-image: url(/img/texas-light.svg);
   }
 
   .project-tagline,

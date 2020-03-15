@@ -45,8 +45,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-header {
+  background: no-repeat center 95%/1.5rem;
   box-sizing: border-box;
   margin: 1rem auto;
+  padding-bottom: 0.25rem;
   text-align: center;
 }
 

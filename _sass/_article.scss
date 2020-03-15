@@ -7,7 +7,7 @@ article.content {
 
   body.theme-dark & {
     background-color: darken($color-dark-bg-base, 10%);
-    box-shadow: 3px 3px 5px 0px darken($color-dark-text-base, 60%);
+    box-shadow: 3px 3px 5px 0px $color-dark-bg-base;
 
     ::selection {
       background-color: $color-dark-punch;

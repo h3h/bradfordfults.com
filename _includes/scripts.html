@@ -1,18 +1,24 @@
 <script type="text/javascript">
-function hasClass(ele,cls) {
-  return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+function hasClass(ele, cls) {
+  return ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'))
 }
 
-function addClass(ele,cls) {
-  if (!this.hasClass(ele,cls)) ele.className += (ele.className.length==0?'':" ")+cls;
+function addClass(ele, cls) {
+  if (!this.hasClass(ele, cls)) {
+    ele.className += (ele.className.length == 0 ? '' : " ") + cls
+  }
 }
 
-function removeClass(ele,cls,clsReplace) {
-  if (hasClass(ele,cls)) {
-    if (clsReplace) { clsReplace = ' '+clsReplace }
-    else { clsReplace = ' ' }
-    var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)')
-    ele.className=ele.className.replace(reg,clsReplace)
+function removeClass(ele, cls, clsReplace) {
+  if (hasClass(ele, cls)) {
+    if (clsReplace) {
+      clsReplace = ' ' + clsReplace
+    }
+    else {
+      clsReplace = ' '
+    }
+    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)')
+    ele.className = ele.className.replace(reg, clsReplace)
   }
 }
 

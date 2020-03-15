@@ -206,10 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and (min-width:42em) {
     font-size: 0.75rem;
   }
-  @media screen and (min-width:64em) {
-    max-width: 64rem;
-  }
-  margin: 2rem auto;
+  margin: 2rem;
   padding-top: 2rem;
   text-align: right;
 }

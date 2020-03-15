@@ -9,6 +9,13 @@ article.content {
     background-color: darken($color-dark-bg-base, 10%);
     box-shadow: 3px 3px 5px 0px $color-dark-bg-base;
 
+    b,
+    em,
+    i,
+    strong {
+      color: lighten($color-dark-text-base, 15%);
+    }
+
     ::selection {
       background-color: $color-dark-punch;
     }
@@ -16,6 +23,13 @@ article.content {
   body.theme-light & {
     background-color: lighten($color-light-bg-base, 10%);
     box-shadow: 3px 3px 5px 0px lighten($color-light-text-base, 50%);
+
+    b,
+    em,
+    i,
+    strong {
+      color: darken($color-light-text-base, 15%);
+    }
 
     ::selection {
       background-color: $color-light-punch;
@@ -33,6 +47,10 @@ article.content p.salutation {
   margin: 0 0 -1.25rem;
   padding: 0;
 
-  body.theme-dark & { color: $color-dark-punch; }
-  body.theme-light & { color: $color-light-punch; }
+  body.theme-dark & {
+    color: $color-dark-punch;
+  }
+  body.theme-light & {
+    color: $color-light-punch;
+  }
 }

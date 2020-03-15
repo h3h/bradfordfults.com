@@ -75,10 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
   display: flex;
 
-  & > * {
-    //border: 1px solid red;
-  }
-
   @media screen and (min-width:64em) {
     max-width: 64rem;
     padding: 1.25rem 6rem 0.5rem;
@@ -236,12 +232,7 @@ ul.post-index li {
     font-size: 1.15rem;
   }
 }
-.post-title a:link,
-.post-title a:visited {
-}
-.post-title a:hover,
-.post-title a:active {
-}
+
 .post-header .post-link {
   text-decoration: none;
 }

@@ -5,7 +5,7 @@ article.content {
 
   body.theme-dark & {
     background-color: darken($color-dark-bg-base, 10%);
-    box-shadow: 3px 3px 5px 0px $color-dark-bg-base;
+    box-shadow: 3px 3px 5px 0 $color-dark-bg-base;
 
     b,
     em,
@@ -20,7 +20,7 @@ article.content {
   }
   body.theme-light & {
     background-color: lighten($color-light-bg-base, 10%);
-    box-shadow: 3px 3px 5px 0px lighten($color-light-text-base, 50%);
+    box-shadow: 3px 3px 5px 0 lighten($color-light-text-base, 50%);
 
     b,
     em,

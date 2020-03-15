@@ -23,12 +23,17 @@ function removeClass(ele, cls, clsReplace) {
 }
 
 // -- Theme Setter on Load --
-
-if (window.localStorage && localStorage.getItem('theme') === 'dark') {
-  addClass(document.body, "theme-dark");
+const hasLocalPreference = (window.localStorage && localStorage.getItem('theme') !== null)
+const agentPrefersDark = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches === true)
+if (hasLocalPreference) {
+  const localPref = localStorage.getItem('theme')
+  addClass(document.body, `theme-${localPref}`)
+}
+else if (agentPrefersDark) {
+  addClass(document.body, "theme-dark")
 }
 else {
-  addClass(document.body, "theme-light");
+  addClass(document.body, "theme-light")
 }
 
 // -- Theme Toggler --
@@ -38,11 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
   if (elToggle) {
     elToggle.addEventListener("click", function() {
       if (hasClass(document.body, "theme-light")) {
-        if (window.localStorage) localStorage.setItem('theme', 'dark');
+        if (window.localStorage) localStorage.setItem('theme', 'dark')
         removeClass(document.body, "theme-light", "theme-dark")
       }
       else {
-        if (window.localStorage) localStorage.setItem('theme', 'light');
+        if (window.localStorage) localStorage.setItem('theme', 'light')
         removeClass(document.body, "theme-dark", "theme-light")
       }
     })

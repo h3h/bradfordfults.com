@@ -4,6 +4,10 @@
 @import 'palette';
 @import 'normalize.css';
 
+::root {
+  color-scheme: light dark;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;

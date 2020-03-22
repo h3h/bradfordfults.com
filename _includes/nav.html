@@ -3,7 +3,6 @@
     <img src="/img/headshot.jpg" alt="Author headshot" />
   </p>
   <ul>
-    <li><a href="/">Home</a></li>
     {% for topic in site.data.topics %}
     {% if topic[0] == page.topic %}
     <li><a class="current" href="/{{ topic[0] }}">{{ topic[1] }}</a></li>

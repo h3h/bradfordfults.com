@@ -24,6 +24,10 @@ body.theme-light {
   .site-footer {
     color: lighten($color-light-text-base, 20%);
   }
+
+  nav.main a.current {
+    color: $color-light-punch;
+  }
 }
 
 body.theme-dark {
@@ -51,5 +55,9 @@ body.theme-dark {
   .project-tagline,
   .site-footer {
     color: darken($color-dark-text-base, 20%);
+  }
+
+  nav.main a.current {
+    color: $color-dark-punch;
   }
 }

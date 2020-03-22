@@ -4,12 +4,16 @@ nav.main {
   flex-direction: row;
   padding: 0.5rem 1rem;
 
-  @media screen and (min-width:64em) {
+  @media screen and (min-width: 64em) {
     flex-direction: column;
+  }
+  @media screen and (max-width: 64em) {
+    margin-top: 2rem;
   }
 }
 
 nav.main p.headshot {
+  margin-top: 0;
   width: 128px;
 
   img {
@@ -17,7 +21,41 @@ nav.main p.headshot {
     max-width: 100%;
   }
 
-  @media screen and (max-width:64em) {
+  @media screen and (max-width: 64em) {
     margin-right: 1rem;
+  }
+}
+
+nav.main > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 128px;
+
+  @media screen and (min-width: 64em) {
+    & > li:first-child {
+      margin-top: 0;
+    }
+
+    & > li {
+      margin: 0.25rem 0;
+    }
+
+    a {
+      border-radius: 0.5rem;
+      display: block;
+      padding: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 64em) {
+    display: flex;
+    flex: 1;
+    // & > li {
+    //   flex: 1;
+    // }
+    a {
+      padding: 0 1rem;
+    }
   }
 }

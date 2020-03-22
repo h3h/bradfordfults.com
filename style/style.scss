@@ -1,8 +1,8 @@
 ---
 ---
 
-@import 'palette';
-@import 'normalize.css';
+@import "palette";
+@import "normalize.css";
 
 ::root {
   color-scheme: light dark;
@@ -22,19 +22,24 @@ a:link {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto Slab", Georgia, serif;
   margin-bottom: 1rem;
 
-  @media screen and (min-width:64em) {
+  @media screen and (min-width: 64em) {
     margin-top: 2rem;
   }
-  @media screen and (max-width:64em) {
+  @media screen and (max-width: 64em) {
     margin-top: 0.25rem;
   }
 }
 
-@import 'themes';
+@import "themes";
 
 .toggler {
   cursor: pointer;
@@ -57,13 +62,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0;
 
-  @media screen and (min-width:64em) {
+  @media screen and (min-width: 64em) {
     font-size: 3.25rem;
   }
-  @media screen and (min-width:42em) and (max-width:64em) {
+  @media screen and (min-width: 42em) and (max-width: 64em) {
     font-size: 2.25rem;
   }
-  @media screen and (max-width:42em) {
+  @media screen and (max-width: 42em) {
     font-size: 1.75rem;
   }
 }
@@ -78,18 +83,18 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column-reverse;
 
-  @media screen and (min-width:64em) {
+  @media screen and (min-width: 64em) {
     flex-direction: row-reverse;
     font-size: 1.15rem;
     margin: 0 auto;
     max-width: 64rem;
     padding: 1.25rem 6rem 0.5rem;
   }
-  @media screen and (min-width:42em) and (max-width:64em) {
+  @media screen and (min-width: 42em) and (max-width: 64em) {
     padding: 1.15rem 4rem 0.5rem;
     font-size: 1.1rem;
   }
-  @media screen and (max-width:42em) {
+  @media screen and (max-width: 42em) {
     padding: 1rem 0.5rem 0.5rem;
     font-size: 1rem;
   }
@@ -97,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   article {
     padding: 0 0.75rem;
 
-    @media screen and (min-width:64em) {
+    @media screen and (min-width: 64em) {
       margin-right: 2rem;
       padding: 1rem 3rem;
     }
@@ -115,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main-content code {
   padding: 2px 4px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, Monaco, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9rem;
   border-radius: 0.3rem;
 }
@@ -123,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 1rem Consolas, Monaco, "Liberation Mono", Menlo, Courier, monospace;
   word-wrap: normal;
   border: solid 1px #dce6f0;
   border-radius: 0.3rem;
@@ -144,14 +149,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   word-break: normal;
 }
-.main-content .highlight pre, .main-content pre {
+.main-content .highlight pre,
+.main-content pre {
   padding: 0.8rem;
   overflow: auto;
   font-size: 0.9rem;
   line-height: 1.45;
   border-radius: 0.3rem;
 }
-.main-content pre code, .main-content pre tt {
+.main-content pre code,
+.main-content pre tt {
   display: inline;
   max-width: initial;
   padding: 0;
@@ -162,10 +169,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   border: 0;
 }
-.main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
+.main-content pre code:before,
+.main-content pre code:after,
+.main-content pre tt:before,
+.main-content pre tt:after {
   content: normal;
 }
-.main-content ul, .main-content ol {
+.main-content ul,
+.main-content ol {
   margin-top: 0;
 }
 .main-content blockquote {
@@ -173,10 +184,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
   border-left: 0.3rem solid #dce6f0;
 }
-.main-content blockquote >:first-child {
+.main-content blockquote > :first-child {
   margin-top: 0;
 }
-.main-content blockquote >:last-child {
+.main-content blockquote > :last-child {
   margin-bottom: 0;
 }
 .main-content table {
@@ -188,7 +199,8 @@ h1, h2, h3, h4, h5, h6 {
 .main-content table th {
   font-weight: bold;
 }
-.main-content table th, .main-content table td {
+.main-content table th,
+.main-content table td {
   padding: 0.5rem 1rem;
   border: 1px solid #e9ebec;
 }
@@ -213,10 +225,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
-  @media screen and (max-width:42em) {
+  @media screen and (max-width: 42em) {
     font-size: 0.8rem;
   }
-  @media screen and (min-width:42em) {
+  @media screen and (min-width: 42em) {
     font-size: 0.75rem;
   }
   margin: 2rem;
@@ -241,7 +253,7 @@ ul.post-index li {
 .post-title {
   font-size: 1.85rem;
 
-  @media screen and (max-width:50em) {
+  @media screen and (max-width: 50em) {
     font-size: 1.15rem;
   }
 }
@@ -255,7 +267,7 @@ ul.post-index li {
 .post-img.img-center {
   text-align: center;
 }
-@media screen and (min-width:50em) {
+@media screen and (min-width: 50em) {
   .post-img.img-breakout {
     margin-left: -25%;
   }
@@ -276,5 +288,5 @@ label:hover {
   cursor: pointer;
 }
 
-@import 'article';
-@import 'nav';
+@import "article";
+@import "nav";

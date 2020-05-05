@@ -22,3 +22,6 @@ plugins:
   - jekyll-paginate
 
 paginate: 10
+
+jekyll-typogrify-auto:
+  tag_selector: article

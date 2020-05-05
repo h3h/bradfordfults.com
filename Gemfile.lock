@@ -1,4 +1,20 @@
 GIT
+  remote: https://github.com/h3h/jekyll-typogrify-auto.git
+  revision: 3c65f3c2adac32e5c5a90b7fcf223958f7113ef9
+  specs:
+    jekyll-typogrify-auto (1.0.0)
+      html-pipeline (~> 2.12)
+      jekyll (~> 4.0)
+      nokogiri (~> 1.10)
+
+GIT
+  remote: https://github.com/h3h/typogruby.git
+  revision: 49227e0680fc0df8ea2f9535986ccdd083e09d19
+  specs:
+    typogruby (1.0.18)
+      rubypants
+
+GIT
   remote: https://github.com/jekyll/jekyll.git
   revision: 190a35dc9a5d3ff5f2cea1837f55c2f38f272ee6
   specs:
@@ -21,6 +37,12 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (6.0.2.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
@@ -31,6 +53,9 @@ GEM
     eventmachine (1.2.7)
     ffi (1.12.2)
     forwardable-extended (2.6.0)
+    html-pipeline (2.12.3)
+      activesupport (>= 2)
+      nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
@@ -47,6 +72,10 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_portile2 (2.4.0)
+    minitest (5.14.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.3)
@@ -54,12 +83,17 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rouge (3.17.0)
+    rubypants (0.7.1)
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.7)
+      thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
+    zeitwerk (2.3.0)
 
 PLATFORMS
   ruby
@@ -67,6 +101,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll!
   jekyll-paginate (~> 1.1.0)
+  jekyll-typogrify-auto!
+  typogruby!
 
 BUNDLED WITH
    2.1.4

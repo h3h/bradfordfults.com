@@ -20,9 +20,20 @@ body.theme-light {
     background-image: url(/img/texas-dark.svg);
   }
 
+  a.header-link,
   .project-tagline,
   .site-footer {
     color: lighten($color-light-text-base, 20%);
+  }
+
+  &.home a.header-link:link,
+  &.home a.header-link:visited {
+    color: $color-light-text-highlight;
+  }
+
+  &.home a.header-link:hover,
+  &.home a.header-link:active {
+    color: $color-light-punch;
   }
 
   nav.main a.current {
@@ -52,9 +63,20 @@ body.theme-dark {
     background-image: url(/img/texas-light.svg);
   }
 
+  a.header-link,
   .project-tagline,
   .site-footer {
     color: darken($color-dark-text-base, 20%);
+  }
+
+  &.home a.header-link:link,
+  &.home a.header-link:visited {
+    color: $color-dark-text-highlight;
+  }
+
+  &.home a.header-link:hover,
+  &.home a.header-link:active {
+    color: $color-dark-punch;
   }
 
   nav.main a.current {

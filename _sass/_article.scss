@@ -4,6 +4,26 @@ article.content {
   font-family: "Gelasio", Georgia, Times, serif;
   font-size: 16pt;
 
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1.15rem;
+  }
+
   body.theme-dark & {
     background-color: darken($color-dark-bg-base, 10%);
     box-shadow: 3px 3px 5px 0 $color-dark-bg-base;
@@ -56,4 +76,16 @@ article.content p.salutation {
 
 article.content .emdash {
   padding: 0 0.1rem;
+}
+
+article.content .post-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  opacity: 0.4;
+
+  p {
+    flex: 1;
+    text-align: center;
+  }
 }

@@ -16,7 +16,7 @@ exclude:
   - Gemfile.lock
   - README.md
 
-permalink: "/:title/"
+permalink: "/:categories/:title/"
 
 plugins:
   - jekyll-paginate

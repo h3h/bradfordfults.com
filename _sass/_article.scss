@@ -1,5 +1,4 @@
 article.content {
-  border-radius: 0.5rem;
   flex: 1;
   font-family: "Gelasio", Georgia, Times, serif;
   font-size: 16pt;
@@ -26,7 +25,11 @@ article.content {
 
   body.theme-dark & {
     background-color: darken($color-dark-bg-base, 10%);
-    box-shadow: 3px 3px 5px 0 $color-dark-bg-base;
+
+    @media screen and (min-width: 42em) {
+      border-radius: 0.5rem;
+      box-shadow: 3px 3px 5px 0 $color-dark-bg-base;
+    }
 
     b,
     em,
@@ -41,7 +44,11 @@ article.content {
   }
   body.theme-light & {
     background-color: lighten($color-light-bg-base, 10%);
-    box-shadow: 3px 3px 5px 0 lighten($color-light-text-base, 50%);
+
+    @media screen and (min-width: 42em) {
+      border-radius: 0.5rem;
+      box-shadow: 3px 3px 5px 0 lighten($color-light-text-base, 50%);
+    }
 
     b,
     em,
@@ -84,8 +91,13 @@ article.content .post-meta {
   padding-bottom: 0.5rem;
   opacity: 0.4;
 
+  @media screen and (max-width: 42em) {
+    flex-direction: column;
+  }
+
   p {
     flex: 1;
+    margin: 0.5rem 0;
     text-align: center;
   }
 }

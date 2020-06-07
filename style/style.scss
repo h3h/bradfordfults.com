@@ -95,12 +95,12 @@ h6 {
     font-size: 1.1rem;
   }
   @media screen and (max-width: 42em) {
-    padding: 1rem 0.5rem 0.5rem;
+    padding: 1rem 0 0.5rem;
     font-size: 1rem;
   }
 
   article {
-    padding: 0 0.75rem;
+    padding: 0.5rem 1rem;
 
     @media screen and (min-width: 64em) {
       margin-right: 2rem;
@@ -227,28 +227,27 @@ h6 {
 .site-footer {
   @media screen and (max-width: 42em) {
     font-size: 0.8rem;
+    text-align: center;
   }
   @media screen and (min-width: 42em) {
     font-size: 0.75rem;
+    text-align: right;
   }
   margin: 2rem;
   padding-top: 2rem;
-  text-align: right;
 }
 
 ul.post-index {
-  margin: 0 auto;
-  width: 80%;
-}
-ul.post-index li {
-  padding-left: 6px;
+  list-style-type: square;
 }
 
 .post-title {
   font-size: 2.2rem;
 
   @media screen and (max-width: 50em) {
-    font-size: 1.15rem;
+    font-size: 1.85rem;
+    margin: 1.25rem 0 2rem;
+    text-align: center;
   }
 }
 

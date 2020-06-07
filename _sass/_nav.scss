@@ -4,6 +4,9 @@ nav.main {
   flex-direction: row;
   padding: 0.5rem 1rem;
 
+  @media screen and (max-width: 36em) {
+    flex-direction: row-reverse;
+  }
   @media screen and (min-width: 64em) {
     flex-direction: column;
   }
@@ -51,9 +54,15 @@ nav.main > ul {
   @media screen and (max-width: 64em) {
     display: flex;
     flex: 1;
-    // & > li {
-    //   flex: 1;
-    // }
+
+    @media screen and (max-width: 36em) {
+      flex-direction: column;
+
+      & > li {
+        margin: 0.25rem 0;
+      }
+    }
+
     a {
       padding: 0 1rem;
     }

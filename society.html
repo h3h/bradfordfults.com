@@ -6,7 +6,18 @@ topic: society
 <!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
 <article class="content h-entry">
   <h2>Society</h2>
+  {% if site.categories.society %}
+  <ul class="post-list">
+    {% for post in site.categories.society %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> &mdash;
+      <span class="published">{{ post.date | date_to_string }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
   <p class="p-summary">
     It’s society time.
   </p>
+  {% endif %}
 </article>

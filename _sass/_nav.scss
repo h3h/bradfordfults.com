@@ -16,16 +16,20 @@ nav.main {
 }
 
 nav.main p.headshot {
-  margin-top: 0;
-  width: 128px;
+  margin: 0;
 
-  img {
-    border-radius: 128px;
-    max-width: 100%;
+  @media screen and (max-width: 36em) {
+    flex: 1;
+    text-align: right;
   }
 
   @media screen and (max-width: 64em) {
     margin-right: 1rem;
+  }
+
+  img {
+    border-radius: 128px;
+    max-width: 128px;
   }
 }
 
@@ -34,6 +38,10 @@ nav.main > ul {
   margin: 0;
   padding: 0;
   width: 128px;
+
+  @media screen and (max-width: 36em) {
+    text-align: right;
+  }
 
   @media screen and (min-width: 64em) {
     & > li:first-child {

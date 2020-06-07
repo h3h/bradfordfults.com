@@ -1,5 +1,5 @@
 <header class="page-header">
-     <h1 class="project-name"> <a class="header-link" href="{{ site.baseurl }}/"> {{ site.title }}</a></h1>
+     <h1 class="project-name"> <a class="header-link" href="{{ site.baseurl }}/"> {{ site.title | xml_escape }}</a></h1>
 
      {% if site.description %}
      <p class="project-tagline">{{site.description}}</p>

@@ -39,6 +39,10 @@ body.theme-light {
   nav.main a.current {
     color: $color-light-punch;
   }
+
+  .main-content p.pullquote {
+    color: lighten($color-light-text-base, 25%);
+  }
 }
 
 body.theme-dark {
@@ -81,5 +85,9 @@ body.theme-dark {
 
   nav.main a.current {
     color: $color-dark-punch;
+  }
+
+  .main-content p.pullquote {
+    color: darken($color-dark-text-base, 25%);
   }
 }

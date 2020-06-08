@@ -40,6 +40,14 @@ body.theme-light {
     color: $color-light-punch;
   }
 
+  .main-content blockquote {
+    border-color: lighten($color-light-text-base, 25%);
+  }
+
+  .main-content hr {
+    border-color: $color-light-punch;
+  }
+
   .main-content p.pullquote {
     color: lighten($color-light-text-base, 25%);
   }
@@ -85,6 +93,14 @@ body.theme-dark {
 
   nav.main a.current {
     color: $color-dark-punch;
+  }
+
+  .main-content blockquote {
+    border-color: darken($color-dark-text-base, 25%);
+  }
+
+  .main-content hr {
+    border-color: $color-dark-punch;
   }
 
   .main-content p.pullquote {

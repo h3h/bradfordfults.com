@@ -88,8 +88,9 @@ article.content .emdash {
 article.content .post-meta {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0.5rem;
+  margin: 3rem 0 1.5rem;
   opacity: 0.4;
+  padding-bottom: 0.5rem;
 
   @media screen and (max-width: 42em) {
     flex-direction: column;

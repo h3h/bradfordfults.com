@@ -83,8 +83,8 @@ could be made.
 
 ## Accountability
 Accountability in a large organization looks like a leader asking hard questions
-of a journalist, about outcomes affecting the whole. Bill Gates became famous
-for this style of [deep dives into technical
+of a journalist, about outcomes affecting the whole. Bill Gates became
+internally famous for this style of [deep dives into technical
 minutiae](https://www.joelonsoftware.com/2006/06/16/my-first-billg-review/) with
 leaders at Microsoft who brought him problems, solutions or updates. He would
 aggressively question assumptions, ask about memory layouts, edge cases or

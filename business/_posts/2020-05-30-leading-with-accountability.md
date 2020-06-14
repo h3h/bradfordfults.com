@@ -46,7 +46,7 @@ greater positions of power to shift practices in favor of their group: they
 become politicians.
 
 There is a plausible argument that in large nations, politicians play a messy
-but necessary role intermediating between facts and human interests one the one
+but necessary role intermediating between facts and human interests on the one
 hand, which are innumerable, and strategic decision making on the other, which
 is, in that environment, necessarily blunt and only loosely tied to
 effectiveness of outcomes.

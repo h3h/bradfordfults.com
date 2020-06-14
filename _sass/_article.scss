@@ -23,7 +23,7 @@ article.content {
     font-size: 1.15rem;
   }
 
-  body.theme-dark & {
+  html.theme-dark & {
     background-color: darken($color-dark-bg-base, 10%);
 
     @media screen and (min-width: 42em) {
@@ -42,7 +42,7 @@ article.content {
       background-color: $color-dark-punch;
     }
   }
-  body.theme-light & {
+  html.theme-light & {
     background-color: lighten($color-light-bg-base, 10%);
 
     @media screen and (min-width: 42em) {
@@ -73,10 +73,10 @@ article.content p.salutation {
   margin: 0 0 -1.25rem;
   padding: 0;
 
-  body.theme-dark & {
+  html.theme-dark & {
     color: $color-dark-punch;
   }
-  body.theme-light & {
+  html.theme-light & {
     color: $color-light-punch;
   }
 }

@@ -1,4 +1,4 @@
-body.theme-light {
+html.theme-light {
   background-color: $color-light-bg-base;
   color: $color-light-text-base;
 
@@ -53,7 +53,7 @@ body.theme-light {
   }
 }
 
-body.theme-dark {
+html.theme-dark {
   background-color: $color-dark-bg-base;
   color: $color-dark-text-base;
 

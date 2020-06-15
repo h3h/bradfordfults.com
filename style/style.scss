@@ -246,6 +246,19 @@ h6 {
 ul.post-index {
   list-style-type: square;
 }
+ul.post-index .published {
+  opacity: 70%;
+
+  @media screen and (max-width: 64em) {
+    display: block;
+    font-size: 0.7em;
+  }
+  @media screen and (min-width: 64em) {
+    &::before {
+      content: " — ";
+    }
+  }
+}
 
 .post-title {
   font-size: 2.2rem;

@@ -16,7 +16,7 @@
       } else {
         clsReplace = " ";
       }
-      var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
+      const reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
       ele.className = ele.className.replace(reg, clsReplace);
     }
   }

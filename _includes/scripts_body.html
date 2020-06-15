@@ -1,7 +1,7 @@
 <script type="text/javascript">
 // -- Theme Toggler --
 document.addEventListener("DOMContentLoaded", function() {
-  var elToggle = document.getElementById("theme-toggler")
+  const elToggle = document.getElementById("theme-toggler")
   if (elToggle) {
     elToggle.addEventListener("click", function() {
       if (hasClass(document.documentElement, "theme-light")) {

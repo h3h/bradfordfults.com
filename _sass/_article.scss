@@ -3,6 +3,10 @@ article.content {
   font-family: "Gelasio", Georgia, Times, serif;
   font-size: 16pt;
 
+  @media screen and (max-width: 64em) {
+    font-size: 14pt;
+  }
+
   h2 {
     font-size: 1.75rem;
   }

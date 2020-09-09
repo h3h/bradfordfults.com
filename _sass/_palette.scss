@@ -4,7 +4,7 @@ $color1: rgba(48, 48, 48, 1);
 $color2: rgba(117, 59, 228, 1);
 $color3: rgba(188, 150, 230, 1);
 $color4: rgba(0, 149, 213, 1);
-$color5: rgb(197, 197, 197);
+$color5: rgba(220, 220, 220, 1);
 
 /* Human Color Names */
 $color-light-bg-base: $color5;
@@ -18,5 +18,5 @@ $color-dark-bg-base: $color1;
 $color-dark-bg-alt: $color2;
 $color-dark-punch: $color4;
 $color-dark-brand: $color3;
-$color-dark-text-base: $color5;
+$color-dark-text-base: darken($color5, 15%);
 $color-dark-text-highlight: $color3;

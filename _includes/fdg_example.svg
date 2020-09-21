@@ -1,0 +1,64 @@
+<style>svg g#graph0 polygon.bg {
+  fill: transparent;
+}
+
+html.theme-light svg g#graph0 .edge {
+  fill: black;
+  stroke: black;
+}
+
+html.theme-dark svg g#graph0 .edge {
+  fill: white;
+  stroke: white;
+}
+</style>
+<!-- Title: G Pages: 1 -->
+<svg width="769pt" height="98pt"
+ viewBox="0.00 0.00 768.65 98.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 94)">
+<title>G</title>
+<polygon class="bg" stroke="transparent" points="-4,4 -4,-94 764.65,-94 764.65,4 -4,4"/>
+<!-- UFS -->
+<g id="node1" class="node">
+<title>UFS</title>
+<ellipse fill="lightgreen" stroke="lightgreen" cx="385.02" cy="-45" rx="169.77" ry="18"/>
+<text text-anchor="middle" x="385.02" y="-41.3" font-family="Times,serif" font-size="14.00">Integrate FooBars Service with Elasticsearch</text>
+</g>
+<!-- FooBars searchable on Web -->
+<g id="node4" class="node">
+<title>FooBars searchable on Web</title>
+<polygon fill="lightblue" stroke="lightblue" points="760.65,-63 590.65,-63 590.65,-27 760.65,-27 760.65,-63"/>
+<text text-anchor="middle" x="675.65" y="-41.3" font-family="Times,serif" font-size="14.00">FooBars searchable on Web</text>
+</g>
+<!-- UFS&#45;&gt;FooBars searchable on Web -->
+<g id="edge3" class="edge">
+<title>UFS&#45;&gt;FooBars searchable on Web</title>
+<path  d="M554.75,-45C563.52,-45 572.17,-45 580.56,-45"/>
+<polygon  points="580.65,-48.5 590.65,-45 580.65,-41.5 580.65,-48.5"/>
+</g>
+<!-- Upgrade Elasticsearch -->
+<g id="node2" class="node">
+<title>Upgrade Elasticsearch</title>
+<ellipse fill="lightgreen" stroke="lightgreen" cx="89.69" cy="-72" rx="89.88" ry="18"/>
+<text text-anchor="middle" x="89.69" y="-68.3" font-family="Times,serif" font-size="14.00">Upgrade Elasticsearch</text>
+</g>
+<!-- Upgrade Elasticsearch&#45;&gt;UFS -->
+<g id="edge1" class="edge">
+<title>Upgrade Elasticsearch&#45;&gt;UFS</title>
+<path  d="M171.62,-64.55C194.75,-62.42 220.63,-60.04 246.15,-57.69"/>
+<polygon  points="246.65,-61.16 256.29,-56.76 246.01,-54.19 246.65,-61.16"/>
+</g>
+<!-- Upgrade Spring Boot -->
+<g id="node3" class="node">
+<title>Upgrade Spring Boot</title>
+<ellipse fill="lightgreen" stroke="lightgreen" cx="89.69" cy="-18" rx="86.38" ry="18"/>
+<text text-anchor="middle" x="89.69" y="-14.3" font-family="Times,serif" font-size="14.00">Upgrade Spring Boot</text>
+</g>
+<!-- Upgrade Spring Boot&#45;&gt;UFS -->
+<g id="edge2" class="edge">
+<title>Upgrade Spring Boot&#45;&gt;UFS</title>
+<path  d="M169.3,-25.24C193,-27.42 219.75,-29.88 246.11,-32.31"/>
+<polygon  points="245.91,-35.8 256.19,-33.23 246.56,-28.83 245.91,-35.8"/>
+</g>
+</g>
+</svg>

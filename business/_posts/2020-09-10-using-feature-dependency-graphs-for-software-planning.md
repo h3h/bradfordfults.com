@@ -9,7 +9,7 @@ particular result*. In software product management, the result would be a
 “deliverable” or a “feature” that provides real, tangible value to customers or
 clients.
 
-## The Problem: An Engineering/Non-Engineering Gap
+## The Problem: A Planner–Creator Gap
 [Agile software development][AS] and other process frameworks for managing
 enterprise-level complexity like [SAFe][SA] have concepts that address many
 facets of software creation, but there is an implied barrier built into all of
@@ -59,7 +59,9 @@ that must be done to some specific part of the software system in question, and
 (b) deliverable nodes, or abilities that the software system will have after the
 preceding projects have been completed. For example:
 
-<img alt="Example FDG" src="/img/fdg-example.svg" />
+<div class="svg" style="padding-bottom: 18%">
+  {% include fdg_example.svg %}
+</div>
 
 That’s really it, but the value is in the details of how the nodes are
 conceptualized and organized, and how the graph is used as a part of the team’s

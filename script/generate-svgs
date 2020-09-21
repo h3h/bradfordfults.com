@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+def real_path(p)
+  File.expand_path(File.join(__dir__, p))
+end
+
+
+DOT_LOCATION = real_path('../img/fdg-example.gv').freeze
+SVG_LOCATION = real_path('../_includes/fdg_example.svg').freeze
+CSS_LOCATION = real_path('../style/fdg-example.css').freeze
+
+if `which dot`.empty?
+  $stderr.puts %q{No command `dot` found; try `brew install graphviz`.}
+  exit 1
+end
+
+system("dot -Tsvg #{DOT_LOCATION} -o #{SVG_LOCATION}")
+
+svg = IO.read(SVG_LOCATION)
+css = "<style>" + IO.read(CSS_LOCATION) + "</style>"
+new_svg = css + "\n" +
+          svg.gsub(/\A(.*\n){5}/, '').                # xml preamble
+              gsub(/fill="white"/, 'class="bg"').     # white background
+              gsub(/fill="none" stroke="black"/, ''). # black lines & outlines
+              gsub(/fill="black" stroke="black"/, '') # black arrowheads
+
+open(SVG_LOCATION, "w") do |f|
+  f.write(new_svg)
+end

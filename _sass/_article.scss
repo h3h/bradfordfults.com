@@ -118,6 +118,20 @@ article.content .emdash {
   padding: 0 0.1rem;
 }
 
+article.content div.svg {
+  position: relative;
+  width: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+article.content div.svg svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 article.content .post-meta {
   display: flex;
   justify-content: space-between;

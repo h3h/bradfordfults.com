@@ -1,0 +1,9 @@
+digraph G {
+  graph [rankdir="LR"];
+  node [shape=ellipse,style=filled,color=lightgreen];
+  UFS [label="Integrate FooBars Service with Elasticsearch"];
+  "Upgrade Elasticsearch" -> UFS;
+  "Upgrade Spring Boot" -> UFS;
+  node [shape=box,style=filled,color=lightblue];
+  UFS -> "FooBars searchable on Web";
+}

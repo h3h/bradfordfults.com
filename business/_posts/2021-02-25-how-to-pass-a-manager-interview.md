@@ -46,7 +46,7 @@ listener is unlikely to form a positive opinion of either the hero or the
 author; and if the conflict you present is too easily solved, your listener is
 not going to be convinced that you are a good manager or a good author.
 
-## Teach a person to fish, and be remembered as a teacher
+## Teach something to be remembered as a teacher
 To really shine and rise above nearly all other candidates, try to teach your
 interviewers one new thing through your stories. This will not be easy, as your
 interviewers are likely to be quite experienced in their roles, but if you can

@@ -68,4 +68,4 @@ hone over time, but I promise that you will have much more interview success if
 you know that you should be telling stories all along, instead of giving
 clipped, unemotional, direct answers to questions asked during interviews. The
 good news is that you should know your subject better than anyone, which is a
-great start to telling a great story.
+good start to telling a great story.

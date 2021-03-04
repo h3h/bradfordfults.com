@@ -18,11 +18,11 @@ difficulties, and monitoring results. Leaders need to make sure that system is
 in place and working well. That’s tactics.
 
 Strategically, leaders have a completely different set of challenges. Teams can
-be delivering incremental results and tackling issues that arise, but toward
-which goals are they working? Often, the broad goals sound simple enough:
+be delivering incremental results and tackling issues that arise, but which
+goals are they working toward? Often, the broad goals sound simple enough:
 increase revenue, develop repeat customers, reduce overhead. Translating those
-high-level goals into an effective machine, though—successive cycles of project
-inception, execution, evaluation, and direction-changing—is the work of
+high-level goals into an effective machine, though—running successive cycles of
+project inception, execution, evaluation, and direction-changing—is the work of
 strategy.
 
 In a complex organization with tens of teams across many functions, each working

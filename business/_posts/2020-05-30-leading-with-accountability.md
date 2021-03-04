@@ -8,7 +8,7 @@ there are many ways to break down the difficulties of leadership into
 categories, but I’m busy so I’ll focus on two: tactical work and strategic work.
 
 ## Tactics vs. Strategy
-Tactically, leaders needs the organizations to run well each and every day.
+Tactically, leaders need their organizations to run well each and every day.
 Teams need to deliver results, and issues need to be handled. (There are always
 issues. Humans are humans, after all.) This means that the teams need a *system*
 for their work (e.g. [Agile software

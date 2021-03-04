@@ -7,7 +7,7 @@ Leading people and projects in a complex organization is difficult. I’m sure
 there are many ways to break down the difficulties of leadership into
 categories, but I’m busy so I’ll focus on two: tactical work and strategic work.
 
-## Tactics vs. Strategy
+## Tactics vs. strategy
 Tactically, leaders need their organizations to run well each and every day.
 Teams need to deliver results, and issues need to be handled. (There are always
 issues. Humans are humans, after all.) This means that the teams need a *system*
@@ -31,7 +31,7 @@ work. Just keeping track of the inventory of those efforts (“What are all of
 these teams even doing?”) is difficult enough, but something else happens inside
 this complexity: humans decide to behave like humans.
 
-## Power vs. Truth
+## Power vs. truth
 In a large organization, each team becomes a locus of power, as does each
 department, on up the hierarchical chain. Each leader of one of these groups is
 then, in part, a wielder of this power. They have the power to build
@@ -63,7 +63,7 @@ impact on the organization, which enables each part of the organization to
 remain both aligned and effective, and enables leaders to make better strategic
 decisions.
 
-## Reporting the News
+## Reporting the news
 In uncorrupted journalism, the goal is to gather and verify facts, then to
 create a narrative that puts those facts into context with an honest attempt at
 a human interpretation of the truth. The journalist’s job is to do the ground

@@ -59,7 +59,7 @@ that must be done to some specific part of the software system in question, and
 (b) deliverable nodes, or abilities that the software system will have after the
 preceding projects have been completed. For example:
 
-<div class="svg" style="padding-bottom: 18%">
+<div class="svg" style="padding-bottom: 98pt">
   {% include fdg_example.svg %}
 </div>
 

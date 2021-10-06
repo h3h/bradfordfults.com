@@ -69,8 +69,63 @@ process.
 
 ### How to use feature dependency graphs
 
+Typically, product managers would identify a problem that they would like to
+solve for customers, they would do research, discuss potential solutions with
+software engineers, and write product requirements based on a chosen solution
+path. From those requirements, user stories would be written, often as tasks
+within a project (or Stories within an Epic). Then, the product manager just
+sort of waits around until the engineers have altered the software enough for
+the user stories to be implemented.
 
-### Pitfalls and tips for using feature dependency graphs
+Using feature dependency graphs, this method changes a bit: after product
+managers do customer research and understand the problem, they discuss potential
+solution paths with engineers, those engineers go do research of their own on
+the potential changes to the code and systems impacted, and *those solution
+paths are made explicit, as feature dependency graphs.*
+
+The product manager and engineers get together to literally draw the different
+implementation paths that solutions could take, with each engineering task as a
+green bubble, and the customer value as a blue square at the end. There is an
+immediate benefit to this shared understanding of the implementation path:
+product managers can identify more expensive paths and ask whether the desired
+feature is worth the investment, or whether a different solution to the
+customer’s problem might be wiser.
+
+#### Building a roadmap with dependency graphs
+
+There is another method of using dependency graphs that is above the level of
+one feature: building a roadmap for a team.
+
+Instead of representing a roadmap as a list of epics or projects, or worse—a
+Gantt chart full of dates that are lies—you can build your roadmap as a graph
+of projects that are meant to lead to some ultimate customer value, e.g.
+achieving some measurable *key result* in an OKR framework.
+
+By defining and refining the roadmap as a graph, product managers and engineers
+are both again sharing a close understanding of the steps require to get from
+where the software is today to where they would like it to be in the future.
+Instead of a project manager incessantly updating estimated project completion
+dates or cascading dependencies that almost always hide most of the necessary
+engineering work, the engineers and product manager can look at and change the
+path that the team will follow, understanding clearly the relationship between
+the work being completed today and the ultimate goal of delivering several
+projects to achieve a larger goal.
+
+### Pitfalls and tips for using dependency graphs
+
+As with any method for working, using dependency graphs for either feature
+planning or roadmapping requires practice and refinement along the way. Some
+key points to watch out for when using them:
+
+* Ensure that engineers and the product manager are explaining and understanding
+  every bubble and box on the graph: how complex the work is, what each
+  intermediate goal looks like, and whether there are ways to change the scope
+  of the work or the deliverable.
+* Ensure that each bubble on the graph is at roughly the same level of
+  granularity: you want each task within a project to be addressing challenges
+  at a similar scale, and not straying off into the details.
+* 
+
 
  [AS]: https://en.wikipedia.org/wiki/Agile_software_development
  [SA]: https://www.scaledagileframework.com

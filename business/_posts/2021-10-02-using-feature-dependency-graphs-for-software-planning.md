@@ -111,7 +111,7 @@ path that the team will follow, understanding clearly the relationship between
 the work being completed today and the ultimate goal of delivering several
 projects to achieve a larger goal.
 
-### Pitfalls and tips for using dependency graphs
+### Pitfalls and tips when using dependency graphs
 
 As with any method for working, using dependency graphs for either feature
 planning or roadmapping requires practice and refinement along the way. Some

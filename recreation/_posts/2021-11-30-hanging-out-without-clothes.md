@@ -63,4 +63,4 @@ Either way, I suspect you’ll have fun, if you can ditch the body shame—your 
 and the judgment of others—and just relax. It’s pretty great.
 
 And don’t come at me with “But what do you do in the cold?! Ha ha.” Wear clothes
-in the cold. Obviously. Are you 12?
+in the cold. Obviously. Are you twelve?

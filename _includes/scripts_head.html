@@ -22,13 +22,10 @@
   }
 
   // -- Theme Setter on Load --
-  const hasLocalPreference =
-    window.localStorage && localStorage.getItem('theme') !== null;
-  const agentPrefersDark =
-    window.matchMedia &&
-    matchMedia("(prefers-color-scheme: dark)").matches === true;
+  const hasLocalPreference = window.localStorage && localStorage.getItem("theme") !== null;
+  const agentPrefersDark = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches === true;
   if (hasLocalPreference) {
-    const localPref = localStorage.getItem('theme');
+    const localPref = localStorage.getItem("theme");
     addClass(document.documentElement, `theme-${localPref}`);
   } else if (agentPrefersDark) {
     addClass(document.documentElement, "theme-dark");
@@ -51,13 +48,7 @@
     a.async = 1;
     a.src = g;
     m.parentNode.insertBefore(a, m);
-  })(
-    window,
-    document,
-    "script",
-    "//www.google-analytics.com/analytics.js",
-    "ga"
-  );
+  })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
 
   ga("create", "{{ site.google_analytics }}", "auto");
   ga("send", "pageview");

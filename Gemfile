@@ -11,3 +11,7 @@ group :jekyll_plugins do
   #gem 'jekyll-typogrify-auto', github: 'h3h/jekyll-typogrify-auto', require: 'jekyll_typogrify_auto'
   #gem 'jekyll-typogrify-auto', path: '../jekyll-typogrify-auto', require: 'jekyll_typogrify_auto'
 end
+
+group :development do
+  gem 'jekyll-compose', '~> 0.12.0'
+end

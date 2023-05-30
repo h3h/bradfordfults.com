@@ -252,6 +252,10 @@ h6 {
 
 ul.post-index {
   list-style-type: square;
+
+  .book-rating {
+    margin-left: 0.5rem;
+  }
 }
 ul.post-index .published {
   opacity: 70%;

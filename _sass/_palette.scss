@@ -13,6 +13,7 @@ $color-light-punch: $color4;
 $color-light-brand: $color2;
 $color-light-text-base: $color1;
 $color-light-text-highlight: $color2;
+$color-light-pull: lighten($color-light-text-base, 15%);
 
 $color-dark-bg-base: $color1;
 $color-dark-bg-alt: $color2;
@@ -20,3 +21,4 @@ $color-dark-punch: $color4;
 $color-dark-brand: $color3;
 $color-dark-text-base: darken($color5, 15%);
 $color-dark-text-highlight: $color3;
+$color-dark-pull: darken($color-dark-text-base, 15%);

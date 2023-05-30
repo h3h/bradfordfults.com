@@ -7,14 +7,8 @@ topic: society
 <article class="content h-entry">
   <h2>Society</h2>
   {% if site.categories.society %}
-  <ul class="post-index">
-    {% for post in site.categories.society %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title | xml_escape }}</a>
-      <span class="published">{{ post.date | date: "%B %-d, %Y" }}</span>
-    </li>
-    {% endfor %}
-  </ul>
+  {% assign post_list = site.categories.society %}
+  {% include post_list.html %}
   {% else %}
   <p class="p-summary">
     It’s society time.

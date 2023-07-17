@@ -4,6 +4,15 @@ title: A Compendium of Useful Factors for SaaS Enterprise Software
 date: 2023-07-11 15:22 -0600
 ---
 
+When building a new SaaS software product, it’s obviously useful to have an idea
+of what customer problems you are trying to solve, and how. But it’s also useful
+to have a strong grasp of the technology stack on which you are building, and to
+have a good sense of your desired software architectue.
+
+Further than that, I propose, it’s good to understand the “table stakes”
+capabilities that, if your product succeeds, you will need to build or
+integrate, and at what cost those will come.
+
 ## Background: The Twelve-Factor App
 
 Over a decade ago, [Adam Wiggins][1], co-founder of Heroku, published _[The
@@ -14,10 +23,12 @@ for app development, paying particular attention to the dynamics of the organic
 growth of an app over time, the dynamics of collaboration between developers
 working on the app’s codebase, and avoiding the cost of software erosion.”
 
-I think a lot of developers gained not only operational ease from this
-declaration, but also learned _which kinds of factors were necessary_ to create
-and run web applications. The factors provided a sort of map and guide to the
-terrain that developers would soon find themselves in.
+I think a lot of developers gained not only operational ease and tactful
+maintenance abilities from The Twelve-Factor App, but also learned _which kinds
+of factors were necessary_ to create and run web applications in the first
+place. The factors provided a sort of map and guide to the terrain that
+developers would soon find themselves in, in an environment where many of those
+developers may have missed entirely some of the factors.
 
 ## Starting Out with Enterprise Software: WorkOS
 
@@ -40,8 +51,9 @@ Among the most critical capabilities that WorkOS provides are:
  * Admin Portal for IT Servicing
 
 These capabilities comprise an enormous amount of heavy lifting that each new
-enterprise product need not implement themselves, and they form a sort of
-bedrock of necessary capabilities for any enterprise product.
+enterprise product need not—if they adopt WorkOS—implement themselves, and they
+form a sort of bedrock of necessary capabilities for any SaaS enterprise
+product.
 
 ## Going Deeper: SaaS Enterprise App Factors
 

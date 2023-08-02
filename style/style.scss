@@ -18,6 +18,10 @@ body {
   transition: background-color 0.5s, color 0.5s;
 }
 
+b, strong {
+  font-weight: 600;
+}
+
 a:link {
   text-decoration: none;
 }

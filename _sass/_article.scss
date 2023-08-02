@@ -48,7 +48,7 @@ article.content {
     }
   }
   html.theme-light & {
-    background-color: lighten($color-light-bg-base, 5%);
+    background-color: lighten($color-light-bg-base, 7%);
 
     @media screen and (min-width: 42em) {
       border-radius: 0.5rem;

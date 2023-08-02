@@ -28,9 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Quicksand", Georgia, serif;
-  font-weight: 600;
-  margin-bottom: 0;
+  font-family: "Roboto Slab", Georgia, serif;
+  margin-bottom: 1rem;
 
   @media screen and (min-width: 64em) {
     margin-top: 2rem;
@@ -59,14 +58,12 @@ h6 {
 }
 
 .project-name {
-  font-family: "Roboto Slab", Helvetica, sans-serif;
-  // text-transform: uppercase;
   line-height: 0.9em;
   margin: 0 auto;
   padding: 0;
 
   @media screen and (min-width: 64em) {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
   }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     font-size: 2.25rem;

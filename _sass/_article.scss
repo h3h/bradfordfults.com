@@ -1,6 +1,6 @@
 article.content {
   flex: 1;
-  font-weight: 300;
+  font-family: "Gelasio", Georgia, Times, serif;
   font-size: 16pt;
 
   @media screen and (max-width: 64em) {
@@ -101,9 +101,9 @@ article.content li {
 }
 
 article.content p.salutation {
-  font-family: "Quicksand", Georgia, serif;
-  font-size: 1.65em;
-  margin: 1rem 0 -0.833rem;
+  font-family: "Rancho", "Gelasio", Georgia, serif;
+  font-size: 2.65em;
+  margin: 0 0 -1.25rem;
   padding: 0;
 
   html.theme-dark & {

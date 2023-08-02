@@ -4,26 +4,22 @@
 @import "palette";
 @import "normalize.css";
 
-:root {
+::root {
   color-scheme: light dark;
-  font-family: 'Wix Madefor Display', sans-serif;
-  line-height: 1.5;
 }
 
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
+  line-height: 1.6;
   transition: background-color 0.5s, color 0.5s;
 }
 
 a:link {
   text-decoration: none;
-}
-
-b, strong {
-  font-weight: 600;
 }
 
 h1,

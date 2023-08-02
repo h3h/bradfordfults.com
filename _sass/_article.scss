@@ -44,7 +44,7 @@ article.content {
     }
 
     ::selection {
-      background-color: $color-dark-punch;
+      background-color: $color-dark-bg-alt;
     }
   }
   html.theme-light & {
@@ -63,7 +63,7 @@ article.content {
     }
 
     ::selection {
-      background-color: $color-light-punch;
+      background-color: $color-light-bg-alt;
     }
   }
 }

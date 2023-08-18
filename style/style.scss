@@ -16,6 +16,10 @@ body {
   font-size: 18px;
   line-height: 1.6;
   transition: background-color 0.5s, color 0.5s;
+
+  height: 100vh;
+  display: grid;
+  grid: "header" auto "main" 1fr "footer" auto / 100%;
 }
 
 b, strong {
@@ -54,6 +58,8 @@ h6 {
 }
 
 .page-header {
+  grid-area: header;
+
   background: no-repeat center 95%/1.5rem;
   box-sizing: border-box;
   margin: 1rem auto;
@@ -84,6 +90,7 @@ h6 {
 }
 
 .main-content {
+  grid-area: main;
   display: flex;
   flex-direction: column-reverse;
 
@@ -91,7 +98,7 @@ h6 {
     flex-direction: row-reverse;
     font-size: 1.15rem;
     margin: 0 auto;
-    max-width: 64rem;
+    width: 64rem;
     padding: 1.25rem 6rem 0.5rem;
   }
   @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -235,6 +242,8 @@ h6 {
 }
 
 .site-footer {
+  grid-area: footer;
+
   @media screen and (max-width: 42em) {
     font-size: 0.8rem;
     text-align: center;
@@ -243,7 +252,7 @@ h6 {
     font-size: 0.75rem;
     text-align: right;
   }
-  margin: 2rem;
+  margin: 2rem 2rem 0;
   padding-top: 2rem;
 }
 

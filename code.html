@@ -1,0 +1,17 @@
+---
+layout: default
+topic: code
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content h-entry">
+  <h2>Code</h2>
+  {% if site.categories.code %}
+  {% assign post_list = site.categories.code %}
+  {% include post_list.html %}
+  {% else %}
+  <p class="p-summary">
+    It’s code time.
+  </p>
+  {% endif %}
+</article>

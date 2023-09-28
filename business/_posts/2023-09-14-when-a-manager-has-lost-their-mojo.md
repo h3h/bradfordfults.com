@@ -112,7 +112,7 @@ This has been a brief look at some key factors to consider when you notice that
 a manager reporting to you is running out of strategic perspective to
 effectively lead their team out of malaise or slow failure.
 
-[I’d love to hear more perspectives][MA] from others who have led or suffered from
-these types of issues.
+[I’d love to hear more perspectives][MA] from others who have led through or
+suffered from these types of issues.
 
 [MA]: https://atx.pub/@h3h

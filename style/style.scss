@@ -125,7 +125,6 @@ html.home {
   grid-area: main;
   display: flex;
   flex-direction: column-reverse;
-  font-family: "Source Serif 4", Georgia, Times, serif;
 
   @media screen and (min-width: 64em) {
     flex-direction: row-reverse;
@@ -147,6 +146,7 @@ html.home {
     flex: 1;
     padding: 0.5rem 1rem;
     background-color: darken($color-dark-bg-base, 10%);
+    font-family: "Source Serif 4", Georgia, Times, serif;
 
     @media screen and (min-width: 42em) {
       border-radius: 0.5rem;

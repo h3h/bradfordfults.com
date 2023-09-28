@@ -107,4 +107,4 @@ through sustained creative effort. No one should be fooled into thinking that
 any of it can be solved with a simple change of tool. This is why I am a product
 team leader and these are the problems that I try to solve.
 
- [1]: http://brianbailey.me/what-project-management-tools-are-missing
+ [1]: https://bb.place/what-project-tools-are-missing/

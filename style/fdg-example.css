@@ -2,12 +2,7 @@ svg g#graph0 polygon.bg {
   fill: transparent;
 }
 
-html.theme-light svg g#graph0 .edge {
-  fill: black;
-  stroke: black;
-}
-
-html.theme-dark svg g#graph0 .edge {
+svg g#graph0 .edge {
   fill: white;
   stroke: white;
 }

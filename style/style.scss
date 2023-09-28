@@ -4,8 +4,17 @@
 @import "palette";
 @import "normalize.css";
 
-::root {
-  color-scheme: light dark;
+// =============================================================================
+// Globals
+// =============================================================================
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 18px;
+  height: 100vh;
 }
 
 body {
@@ -13,96 +22,120 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
   line-height: 1.6;
   transition: background-color 0.5s, color 0.5s;
 
-  height: 100vh;
   display: grid;
   grid: "header" auto "main" 1fr "footer" auto / 100%;
+
+  background-color: $color-dark-bg-base;
+  color: $color-dark-text-base;
 }
 
-b, strong {
+b,
+em,
+i,
+strong {
+  color: lighten($color-dark-text-base, 15%);
+}
+
+::selection {
+  background-color: $color-dark-bg-alt;
+}
+
+b,
+strong {
   font-weight: 600;
 }
 
 a:link {
   text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Roboto Slab", Georgia, serif;
-  margin-bottom: 1rem;
-
-  @media screen and (min-width: 64em) {
-    margin-top: 2rem;
-  }
-  @media screen and (max-width: 64em) {
-    margin-top: 0.25rem;
-  }
+a:link,
+a:visited {
+  color: $color-dark-text-highlight;
+}
+a:hover,
+a:active {
+  color: $color-dark-punch;
 }
 
-@import "themes";
-
-.toggler {
+label:hover {
   cursor: pointer;
-  font-size: 28px;
-  position: fixed;
-  right: 1rem;
-  top: 0.5rem;
 }
+
+// =============================================================================
+// Header
+// =============================================================================
 
 .page-header {
   grid-area: header;
 
-  background: no-repeat center 95%/1.5rem;
+  background: url("/img/texas-light.svg") no-repeat center 95%/1.5rem;
   box-sizing: border-box;
   margin: 1rem auto;
   padding-bottom: 0.25rem;
   text-align: center;
+
+  .project-name {
+    line-height: 0.9em;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (min-width: 64em) {
+      font-size: 2.25rem;
+    }
+    @media screen and (min-width: 42em) and (max-width: 64em) {
+      font-size: 2.25rem;
+    }
+    @media screen and (max-width: 42em) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .project-tagline {
+    color: darken($color-dark-text-base, 20%);
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0.25rem auto 2rem;
+  }
+
+  a.header-link {
+    color: darken($color-dark-text-base, 20%);
+  }
 }
 
-.project-name {
-  line-height: 0.9em;
-  margin: 0 auto;
-  padding: 0;
+html.home {
+  a.header-link:link,
+  a.header-link:visited {
+    color: $color-dark-text-highlight;
+  }
 
-  @media screen and (min-width: 64em) {
-    font-size: 2.25rem;
-  }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    font-size: 2.25rem;
-  }
-  @media screen and (max-width: 42em) {
-    font-size: 1.75rem;
+  a.header-link:hover,
+  a.header-link:active {
+    color: $color-dark-punch;
   }
 }
 
-.project-tagline {
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 0.25rem auto 2rem;
-}
+// =============================================================================
+// Main content
+// =============================================================================
 
 .main-content {
   grid-area: main;
   display: flex;
   flex-direction: column-reverse;
+  font-family: "Source Serif 4", Georgia, Times, serif;
 
   @media screen and (min-width: 64em) {
     flex-direction: row-reverse;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     margin: 0 auto;
     width: 64rem;
     padding: 1.25rem 6rem 0.5rem;
   }
   @media screen and (min-width: 42em) and (max-width: 64em) {
-    padding: 1.15rem 4rem 0.5rem;
+    padding: 1.15rem 4rem 1rem;
     font-size: 1.1rem;
   }
   @media screen and (max-width: 42em) {
@@ -111,15 +144,82 @@ h6 {
   }
 
   article {
+    flex: 1;
     padding: 0.5rem 1rem;
+    background-color: darken($color-dark-bg-base, 10%);
 
+    @media screen and (min-width: 42em) {
+      border-radius: 0.5rem;
+      box-shadow: 3px 3px 5px 0 $color-dark-bg-base;
+    }
+    @media screen and (min-width: 42em) and (max-width: 64em) {
+      padding: 0.5rem 2rem;
+    }
     @media screen and (min-width: 64em) {
       margin-right: 2rem;
       padding: 1rem 3rem;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-dark-text-base;
+    }
+
+    h1.post-title {
+      color: $color-dark-text-highlight;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-dark-text-highlight;
+    font-family: "Roboto Slab", Georgia, serif;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 64em) {
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 64em) {
+      margin-top: 0.25rem;
+    }
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1.15rem;
   }
 }
+.main-content h1 {
+  font-size: 2.2rem;
 
+  @media screen and (max-width: 50em) {
+    font-size: 1.85rem;
+    margin: 1.25rem 0 2rem;
+    text-align: center;
+  }
+}
 .main-content:first-child {
   margin-top: 0;
 }
@@ -152,6 +252,9 @@ h6 {
   white-space: pre;
   background: transparent;
   border: 0;
+}
+.main-content .emdash {
+  padding: 0 0.1rem;
 }
 .main-content .highlight {
   margin-bottom: 1rem;
@@ -186,14 +289,36 @@ h6 {
 .main-content pre tt:after {
   content: normal;
 }
+
+.main-content div.svg {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .main-content ul,
 .main-content ol {
   margin-top: 0;
+}
+.main-content ul {
+  list-style-type: square;
+}
+.main-content li {
+  margin: 0.8333rem 0;
 }
 .main-content blockquote {
   padding: 0 1rem;
   margin: 2rem 0.75rem;
   border-left: 3px solid;
+  border-color: darken($color-dark-text-base, 25%);
 }
 .main-content blockquote > :first-child {
   margin-top: 0;
@@ -234,15 +359,99 @@ h6 {
   margin: 2rem auto;
   border: none;
   border-top: 3px solid;
+  border-color: $color-dark-punch;
   width: 33%;
 }
 .main-content p.pullquote {
+  color: darken($color-dark-text-base, 25%);
   font-size: 133%;
   margin: 2.5rem;
 }
 
+.main-content .post-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 1.5rem;
+  opacity: 0.4;
+  padding-bottom: 0.5rem;
+
+  @media screen and (max-width: 42em) {
+    flex-direction: column;
+  }
+
+  p {
+    flex: 1;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+
+.main-content ul.post-index {
+  .book-rating {
+    margin-left: 0.5rem;
+  }
+
+  .published {
+    opacity: 70%;
+
+    @media screen and (max-width: 64em) {
+      display: block;
+      font-size: 0.7em;
+    }
+    @media screen and (min-width: 64em) {
+      &::before {
+        content: " — ";
+      }
+    }
+  }
+}
+
+// =============================================================================
+// Specific stray styles
+// =============================================================================
+
+.pagination {
+  text-align: center;
+}
+
+.main-content .book-review {
+  p.book-author {
+    margin: 0;
+    color: $color-dark-pull;
+  }
+
+  p.book-rating {
+    font-size: 2.5rem;
+    margin: 1.33rem 0 0;
+    text-align: center;
+
+    .book-rating-number {
+      display: none;
+    }
+  }
+
+  p.book-spoilers {
+    font-size: 0.9rem;
+    margin: 0 0 1.33rem;
+    text-align: center;
+  }
+}
+
+.main-content p.salutation {
+  font-family: "Rancho", "Source Serif 4", Georgia, serif;
+  font-size: 2.65em;
+  margin: 0 0 -1.25rem;
+  padding: 0;
+  color: $color-dark-punch;
+}
+
+// =============================================================================
+// Footer
+// =============================================================================
+
 .site-footer {
   grid-area: footer;
+  color: darken($color-dark-text-base, 20%);
 
   @media screen and (max-width: 42em) {
     font-size: 0.8rem;
@@ -256,66 +465,89 @@ h6 {
   padding-top: 2rem;
 }
 
-ul.post-index {
-  list-style-type: square;
+// =============================================================================
+// Side nav
+// =============================================================================
 
-  .book-rating {
-    margin-left: 0.5rem;
-  }
-}
-ul.post-index .published {
-  opacity: 70%;
+nav.main {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
 
-  @media screen and (max-width: 64em) {
-    display: block;
-    font-size: 0.7em;
+  @media screen and (max-width: 36em) {
+    flex-direction: row-reverse;
   }
   @media screen and (min-width: 64em) {
-    &::before {
-      content: " — ";
+    flex-direction: column;
+  }
+  @media screen and (max-width: 64em) {
+    margin-top: 2rem;
+  }
+
+  a.current {
+    color: $color-dark-punch;
+  }
+
+  p.headshot {
+    margin: 0;
+
+    @media screen and (max-width: 36em) {
+      flex: 1;
+      text-align: right;
+    }
+
+    @media screen and (max-width: 64em) {
+      margin-right: 1rem;
+    }
+
+    img {
+      border-radius: 128px;
+      max-width: 128px;
+    }
+  }
+
+  & > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 128px;
+
+    @media screen and (max-width: 36em) {
+      text-align: right;
+    }
+
+    @media screen and (min-width: 64em) {
+      & > li:first-child {
+        margin-top: 0;
+      }
+
+      & > li {
+        margin: 0.25rem 0;
+      }
+
+      a {
+        border-radius: 0.5rem;
+        display: block;
+        padding: 0.5rem;
+      }
+    }
+
+    @media screen and (max-width: 64em) {
+      display: flex;
+      flex: 1;
+
+      @media screen and (max-width: 36em) {
+        flex-direction: column;
+
+        & > li {
+          margin: 0.25rem 0;
+        }
+      }
+
+      a {
+        padding: 0 1rem;
+      }
     }
   }
 }
-
-.post-title {
-  font-size: 2.2rem;
-
-  @media screen and (max-width: 50em) {
-    font-size: 1.85rem;
-    margin: 1.25rem 0 2rem;
-    text-align: center;
-  }
-}
-
-.post-header .post-link {
-  text-decoration: none;
-}
-.post-img:before {
-  clear: both;
-}
-.post-img.img-center {
-  text-align: center;
-}
-@media screen and (min-width: 50em) {
-  .post-img.img-breakout {
-    margin-left: -25%;
-  }
-  .post-img.img-breakout img {
-    max-width: none;
-  }
-  .post-img.img-right {
-    float: right;
-    margin: 1rem 0 0 1.5rem;
-  }
-}
-
-.pagination {
-  text-align: center;
-}
-
-label:hover {
-  cursor: pointer;
-}
-
-@import "article";
-@import "nav";

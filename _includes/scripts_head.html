@@ -1,39 +1,3 @@
-<script type="text/javascript">
-  function hasClass(ele, cls) {
-    return ele.className.match(new RegExp("(\\s|^)" + cls + "(\\s|$)"));
-  }
-
-  function addClass(ele, cls) {
-    if (!this.hasClass(ele, cls)) {
-      ele.className += (ele.className.length == 0 ? "" : " ") + cls;
-    }
-  }
-
-  function removeClass(ele, cls, clsReplace) {
-    if (hasClass(ele, cls)) {
-      if (clsReplace) {
-        clsReplace = " " + clsReplace;
-      } else {
-        clsReplace = " ";
-      }
-      const reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
-      ele.className = ele.className.replace(reg, clsReplace);
-    }
-  }
-
-  // -- Theme Setter on Load --
-  const hasLocalPreference = window.localStorage && localStorage.getItem("theme") !== null;
-  const agentPrefersDark = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches === true;
-  if (hasLocalPreference) {
-    const localPref = localStorage.getItem("theme");
-    addClass(document.documentElement, `theme-${localPref}`);
-  } else if (agentPrefersDark) {
-    addClass(document.documentElement, "theme-dark");
-  } else {
-    addClass(document.documentElement, "theme-light");
-  }
-</script>
-
 {% if site.google_analytics %}
 <script type="text/javascript">
   (function (i, s, o, g, r, a, m) {

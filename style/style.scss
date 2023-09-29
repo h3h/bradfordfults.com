@@ -451,23 +451,34 @@ label:hover {
 
 section.principles {
   h3 {
-    padding-left: 2.75rem;
+    color: $color-dark-text-highlight;
+    clear: right;
+  }
+  h3 + p::before {
+    content: " ";
+    width: 10rem;
+    float: right;
+    opacity: 0.3;
     background-repeat: no-repeat;
+    border-radius: 10rem;
   }
-  h3.quality {
+  h3.quality + p::before {
     background-image: url('/img/gordian-knot.svg');
-    background-size: 2rem;
-    background-position: left calc(50% + 0.25rem);
+    background-size: 8.75rem;
+    background-position: left -1rem;
+    height: 7.5rem;
   }
-  h3.liberty {
+  h3.liberty + p::before {
     background-image: url('/img/liberty-tree.svg');
-    background-size: 2.5rem;
-    background-position: -0.3rem calc(50% + 0.4rem);
+    background-size: 11rem;
+    background-position: -1.25rem -2rem;
+    height: 7.5rem;
   }
-  h3.perspective {
+  h3.perspective + p::before {
     background-image: url('/img/globe.svg');
-    background-size: 1.7rem;
-    background-position: 0.2rem calc(50% + 0.15rem);
+    background-size: 6.5rem;
+    background-position: 1rem top;
+    height: 7.5rem;
   }
 }
 

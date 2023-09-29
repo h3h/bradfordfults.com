@@ -449,6 +449,28 @@ label:hover {
   color: $color-dark-punch;
 }
 
+section.principles {
+  h3 {
+    padding-left: 2.75rem;
+    background-repeat: no-repeat;
+  }
+  h3.quality {
+    background-image: url('/img/gordian-knot.svg');
+    background-size: 2rem;
+    background-position: left calc(50% + 0.25rem);
+  }
+  h3.liberty {
+    background-image: url('/img/liberty-tree.svg');
+    background-size: 2.5rem;
+    background-position: -0.3rem calc(50% + 0.4rem);
+  }
+  h3.perspective {
+    background-image: url('/img/globe.svg');
+    background-size: 1.7rem;
+    background-position: 0.2rem calc(50% + 0.15rem);
+  }
+}
+
 // =============================================================================
 // Footer
 // =============================================================================

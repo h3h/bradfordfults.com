@@ -71,16 +71,32 @@ label:hover {
 .page-header {
   grid-area: header;
 
-  background: url("/img/texas-light.svg") no-repeat center 95%/1.5rem;
+  background: url("/img/texas-light.svg") no-repeat center 95%/1.5em;
   box-sizing: border-box;
   margin: 1rem auto;
   padding-bottom: 0.25rem;
   text-align: center;
 
+  &::before {
+    content: " ";
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    background-image: url("/img/headshot.jpg");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: 10rem;
+  }
+
   .project-name {
     line-height: 0.9em;
     margin: 0 auto;
     padding: 0;
+    font-family: "Roboto Slab", Georgia, serif;
 
     @media screen and (min-width: 64em) {
       font-size: 2.25rem;
@@ -102,18 +118,6 @@ label:hover {
 
   a.header-link {
     color: darken($color-dark-text-base, 20%);
-  }
-}
-
-html.home {
-  a.header-link:link,
-  a.header-link:visited {
-    color: $color-dark-text-highlight;
-  }
-
-  a.header-link:hover,
-  a.header-link:active {
-    color: $color-dark-punch;
   }
 }
 
@@ -550,4 +554,8 @@ nav.main {
       }
     }
   }
+}
+
+.home nav.main p.headshot {
+  display: none;
 }

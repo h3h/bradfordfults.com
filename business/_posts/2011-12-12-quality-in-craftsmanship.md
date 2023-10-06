@@ -1,6 +1,7 @@
 ---
 title: Quality in Craftsmanship
 layout: post
+tag: essay
 ---
 
 In the creation of products, some people are more concerned with quality than

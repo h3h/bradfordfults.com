@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Better Approach to 360° Feedback
+tag: essay
 ---
 
 Many resources on [360° feedback][1] will tell you that the best questions to

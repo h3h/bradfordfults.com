@@ -1,0 +1,45 @@
+---
+layout: default
+topic: personal
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content h-entry">
+  <h2>Personal</h2>
+  <p>
+    We all live complex and multi-faceted lives. Many professionals maintain a
+    strict separation of their personal lives from their professional ones, and
+    there are many good reasons for that. I take a slightly more integrated
+    approach, offering myself as a whole to anyone who cares to dive a little
+    deeper.
+  </p>
+  <p>
+    As part of revealing more of my personal life, I aim to show the consistency
+    of my attempts to live a thoughtful and principled life in every aspect. I
+    also expect more maturity, thoughtfulness, and respect for social boundaries
+    from my readers. I am interested to discuss and learn from more
+    perspectives about the topics on which I write, but I also expect that
+    anyone with discomfort or differences of opinion can adequately observe
+    boundaries that enable us to interact on whatever level we have chosen.
+  </p>
+
+  <section class="section-list essays">
+    <h3>Essays</h3>
+    {% if site.categories.personal %}
+    {% assign post_list = site.categories.personal | where: "tag", "essay" %}
+    {% include post_list.html %} {%
+    else %}
+    <p class="p-summary">It’s personal time.</p>
+    {% endif %}
+  </section>
+
+  <section class="section-list asides">
+    <h3>Asides</h3>
+    {% if site.categories.personal %}
+    {% assign post_list = site.categories.personal | where: "tag", "aside" %}
+    {% include post_list.html %} {%
+    else %}
+    <p class="p-summary">It’s personal time.</p>
+    {% endif %}
+  </section>
+</article>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Becoming a Manager of Managers
+tag: essay
 ---
 
 I often get the question from managers on my team about what it takes to become

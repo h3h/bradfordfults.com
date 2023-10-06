@@ -1,6 +1,7 @@
 ---
 title: The Technical Track
 layout: post
+tag: essay
 ---
 
 There’s a common problem in the software industry, especially among companies

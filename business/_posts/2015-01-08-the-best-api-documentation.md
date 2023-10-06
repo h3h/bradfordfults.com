@@ -1,6 +1,7 @@
 ---
 title: The Best API Documentation
 layout: post
+tag: essay
 ---
 
 As a developer, I often need to make use of API documentation to understand how

@@ -1,6 +1,7 @@
 ---
 title: Problems with “Headcount” at Profitable Companies
 layout: post
+tag: essay
 ---
 
 In medium-to-large-sized companies, there is a term of art to denote _a set of

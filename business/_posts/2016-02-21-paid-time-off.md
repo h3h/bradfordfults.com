@@ -1,6 +1,7 @@
 ---
 title: Paid Time Off
 layout: post
+tag: essay
 ---
 
 The companies with the best time-off policies understand that ample time off for

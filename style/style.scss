@@ -13,7 +13,7 @@
 }
 html,
 body {
-  font-size: 18px;
+  font-size: 16px;
   height: 100vh;
 }
 
@@ -121,7 +121,6 @@ label:hover {
   background-size: 10rem;
 }
 
-
 // =============================================================================
 // Main content
 // =============================================================================
@@ -130,13 +129,12 @@ label:hover {
   grid-area: main;
   display: flex;
   flex-direction: column-reverse;
+  max-width: 64rem;
 
   @media screen and (min-width: 64em) {
-    flex-direction: row-reverse;
     font-size: 1.2rem;
     margin: 0 auto;
-    width: 64rem;
-    padding: 1.25rem 6rem 0.5rem;
+    padding: 1.25rem 3rem 0.5rem;
   }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     padding: 1.15rem 4rem 1rem;
@@ -388,6 +386,10 @@ label:hover {
     flex: 1;
     margin: 0.5rem 0;
     text-align: center;
+
+    span::before {
+      content: " ≫ ";
+    }
   }
 }
 
@@ -397,16 +399,39 @@ label:hover {
   }
 
   .published {
+    display: block;
+    font-size: 0.7em;
     opacity: 70%;
+  }
+}
 
-    @media screen and (max-width: 64em) {
-      display: block;
-      font-size: 0.7em;
+.main-content section.essays ul.post-index .published {
+  display: none;
+}
+
+.home .main-content {
+  max-width: 90rem;
+}
+
+// =============================================================================
+// Columnar layout
+// =============================================================================
+.layout-2col {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col {
+    flex: 1 0 16rem;
+    margin: 1rem;
+  }
+  @media screen and (min-width: 54em) {
+    .col:first-of-type {
+      margin-right: 3rem;
     }
-    @media screen and (min-width: 64em) {
-      &::before {
-        content: " — ";
-      }
+  }
+  &.split23 {
+    .col:first-of-type {
+      flex: 2 0 16rem;
     }
   }
 }
@@ -445,41 +470,37 @@ label:hover {
 .main-content p.salutation {
   font-family: "Rancho", "Source Serif 4", Georgia, serif;
   font-size: 2.65em;
-  margin: 0 0 -1.25rem;
+  margin: 0 0 2rem;
   padding: 0;
   color: $color-dark-punch;
 }
 
 section.principles {
+  h2 {
+    color: $color-dark-punch;
+    text-align: center;
+  }
   h3 {
     color: $color-dark-text-highlight;
-    clear: right;
   }
-  h3 + p::before {
-    content: " ";
-    width: 10rem;
-    float: right;
-    opacity: 0.3;
-    background-repeat: no-repeat;
-    border-radius: 10rem;
-  }
-  h3.quality + p::before {
-    background-image: url('/img/gordian-knot.svg');
-    background-size: 8.75rem;
-    background-position: left -1rem;
-    height: 7.5rem;
-  }
-  h3.liberty + p::before {
-    background-image: url('/img/liberty-tree.svg');
-    background-size: 11rem;
-    background-position: -1.25rem -2rem;
-    height: 7.5rem;
-  }
-  h3.perspective + p::before {
-    background-image: url('/img/globe.svg');
-    background-size: 6.5rem;
-    background-position: 1rem top;
-    height: 7.5rem;
+
+  spicy-sections {
+    --const-mq-affordances:
+      [screen and (max-width: 54em) ] collapse |
+      [screen and (min-width: 54em) ] tab-bar
+    ;
+    display: block;
+
+    &[affordance="tab-bar"] {
+      h3 {
+        cursor: pointer;
+        margin-right: 2rem;
+      }
+
+      h3[tabindex="0"] {
+       border-bottom: 4px solid $color5;
+      }
+    }
   }
 }
 
@@ -508,18 +529,13 @@ section.principles {
 // =============================================================================
 
 nav.main {
-  align-items: center;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  width: min-content;
 
-  @media screen and (max-width: 36em) {
-    flex-direction: row-reverse;
-  }
-  @media screen and (min-width: 64em) {
-    flex-direction: column;
-  }
-  @media screen and (max-width: 64em) {
+  @media screen and (min-width: 36em) {
     margin-top: 2rem;
   }
 
@@ -528,16 +544,7 @@ nav.main {
   }
 
   p.headshot {
-    margin: 0;
-
-    @media screen and (max-width: 36em) {
-      flex: 1;
-      text-align: right;
-    }
-
-    @media screen and (max-width: 64em) {
-      margin-right: 1rem;
-    }
+    margin: 0 1rem 0 0;
 
     img {
       border-radius: 128px;
@@ -545,44 +552,20 @@ nav.main {
     }
   }
 
-  & > ul {
+  ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 128px;
 
     @media screen and (max-width: 36em) {
       text-align: right;
-    }
-
-    @media screen and (min-width: 64em) {
-      & > li:first-child {
-        margin-top: 0;
-      }
 
       & > li {
         margin: 0.25rem 0;
       }
-
-      a {
-        border-radius: 0.5rem;
-        display: block;
-        padding: 0.5rem;
-      }
     }
 
     @media screen and (max-width: 64em) {
-      display: flex;
-      flex: 1;
-
-      @media screen and (max-width: 36em) {
-        flex-direction: column;
-
-        & > li {
-          margin: 0.25rem 0;
-        }
-      }
-
       a {
         padding: 0 1rem;
       }
@@ -590,6 +573,21 @@ nav.main {
   }
 }
 
-.home nav.main p.headshot {
-  display: none;
+.home nav.main {
+  p.headshot {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  ul > li a {
+    display: inline;
+    margin: 0 1rem;
+  }
+  ul > li:last-of-type {
+    list-style-type: square;
+    margin-left: 2rem;
+  }
 }

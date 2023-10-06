@@ -1,6 +1,7 @@
 ---
 title: Product Teams & Cultural Design
 layout: post
+tag: essay
 ---
 
 I enjoyed [this thoughtful post][1] from Brian on team communication and

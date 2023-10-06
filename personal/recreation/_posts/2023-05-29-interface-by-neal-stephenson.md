@@ -5,6 +5,7 @@ book_author: Neal Stephenson & J. Frederick George
 book_rating: 5.0
 book_spoilers: false
 date: 2023-05-29 20:08 -0500
+tag: aside
 ---
 
 A fast-paced political thriller, technically ambitious like one would expect

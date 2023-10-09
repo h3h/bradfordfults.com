@@ -88,4 +88,4 @@ the technical track? I’ll leave that question for next time.
 
  [1]: https://en.wikipedia.org/wiki/Guido_van_Rossum
  [2]: https://en.wikipedia.org/wiki/Donald_Knuth
- [3]: https://bradfordfults.com/business/software-engineer-leveling-expectations
+ [3]: /business/software-engineering-leveling-expectations/

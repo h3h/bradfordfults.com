@@ -127,8 +127,6 @@ label:hover {
 
 .main-content {
   grid-area: main;
-  display: flex;
-  flex-direction: column-reverse;
   max-width: 64rem;
 
   @media screen and (min-width: 64em) {
@@ -146,7 +144,6 @@ label:hover {
   }
 
   article {
-    flex: 1;
     padding: 0.5rem 1rem;
     background-color: darken($color-dark-bg-base, 10%);
     font-family: "Source Serif 4", Georgia, Times, serif;
@@ -159,7 +156,6 @@ label:hover {
       padding: 0.5rem 2rem;
     }
     @media screen and (min-width: 64em) {
-      margin-right: 2rem;
       padding: 1rem 3rem;
     }
 
@@ -175,6 +171,11 @@ label:hover {
     h1.post-title {
       color: $color-dark-text-highlight;
     }
+  }
+
+  article.post {
+    max-width: 48rem;
+    margin: 0 auto;
   }
 
   h1,
@@ -394,6 +395,14 @@ label:hover {
 }
 
 .main-content ul.post-index {
+  li {
+    padding-left: 0.5rem;
+  }
+
+  li.book-review {
+    list-style-image: url("/img/book.svg");
+  }
+
   .book-rating {
     margin-left: 0.5rem;
   }
@@ -402,6 +411,29 @@ label:hover {
     display: block;
     font-size: 0.7em;
     opacity: 70%;
+  }
+}
+
+.main-content ul.social-links {
+  display: flex;
+  list-style-type: none;
+  margin: 2rem auto;
+  width: 28rem;
+
+  li {
+    flex: 1;
+  }
+
+  a:link {
+    color: $color5;
+    transition: color 0.33s;
+  }
+  a:hover {
+    color: $color-dark-text-highlight;
+  }
+  svg {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -423,6 +455,11 @@ label:hover {
   .col {
     flex: 1 0 16rem;
     margin: 1rem;
+
+    h2 {
+      color: $color-dark-punch;
+      text-align: center;
+    }
   }
   @media screen and (min-width: 54em) {
     .col:first-of-type {
@@ -467,6 +504,14 @@ label:hover {
   }
 }
 
+.main-content p.read-on {
+  text-align: right;
+
+  a::after {
+    content: " →";
+  }
+}
+
 .main-content p.salutation {
   font-family: "Rancho", "Source Serif 4", Georgia, serif;
   font-size: 2.65em;
@@ -476,32 +521,84 @@ label:hover {
 }
 
 section.principles {
-  h2 {
-    color: $color-dark-punch;
-    text-align: center;
-  }
   h3 {
     color: $color-dark-text-highlight;
   }
 
   spicy-sections {
-    --const-mq-affordances:
-      [screen and (max-width: 54em) ] collapse |
-      [screen and (min-width: 54em) ] tab-bar
-    ;
+    --const-mq-affordances: [screen and (max-width: 54em)] collapse | [screen and (min-width: 54em)] tab-bar;
     display: block;
+
+    h3 {
+      cursor: pointer;
+    }
 
     &[affordance="tab-bar"] {
       h3 {
-        cursor: pointer;
         margin-right: 2rem;
       }
 
       h3[tabindex="0"] {
-       border-bottom: 4px solid $color5;
+        border-bottom: 4px solid $color5;
       }
     }
   }
+}
+
+section.personal-banner {
+  background-color: rgb(103, 191, 229);
+  color: $color-light-text-base;
+  border-radius: 0.5em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2em auto;
+  padding: 1em 2em;
+  max-width: 46rem;
+
+  h2 {
+    color: $color-light-text-base;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    margin: 0;
+
+    svg {
+      height: 1.75ex;
+      width: 1.75ex;
+      position: relative;
+      top: 0.25ex;
+    }
+  }
+  a:link,
+  a:visited {
+    color: lighten($color-light-text-base, 20%);
+  }
+  a:hover,
+  a:active {
+    color: $color-dark-punch;
+  }
+  em {
+    color: $color-light-text-base;
+  }
+  p {
+    margin: 0.33em 0;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+}
+
+.banner-preview {
+  margin: 2rem 10%;
+
+  section.personal-banner {
+    font-size: 12px;
+  }
+}
+
+body.from-personal > section.main-content > section.personal-banner {
+  display: none;
 }
 
 // =============================================================================
@@ -520,8 +617,14 @@ section.principles {
     font-size: 0.75rem;
     text-align: right;
   }
+
   margin: 2rem 2rem 0;
   padding-top: 2rem;
+
+  a.privacy:link,
+  a.privacy:visited {
+    color: darken($color-dark-text-base, 20%);
+  }
 }
 
 // =============================================================================

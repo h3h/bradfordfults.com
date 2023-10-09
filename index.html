@@ -5,17 +5,14 @@ topic: ""
 body_class: "home"
 ---
 
-<script type="module" src="/script/SpicySections.js"></script>
-
 <!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
 <article class="content h-entry layout-2col">
   <section class="col intro">
     <p class="salutation">Hey y’all,</p>
     <p class="p-summary">
-      I am Bradford Fults, a thinker, feminist, humanist, abolitionist, and
-      leader, living deep in the heart of Texas, in the city of Austin. I enjoy
-      reading, watching movies, looking at houses, eating tacos, and drinking
-      whiskey and red&nbsp;wine.
+      I am Bradford Fults, a thinker, leader, and friend living deep in the
+      heart of Texas, in the city of Austin. I enjoy reading, watching movies,
+      looking at houses, eating tacos, and drinking whiskey and red&nbsp;wine.
     </p>
     <p>
       I live my life and choose my actions according to <em>principles</em> of
@@ -62,38 +59,57 @@ body_class: "home"
 
 <ul class="social-links">
   <li>
-    <a href="https://github.com/h3h">
-      <img src="/img/github.svg" alt="GitHub">
+    <a href="https://github.com/h3h" rel="me" target="_blank">
+      {% include_relative img/github.svg %}
     </a>
   </li>
   <li>
-    <a href="https://atx.pub/@h3h">
-      <img src="/img/mastodon.svg" alt="Mastodon">
+    <a href="https://atx.pub/@h3h" rel="me" target="_blank">
+      {% include_relative img/mastodon.svg %}
     </a>
   </li>
   <li>
-    <a href="https://www.google.com/maps/contrib/101441907155503620906/reviews">
-      <img src="/img/map.svg" alt="Google Maps Reviews">
+    <a href="https://www.google.com/maps/contrib/101441907155503620906/reviews" rel="me" target="_blank">
+      {% include_relative img/map.svg %}
     </a>
   </li>
   <li>
-    <a href="https://medium.com/@h3h">
-      <img src="/img/medium.svg" alt="Medium.com">
+    <a href="https://medium.com/@h3h" rel="me" target="_blank">
+      {% include_relative img/medium.svg %}
     </a>
   </li>
   <li>
-    <a href="https://linkedin.com/in/bradfordfults">
-      <img src="/img/linkedin.svg" alt="LinkedIn">
+    <a href="https://linkedin.com/in/bradfordfults" rel="me" target="_blank">
+      {% include_relative img/linkedin.svg %}
     </a>
   </li>
   <li>
-    <a href="https://www.instagram.com/h3h/">
-      <img src="/img/instagram.svg" alt="Instagram">
+    <a href="https://instagram.com/h3h/" rel="me" target="_blank">
+      {% include_relative img/instagram.svg %}
     </a>
   </li>
   <li>
-    <a href="https://www.threads.net/@h3h">
-      <img src="/img/threads.svg" alt="Threads.net">
+    <a href="https://threads.net/@h3h" rel="me" target="_blank">
+      {% include_relative img/threads.svg %}
     </a>
   </li>
 </ul>
+
+<article class="content layout-2col">
+  <section class="col">
+    <h2>Business</h2>
+    <p>
+      I write about being a manager, an organizational leader, a software
+      engineer and many things between.
+    </p>
+    <p class="read-on"><a href="/business">Read on</a></p>
+  </section>
+  <section class="col">
+    <h2>Personal</h2>
+    <p>
+      I write about being an eccentric and thoughtful citizen, living and
+      opining in my own particular ways.
+    </p>
+    <p class="read-on"><a href="/personal">Read on</a></p>
+  </section>
+</article>

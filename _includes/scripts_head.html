@@ -9,3 +9,31 @@
   gtag('config', '{{ site.google_analytics }}');
 </script>
 {% endif %}
+
+<script type="text/javascript">
+// dynamically inject styles to hide the content
+let style = document.head.appendChild(
+  Object.assign(document.createElement('style'), {
+    textContent: 'spicy-sections:not(:defined) { visibility: hidden; }'
+  })
+);
+
+// remove these styles after one second
+setTimeout(() => style.remove(), 1000);
+
+document.addEventListener('DOMContentLoaded', () => {
+  // force spicy-sections to activate when present
+  let el = document.getElementsByTagName("spicy-sections")[0]
+  if (el) {
+    el.setActiveAffordance('tab-bar')
+  }
+
+  // hide personal banner if coming from a personal page already
+  let rxPersonal = /\/personal\b/;
+  if (rxPersonal.test(location.href) && rxPersonal.test(document.referrer)) {
+    document.body.className += " from-personal"
+  }
+});
+</script>
+
+<script type="module" src="/script/SpicySections.js"></script>

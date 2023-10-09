@@ -4,7 +4,7 @@ topic: personal
 ---
 
 <!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
-<article class="content h-entry">
+<article class="content post h-entry">
   <h2>Personal</h2>
   <p>
     We all live complex and multi-faceted lives. Many professionals maintain a
@@ -22,24 +22,41 @@ topic: personal
     anyone with discomfort or differences of opinion can adequately observe
     boundaries that enable us to interact on whatever level we have chosen.
   </p>
+  <p>
+    Accordingly, you will find the following notice on personal pages if you
+    are new to the section:
+  </p>
 
-  <section class="section-list essays">
-    <h3>Essays</h3>
-    {% if site.categories.personal %}
-    {% assign post_list = site.categories.personal | where: "tag", "essay" %}
-    {% include post_list.html %} {%
-    else %}
-    <p class="p-summary">It’s personal time.</p>
-    {% endif %}
-  </section>
+  <div class="banner-preview">
+    {% include banner_personal.html %}
+  </div>
 
-  <section class="section-list asides">
-    <h3>Asides</h3>
-    {% if site.categories.personal %}
-    {% assign post_list = site.categories.personal | where: "tag", "aside" %}
-    {% include post_list.html %} {%
-    else %}
-    <p class="p-summary">It’s personal time.</p>
-    {% endif %}
-  </section>
+  <p>
+    I’m open to thoughts and feedback on what I write, but I also don’t need to
+    agree with everyone on every topic. I respect everyone who tries earnestly
+    to articulate their position on social and societal topics. Thank you for
+    your respect in return.
+  </p>
+
+  <div class="layout-2col split23">
+    <section class="col section-list essays">
+      <h3>Essays</h3>
+      {% if site.categories.personal %}
+      {% assign post_list = site.categories.personal | where: "tag", "essay" %}
+      {% include post_list.html %} {%
+      else %}
+      <p class="p-summary">It’s personal time.</p>
+      {% endif %}
+    </section>
+
+    <section class="col section-list asides">
+      <h3>Asides</h3>
+      {% if site.categories.personal %}
+      {% assign post_list = site.categories.personal | where: "tag", "aside" %}
+      {% include post_list.html %} {%
+      else %}
+      <p class="p-summary">It’s personal time.</p>
+      {% endif %}
+    </section>
+  </div>
 </article>

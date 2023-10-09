@@ -110,7 +110,7 @@ class MediaAffordancesElement extends HTMLElement {
 		height: 0.75em;
 		margin: 0 0.4em 0 0;
 		transform: rotate(90deg);
-		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' viewBox='0 0 270 240' enable-background='new 0 0 270 240' xml:space='preserve'%3e%3cpolygon fill='black' points='5,235 135,10 265,235 '/%3e%3c/svg%3e ");
+		background-image: url("/img/collapse-arrow.svg");
 		background-size: 100% 100%;
 	} 
 

@@ -1,6 +1,9 @@
 <!-- All content & code CC-BY & © 2020 Bradford Fults. -->
 <head>
   <meta charset="UTF-8" />
+
+  {% include scripts_head.html %}
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -108,6 +111,4 @@
     {% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title |
     xml_escape }}{% endif %}
   </title>
-
-  {% include scripts_head.html %}
 </head>

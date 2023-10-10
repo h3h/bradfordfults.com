@@ -418,7 +418,9 @@ label:hover {
   display: flex;
   list-style-type: none;
   margin: 2rem auto;
-  width: 28rem;
+  max-width: 30rem;
+  padding-inline-start: 0;
+  padding: 0 1.5rem;
 
   li {
     flex: 1;
@@ -526,7 +528,7 @@ section.principles {
   }
 
   spicy-sections {
-    --const-mq-affordances: [screen and (max-width: 54em)] collapse | [screen and (min-width: 54em)] tab-bar;
+    --const-mq-affordances: [screen and (max-width: 54em)] exclusive-collapse | [screen and (min-width: 54em)] tab-bar;
     display: block;
 
     h3 {

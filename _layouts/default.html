@@ -9,10 +9,10 @@
 
     <section class="main-content">
       {{ content }}
-      {% include nav.html %}
+      {% if page.path != 'index.html' %}
+        {% include nav.html %}
+      {% endif %}
     </section>
-
     {% include footer.html %}
-
   </body>
 </html>

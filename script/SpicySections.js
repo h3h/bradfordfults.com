@@ -103,7 +103,7 @@ class MediaAffordancesElement extends HTMLElement {
 
 	let style = document.createElement('style')
 	style.innerHTML = `
-	:where(spicy-sections > [affordance*="collapse"])::before { 
+	:where(spicy-sections > [affordance*="collapse"])::before {
 		content: ' ';
 		display: inline-block;
 		width: 0.5em;
@@ -112,13 +112,13 @@ class MediaAffordancesElement extends HTMLElement {
 		transform: rotate(90deg);
 		background-image: url("/img/collapse-arrow.svg");
 		background-size: 100% 100%;
-	} 
+	}
 
 	:where(spicy-sections > .hide) {
 		display: none !important;
-	} 
+	}
 
-	:where(spicy-sections > [affordance*="collapse"][aria-expanded="true"])::before, 
+	:where(spicy-sections > [affordance*="collapse"][aria-expanded="true"])::before,
 	:where(spicy-sections > [affordance*="collapse"][aria-expanded="true"])::after {
 		transform: rotate(180deg);
 	}
@@ -136,7 +136,7 @@ class MediaAffordancesElement extends HTMLElement {
 		::slotted([hidden]) {
 			display: none;
 		}
-		
+
 		::slotted(spicy-h) {
 			display: block;
 		}
@@ -158,9 +158,9 @@ class MediaAffordancesElement extends HTMLElement {
 		.hide {
 			display: none;
 		}
-		
-		[part="tab-list"] { 
-			display: flex; 
+
+		[part="tab-list"] {
+			display: flex;
 			overflow: hidden;
 			white-space: nowrap;
 		}
@@ -546,5 +546,5 @@ class MediaAffordancesElement extends HTMLElement {
 		}
 	}
 
-	customElements.define('spicy-sections', RegionSet)
+	setTimeout(() => { customElements.define('spicy-sections', RegionSet) }, 0)
 })()

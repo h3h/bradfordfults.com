@@ -28,19 +28,20 @@ body {
   display: grid;
   grid: "header" auto "main" 1fr "footer" auto / 100%;
 
-  background-color: $color-dark-bg-base;
-  color: $color-dark-text-base;
+  background-color: $color-paynes-gray;
+  color: $color-raisin-black;
 }
 
 b,
 em,
 i,
 strong {
-  color: lighten($color-dark-text-base, 15%);
+  color: $color-alice-blue;
 }
 
 ::selection {
-  background-color: $color-dark-text-highlight;
+  color: $color-alice-blue;
+  background-color: $color-tropical-indigo;
 }
 
 b,
@@ -53,11 +54,11 @@ a:link {
 }
 a:link,
 a:visited {
-  color: $color-dark-text-highlight;
+  color: $color-russian-violet;
 }
 a:hover,
 a:active {
-  color: $color-dark-punch;
+  color: $color-celestial-blue;
 }
 
 label:hover {
@@ -71,7 +72,7 @@ label:hover {
 .page-header {
   grid-area: header;
 
-  background: url("/img/texas-light.svg") no-repeat center 95%/1.5em;
+  background: url("/img/texas-dark.svg") no-repeat center 95%/1.5em;
   box-sizing: border-box;
   margin: 1rem auto;
   padding-bottom: 0.25rem;
@@ -94,15 +95,16 @@ label:hover {
     }
   }
 
+  a.header-link {
+    color: $color-raisin-black;
+    font-weight: 800;
+  }
+
   .project-tagline {
-    color: darken($color-dark-text-base, 20%);
+    color: $color-raisin-black;
     font-size: 1rem;
     font-weight: normal;
     margin: 0.25rem auto 2rem;
-  }
-
-  a.header-link {
-    color: darken($color-dark-text-base, 20%);
   }
 }
 
@@ -144,19 +146,23 @@ label:hover {
   }
 
   article {
-    padding: 0.5rem 1rem;
-    background-color: darken($color-dark-bg-base, 10%);
+    padding: 0;
+    background-color: $color-raisin-black;
+    color: $color-columbia-blue;
+    box-shadow: 0 2rem 3rem rgba(30, 30, 30, 0.75);
     font-family: "Source Serif 4", Georgia, Times, serif;
 
     @media screen and (min-width: 42em) {
       border-radius: 0.5rem;
-      box-shadow: 3px 3px 5px 0 $color-dark-bg-base;
     }
-    @media screen and (min-width: 42em) and (max-width: 64em) {
-      padding: 0.5rem 2rem;
+
+    a:link,
+    a:visited {
+      color: $color-tropical-indigo;
     }
-    @media screen and (min-width: 64em) {
-      padding: 1rem 3rem;
+    a:hover,
+    a:active {
+      color: $color-celestial-blue;
     }
 
     h1,
@@ -165,11 +171,29 @@ label:hover {
     h4,
     h5,
     h6 {
-      color: $color-dark-text-base;
+      color: $color-celestial-blue;
+      font-weight: 600;
+
+      a:link,
+      a:visited {
+        color: $color-celestial-blue;
+      }
     }
 
     h1.post-title {
-      color: $color-dark-text-highlight;
+      color: $color-tropical-indigo;
+      text-shadow: 0 0.1em 0.15em darken($color-raisin-black, 5%);
+    }
+
+    div.post-content {
+      padding: 0.5rem 1rem;
+
+      @media screen and (min-width: 42em) and (max-width: 64em) {
+        padding: 0.5rem 2rem;
+      }
+      @media screen and (min-width: 64em) {
+        padding: 1rem 3rem;
+      }
     }
   }
 
@@ -184,7 +208,7 @@ label:hover {
   h4,
   h5,
   h6 {
-    color: $color-dark-text-highlight;
+    color: $color-tropical-indigo;
     font-family: "Roboto Slab", Georgia, serif;
     margin-bottom: 1rem;
 
@@ -201,15 +225,18 @@ label:hover {
 
   h3 {
     font-size: 1.5rem;
+    margin-left: 0.1rem;
   }
 
   h4 {
     font-size: 1.4rem;
+    margin-left: 0.2rem;
   }
 
   h5 {
     font-size: 1.25rem;
-  }
+    margin-left: 0.3rem;
+}
 
   h6 {
     font-size: 1.15rem;
@@ -367,20 +394,34 @@ label:hover {
   width: 33%;
 }
 .main-content p.pullquote {
-  color: darken($color-dark-text-base, 25%);
+  color: $color-celestial-blue;
   font-size: 133%;
   margin: 2.5rem;
 }
 
 .main-content .post-meta {
+  background-color: $color-electric-indigo;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0 1.5rem;
-  opacity: 0.4;
-  padding-bottom: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 1rem;
 
   @media screen and (max-width: 42em) {
     flex-direction: column;
+  }
+  @media screen and (min-width: 42em) {
+      border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  a:link,
+  a:visited {
+    color: $color-columbia-blue;
+  }
+  a:hover,
+  a:active {
+    color: $color-alice-blue;
   }
 
   p {
@@ -389,7 +430,7 @@ label:hover {
     text-align: center;
 
     span::before {
-      content: " ≫ ";
+      content: " · ";
     }
   }
 }
@@ -417,7 +458,7 @@ label:hover {
 .main-content ul.social-links {
   display: flex;
   list-style-type: none;
-  margin: 2rem auto;
+  margin: 4rem auto 2rem;
   max-width: 30rem;
   padding-inline-start: 0;
   padding: 0 1.5rem;
@@ -427,11 +468,11 @@ label:hover {
   }
 
   a:link {
-    color: $color5;
-    transition: color 0.33s;
+    color: $color-raisin-black;
+    transition: color 0.25s;
   }
   a:hover {
-    color: $color-dark-text-highlight;
+    color: $color-tropical-indigo;
   }
   svg {
     width: 32px;
@@ -484,9 +525,12 @@ label:hover {
 }
 
 .main-content .book-review {
+  h1.post-title {
+    margin-bottom: 0;
+  }
+
   p.book-author {
     margin: 0;
-    color: $color-dark-pull;
   }
 
   p.book-rating {
@@ -524,7 +568,7 @@ label:hover {
 
 section.principles {
   h3 {
-    color: $color-dark-text-highlight;
+    color: $color-tropical-indigo;
   }
 
   spicy-sections {
@@ -548,18 +592,22 @@ section.principles {
 }
 
 section.personal-banner {
-  background-color: rgb(103, 191, 229);
-  color: $color-light-text-base;
-  border-radius: 0.5em;
+  background-color: $color-celestial-blue;
+  color: $color-raisin-black;
+  border-radius: 0.5rem 0.5rem 0 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 2em auto;
-  padding: 1em 2em;
-  max-width: 46rem;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    padding: 0.5rem 2rem;
+  }
+  @media screen and (min-width: 64em) {
+    padding: 1rem 3rem;
+  }
 
   h2 {
-    color: $color-light-text-base;
+    color: $color-night;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.25em;
     margin: 0;
@@ -573,17 +621,24 @@ section.personal-banner {
   }
   a:link,
   a:visited {
-    color: lighten($color-light-text-base, 20%);
+    color: $color-raisin-black;
+    font-weight: 700;
   }
   a:hover,
   a:active {
-    color: $color-dark-punch;
+    color: $color-night;
   }
   em {
-    color: $color-light-text-base;
+    color: $color-night;
   }
   p {
-    margin: 0.33em 0;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0.33em 0.5em;
+
+    &:first-of-type {
+      margin-top: 1em;
+    }
 
     span {
       white-space: nowrap;
@@ -609,7 +664,6 @@ body.from-personal > section.main-content > section.personal-banner {
 
 .site-footer {
   grid-area: footer;
-  color: darken($color-dark-text-base, 20%);
 
   @media screen and (max-width: 42em) {
     font-size: 0.8rem;
@@ -622,11 +676,6 @@ body.from-personal > section.main-content > section.personal-banner {
 
   margin: 2rem 2rem 0;
   padding-top: 2rem;
-
-  a.privacy:link,
-  a.privacy:visited {
-    color: darken($color-dark-text-base, 20%);
-  }
 }
 
 // =============================================================================
@@ -641,11 +690,7 @@ nav.main {
   width: min-content;
 
   @media screen and (min-width: 36em) {
-    margin-top: 2rem;
-  }
-
-  a.current {
-    color: $color-dark-punch;
+    margin-top: 4rem;
   }
 
   p.headshot {

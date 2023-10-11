@@ -2,7 +2,7 @@
 
 $color1: rgba(48, 48, 48, 1);
 $color2: rgba(112, 43, 244, 1);
-$color3: rgb(163, 116, 251);
+$color3: #a374fb;
 $color4: rgba(0, 149, 213, 1);
 $color5: rgb(190, 190, 190);
 
@@ -15,10 +15,23 @@ $color-light-text-base: $color1;
 $color-light-text-highlight: $color2;
 $color-light-pull: lighten($color-light-text-base, 15%);
 
-$color-dark-bg-base: $color1;
+$color-dark-bg-base: #65717E;
 $color-dark-bg-alt: $color2;
 $color-dark-punch: $color4;
 $color-dark-brand: $color3;
 $color-dark-text-base: darken($color5, 15%);
 $color-dark-text-highlight: $color3;
 $color-dark-pull: darken($color-dark-text-base, 15%);
+
+
+$color-night: hsla(210, 10%, 4%, 1);
+$color-raisin-black: hsla(219, 19%, 15%, 1);
+$color-russian-violet: hsla(261, 73%, 16%, 1);
+$color-electric-indigo: hsla(261, 90%, 56%, 1);
+$color-tropical-indigo: hsla(261, 94%, 72%, 1);
+$color-celestial-blue: hsla(198, 100%, 42%, 1);
+$color-ut-orange: hsla(29, 96%, 56%, 1);
+$color-paynes-gray: hsla(211, 11%, 45%, 1);
+$color-air-force-blue: hsla(211, 24%, 56%, 1);
+$color-columbia-blue: hsla(210, 50%, 85%, 1);
+$color-alice-blue: hsla(211, 66%, 92%, 1);

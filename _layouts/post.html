@@ -2,45 +2,48 @@
 layout: default
 ---
 
-{% if page and page.categories[0] and page.categories[0] == 'personal' %}
-  {% include banner_personal.html %}
-{% endif %}
-
 <article
   class="post content"
   itemscope
   itemtype="http://schema.org/BlogPosting">
+  {% if page and page.categories[0] and page.categories[0] == 'personal' %}
+    {% include banner_personal.html %}
+  {% endif %}
   <div class="post-content" itemprop="articleBody">
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">{{ page.title | xml_escape }}</h1>
+      {% assign title_words = page.title | xml_escape | split: " " %}
+      {% assign title_truncate_count_target = title_words | size | minus: 1 %}
+      {% assign title_first_many = title_words | join: " " | truncatewords: title_truncate_count_target, "" %}
+      {% assign title_final_word = title_words | last | prepend: "&nbsp;" %}
+      {% assign title_widont = title_first_many | append: title_final_word %}
+      <h1 class="post-title" itemprop="name headline">{{ title_widont }}</h1>
     </header>
     {{ content }}
   </div>
-    <div class="post-meta">
-      {% if page and page.categories %}
-        <p>
-          {% for category in page.categories %}
-            {% if category == "business" or category == "personal" %}
-              <a href="/{{category}}">{{ category | capitalize }}</a>
-            {% else %}
-              <span class="category">{{ category | capitalize }}</span>
-            {% endif %}
-          {% endfor %}
-        </p>
-      {% endif %}
-      <p>Bradford Fults</p>
+  <div class="post-meta">
+    {% if page and page.categories %}
       <p>
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-        {% if page.author %}
-          •
-          <span
-            itemprop="author"
-            itemscope
-            itemtype="http://schema.org/Person">
-            <span itemprop="name">{{ page.author }}</span>
-          </span>
-        {% endif %}
+        {% for category in page.categories %}
+          {% if category == "business" or category == "personal" %}
+            <a href="/{{category}}">{{ category | capitalize }}</a>
+          {% else %}
+            <span class="category">{{ category | capitalize }}</span>
+          {% endif %}
+        {% endfor %}
       </p>
-    </div>
+    {% endif %}
+    <p>Bradford Fults</p>
+    <p>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.author %}
+        •
+        <span
+          itemprop="author"
+          itemscope
+          itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ page.author }}</span>
+        </span>
+      {% endif %}
+    </p>
   </div>
 </article>

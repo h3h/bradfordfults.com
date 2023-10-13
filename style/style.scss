@@ -349,7 +349,7 @@ label:hover {
   padding: 0 1rem;
   margin: 2rem 0.75rem;
   border-left: 3px solid;
-  border-color: darken($color-dark-text-base, 25%);
+  border-color: $color-paynes-gray;
 }
 .main-content blockquote > :first-child {
   margin-top: 0;
@@ -390,7 +390,7 @@ label:hover {
   margin: 2rem auto;
   border: none;
   border-top: 3px solid;
-  border-color: $color-dark-punch;
+  border-color: $color-celestial-blue;
   width: 33%;
 }
 .main-content p.pullquote {
@@ -500,7 +500,7 @@ label:hover {
     margin: 1rem;
 
     h2:first-of-type {
-      color: $color-dark-punch;
+      color: $color-celestial-blue;
       margin-top: 0;
       text-align: center;
     }
@@ -571,7 +571,7 @@ body.home .layout-2col:nth-of-type(1) .col {
   font-size: 2.65em;
   margin: 0 0 2rem;
   padding: 0;
-  color: $color-dark-punch;
+  color: $color-celestial-blue;
 }
 
 section.principles {
@@ -593,7 +593,7 @@ section.principles {
       }
 
       h3[tabindex="0"] {
-        border-bottom: 4px solid $color5;
+        border-bottom: 4px solid $color-paynes-gray;
       }
     }
   }

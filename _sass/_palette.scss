@@ -1,28 +1,4 @@
-// https://coolors.co/303030-4c166b-bc96e6-0095d5-c5c5c5
-
-$color1: rgba(48, 48, 48, 1);
-$color2: rgba(112, 43, 244, 1);
-$color3: #a374fb;
-$color4: rgba(0, 149, 213, 1);
-$color5: rgb(190, 190, 190);
-
-/* Human Color Names */
-$color-light-bg-base: $color5;
-$color-light-bg-alt: $color3;
-$color-light-punch: $color4;
-$color-light-brand: $color2;
-$color-light-text-base: $color1;
-$color-light-text-highlight: $color2;
-$color-light-pull: lighten($color-light-text-base, 15%);
-
-$color-dark-bg-base: #65717E;
-$color-dark-bg-alt: $color2;
-$color-dark-punch: $color4;
-$color-dark-brand: $color3;
-$color-dark-text-base: darken($color5, 15%);
-$color-dark-text-highlight: $color3;
-$color-dark-pull: darken($color-dark-text-base, 15%);
-
+// https://coolors.co/090a0b-1e232c-702bf4-a374fb-0095d5-fb8b24-66727f-acc4dd-c6d9ec-ddeaf8
 
 $color-night: hsla(210, 10%, 4%, 1);
 $color-raisin-black: hsla(219, 19%, 15%, 1);

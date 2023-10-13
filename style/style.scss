@@ -148,7 +148,7 @@ label:hover {
   article {
     padding: 0;
     background-color: $color-raisin-black;
-    color: $color-columbia-blue;
+    color: $color-powder-blue;
     box-shadow: 0 2rem 3rem rgba(30, 30, 30, 0.75);
     font-family: "Source Serif 4", Georgia, Times, serif;
 
@@ -185,7 +185,7 @@ label:hover {
       text-shadow: 0 0.1em 0.15em darken($color-raisin-black, 5%);
     }
 
-    div.post-content {
+    .post-content {
       padding: 0.5rem 1rem;
 
       @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -499,8 +499,9 @@ label:hover {
     flex: 1 0 16rem;
     margin: 1rem;
 
-    h2 {
+    h2:first-of-type {
       color: $color-dark-punch;
+      margin-top: 0;
       text-align: center;
     }
   }
@@ -513,6 +514,13 @@ label:hover {
     .col:first-of-type {
       flex: 2 0 16rem;
     }
+  }
+}
+body.home .layout-2col:nth-of-type(1) .col {
+  margin-bottom: 0;
+
+  & > :last-child {
+    margin-bottom: 0;
   }
 }
 

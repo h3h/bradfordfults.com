@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content post h-entry">
+  {% if page.topic and page.topic == 'personal' %}
+  {% include banner_personal.html %}
+  {% endif %}
+  <div class="post-content">
+    <h2>{{ page.title }}</h2>
+    <div class="layout-2col split23">
+      {% assign post_list = site.categories[page.subcategory] | where: "tag", "essay" | where: "lang", "en" %}
+      {% if post_list.size > 0 %}
+      <section class="col essays">
+        <h3>Essays</h3>
+        {% include post_list.html %}
+      </section>
+      {% endif %}
+      {% assign post_list = site.categories[page.subcategory] | where: "tag", "aside" | where: "lang", "en" %}
+      <section class="col asides">
+        {% if post_list.size > 0 %}
+        <h3>Asides</h3>
+        {% include post_list.html %}
+        {% endif %}
+      </section>
+    </div>
+    <p>
+      <a href="/{{page.topic}}/">Read more {{ page.topic }} posts…</a>
+    </p>
+  </div>
+</article>

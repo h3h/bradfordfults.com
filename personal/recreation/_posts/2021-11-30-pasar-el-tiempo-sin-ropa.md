@@ -54,7 +54,7 @@ sobre a quién se le debería permitir mirarles, hablarles, o tocarles, de
 cualquier manera. Piense sobre no crear pequeñas cloacas de vergüenza y
 trastornos mentales que vienen de ocultar y prohibir la discusión de una de las
 partes más obvias de estar vivo: sus cuerpos. Quizás de esta forma podríamos
-acercarnos a tener una futura generación de hombres (seamos sinceros, es de
+acercarnos a tener una futura generación de hombres (seamos sinceros, son los
 hombres) quienes sepan lo que significa no ser lascivo o transgresivo o
 irrespetuoso hacía otros, de cualquier manera.
 

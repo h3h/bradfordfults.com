@@ -454,6 +454,11 @@ label:hover {
   margin: 2.5rem;
 }
 
+.main-content .post-others-in-cat {
+  padding: 0 3rem 1rem;
+  text-align: center;
+}
+
 .main-content .post-meta {
   background-color: $color-electric-indigo;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -484,7 +489,7 @@ label:hover {
     margin: 0.5rem 0;
     text-align: center;
 
-    span::before {
+    a:nth-of-type(2)::before {
       content: " · ";
     }
   }
@@ -501,6 +506,23 @@ label:hover {
 
   .book-rating {
     margin-left: 0.5rem;
+  }
+
+  .subcategory:link,
+  .subcategory:visited {
+    background-color: darken($color-raisin-black, 3%);
+    border-radius: 1em;
+    color: lighten($color-raisin-black, 20%);
+    font-size: 10pt;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1rem;
+    margin-left: 0.5em;
+    padding: 0.25em 0.75em;
+  }
+  .subcategory:hover,
+  .subcategory:active {
+    background-color: $color-ut-orange;
+    color: $color-night;
   }
 
   .published {

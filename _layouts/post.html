@@ -39,16 +39,19 @@ layout: default
   </div>
   {% endif %}
 
+  {% assign subcat = page.categories | last %}
+  {% assign other_posts = site.categories[subcat] | where: "lang", "en" %}
+  {% if other_posts.size > 1 %}
+    <div class="post-others-in-cat">
+      <a href="/{{page.categories | first }}/{{page.categories | last }}/">Read more {{ page.categories | last }} posts…</a>
+    </div>
+  {% endif %}
+
   <div class="post-meta">
     {% if page and page.categories %}
       <p>
-        {% for category in page.categories %}
-          {% if category == "business" or category == "personal" %}
-            <a href="/{{category}}">{{ category | capitalize }}</a>
-          {% else %}
-            <span class="category">{{ category | capitalize }}</span>
-          {% endif %}
-        {% endfor %}
+        <a href="/{{page.categories | first }}/">{{ page.categories | first | capitalize }}</a>
+        <a href="/{{page.categories | first }}/{{page.categories | last }}/">{{ page.categories | last | capitalize }}</a>
       </p>
     {% endif %}
     <p>Bradford Fults</p>

@@ -2,6 +2,7 @@
 layout: post
 title: How to Pass a Manager Interview
 tag: essay
+lang: en
 ---
 
 Interviewing to hire managers is a strange and squishy process at best. The team

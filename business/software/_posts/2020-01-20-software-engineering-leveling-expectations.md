@@ -2,6 +2,7 @@
 title: Software Engineer Leveling & Expectations
 layout: post
 tag: essay
+lang: en
 ---
 
 There’s a persistent pattern around promotions in the software industry. It goes

@@ -1,6 +1,7 @@
 # Site settings
 title: "Bradford Fults"
 description: "Texan sense and charm."
+description_es: "Sentido y encanto texano."
 baseurl: ''
 url: ''
 google_analytics: 'G-10Z97LZD32'

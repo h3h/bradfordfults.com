@@ -2,6 +2,7 @@
 layout: post
 title: When a Manager Has Lost Their Mojo
 tag: essay
+lang: en
 ---
 
 After managing dozens of managers in my career, I’ve noticed a failure pattern

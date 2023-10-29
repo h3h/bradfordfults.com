@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Calibrating People Ratings on Software Teams
+lang: en
 ---
 
 In modern software companies, there is a well-known procedure for managers to

@@ -1,4 +1,23 @@
 <section class="personal-banner">
+{% if page.lang and page.lang == "es" %}
+  <h2>
+    {% include exclamation.svg %}
+    Contenido personal sigue
+  </h2>
+  <p>
+    Hola amigo,
+  </p>
+  <p>
+    Contenido publicado en la sección <a href="/personal">Personal</a> de este
+    sitio es, como lo suena, <em>personal</em></span>. ¡Espero que encuentre
+    contenido interesante y que tiene una buena vibra para usted!
+  </p>
+  <p>
+    Por favor <a href="/personal">lea la introducción a esta sección</a>, y
+    ocúpese con su propia comodida y sus límites de mente.
+  </p>
+  <p>Atentamente,<br>Bradford</p>
+{% else %}
   <h2>
     {% include exclamation.svg %}
     Personal Content Follows
@@ -16,4 +35,5 @@
     own comfort and boundaries.
   </p>
   <p>My best,<br>Bradford</p>
+{% endif %}
 </section>

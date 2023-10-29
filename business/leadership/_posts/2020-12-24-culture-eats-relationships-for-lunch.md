@@ -2,6 +2,7 @@
 layout: post
 title: Culture Eats Relationships for Lunch
 tag: essay
+lang: en
 ---
 
 **Certain organizations have a culture that _encourages and enables_ the

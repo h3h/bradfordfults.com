@@ -2,6 +2,7 @@
 layout: post
 title: Coalescing a Team to Build a Future Together
 tag: aside
+lang: en
 ---
 
 I was talking with someone about the challenges of taking a team from a

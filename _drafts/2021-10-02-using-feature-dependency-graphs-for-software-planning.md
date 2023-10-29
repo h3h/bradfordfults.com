@@ -1,6 +1,7 @@
 ---
 title: Using Feature Dependency Graphs for Software Planning
 layout: post
+lang: en
 ---
 
 When developing software systems there is a very common need among all of the

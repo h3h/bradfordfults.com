@@ -2,6 +2,8 @@
 layout: post
 title: Hanging Out without Clothes
 tag: essay
+lang: en
+lang_ref: hanging-out-without-clothes
 ---
 
 For me, being without clothing is all about freedom. Freedom from restrictions,

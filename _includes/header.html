@@ -5,7 +5,9 @@
     </a>
   </h1>
 
-  {% if site.description %}
+  {% if page.lang and page.lang == "es" %}
+    <p class="project-tagline">{{ site.description_es }}</p>
+  {% else %}
     <p class="project-tagline">{{ site.description }}</p>
   {% endif %}
 </header>

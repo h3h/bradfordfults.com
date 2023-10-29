@@ -2,6 +2,7 @@
 title: Leading with Accountability
 layout: post
 tag: essay
+lang: en
 ---
 
 Leading people and projects in a complex organization is difficult. I’m sure

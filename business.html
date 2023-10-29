@@ -38,7 +38,7 @@ topic: business
       <section class="col essays">
         <h3>Essays</h3>
         {% if site.categories.business %}
-        {% assign post_list = site.categories.business | where: "tag", "essay" %}
+        {% assign post_list = site.categories.business | where: "tag", "essay" | where: "lang", "en" %}
         {% include post_list.html %} {%
         else %}
         <p class="p-summary">It’s business time.</p>
@@ -47,7 +47,7 @@ topic: business
       <section class="col asides">
         <h3>Asides</h3>
         {% if site.categories.business %}
-        {% assign post_list = site.categories.business | where: "tag", "aside" %}
+        {% assign post_list = site.categories.business | where: "tag", "aside" | where: "lang", "en" %}
         {% include post_list.html %} {%
         else %}
         <p class="p-summary">It’s business time.</p>

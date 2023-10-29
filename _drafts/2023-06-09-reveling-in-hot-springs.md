@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reveling in Hot Springs
+lang: en
 ---
 
 There are few pleasures more thoroughly disarming, rejuvenating, and liberating

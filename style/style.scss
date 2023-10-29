@@ -147,6 +147,7 @@ label:hover {
 
   article {
     padding: 0;
+    position: relative;
     background-color: $color-raisin-black;
     color: $color-powder-blue;
     box-shadow: 0 2rem 3rem rgba(30, 30, 30, 0.75);
@@ -193,6 +194,60 @@ label:hover {
       }
       @media screen and (min-width: 64em) {
         padding: 1rem 3rem;
+      }
+    }
+
+    .lang-link {
+      margin: 2rem auto 4rem;
+      text-align: center;
+
+      a {
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+      a:link,
+      a:visited {
+        background-color: $color-night;
+        color: $color-ut-orange;
+      }
+      a:hover,
+      a:active {
+        color: $color-celestial-blue;
+      }
+    }
+
+    @media screen and (min-width: 64em) {
+      .lang-link {
+        position: absolute;
+        margin: 0;
+        right: -25rem;
+        top: 15rem;
+        width: 20rem;
+        height: 5rem;
+
+        a {
+          border-radius: 0;
+          display: block;
+          width: 100%;
+          line-height: 3rem;
+          padding: 1rem 2rem;
+          text-align: center;
+          transform: rotate(90deg);
+          transform-origin: 0 0;
+          clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+        }
+        a:link,
+        a:visited {
+          background-color: $color-raisin-black-o50;
+          color: $color-ut-orange;
+        }
+        a:hover,
+        a:active {
+          background-color: $color-raisin-black;
+          color: $color-celestial-blue;
+        }
+
       }
     }
   }
@@ -602,7 +657,6 @@ section.principles {
 section.personal-banner {
   background-color: $color-celestial-blue;
   color: $color-raisin-black;
-  border-radius: 0.5rem 0.5rem 0 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding: 0.5rem 1rem;
@@ -611,7 +665,8 @@ section.personal-banner {
     padding: 0.5rem 2rem;
   }
   @media screen and (min-width: 64em) {
-    padding: 1rem 3rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+      padding: 1rem 3rem;
   }
 
   h2 {
@@ -662,7 +717,7 @@ section.personal-banner {
   }
 }
 
-body.from-personal > section.main-content > section.personal-banner {
+body.from-personal > section.main-content section.personal-banner {
   display: none;
 }
 

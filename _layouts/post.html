@@ -20,6 +20,25 @@ layout: default
     </header>
     {{ content }}
   </div>
+
+  {% if page.lang == "en" %}
+    {% assign other_lang = "es" %}
+  {% else %}
+    {% assign other_lang = "en" %}
+  {% endif %}
+  {% if page.lang_ref %}
+    {% assign other_post = site.posts | where: "lang_ref", page.lang_ref | where: "lang", other_lang | first %}
+  <div class="lang-link">
+    <a href="{{ other_post.url }}">
+      {% if page.lang == "en" %}
+      Leer en español
+      {% else %}
+      Read in English
+      {% endif %}
+    </a>
+  </div>
+  {% endif %}
+
   <div class="post-meta">
     {% if page and page.categories %}
       <p>

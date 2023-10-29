@@ -717,7 +717,7 @@ section.personal-banner {
   }
 }
 
-body.from-personal > section.main-content section.personal-banner {
+body.from-personal:not(.personal-landing) > section.main-content section.personal-banner {
   display: none;
 }
 

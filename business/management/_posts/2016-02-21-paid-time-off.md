@@ -5,14 +5,6 @@ tag: essay
 lang: en
 ---
 
-The companies with the best time-off policies understand that ample time off for
-workers isn’t a luxury granted from on high, but a reflection of a civilized
-society, a benefit ultimately reaped by the business, and respectful to humans
-who work to build and live a life apart from work.
-
-lang: en
----
-
 I live in a country where it is _standard_ to give employees two weeks of paid
 time off (PTO) per year. Ten days out of over two-hundred fifty working days in
 a year. Many companies will also only include 6–8 holidays over 12 months.

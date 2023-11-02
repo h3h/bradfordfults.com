@@ -5,7 +5,7 @@ description_es: "Sentido y encanto texano."
 baseurl: ''
 url: ''
 google_analytics: 'G-10Z97LZD32'
-# twitter_username: 'twitter_username'
+praxis_banner: true
 
 # Build settings
 markdown: kramdown

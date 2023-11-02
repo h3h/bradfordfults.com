@@ -47,6 +47,10 @@ layout: default
     </div>
   {% endif %}
 
+  {% if page.categories[0] == 'business' and site.praxis_banner %}
+  {% include banner_praxis.html %}
+  {% endif %}
+
   <div class="post-meta">
     {% if page and page.categories %}
       <p>

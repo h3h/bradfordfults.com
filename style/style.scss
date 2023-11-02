@@ -731,6 +731,51 @@ section.personal-banner {
   }
 }
 
+section.praxis-banner {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  line-height: 1.6;
+
+  a {
+    display: block;
+    background-color: $color-indigo-dye;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px $color-near-black-mid-opaque;
+    margin: 1.5rem auto 2.5rem;
+    padding: 1rem;
+
+    @media screen and (max-width: 64em) {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    @media screen and (min-width: 64em) {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
+    &:hover,
+    &:active {
+      box-shadow: 0 0 8px 8px $color-naples-yellow;
+    }
+
+    h2 {
+      color: $color-naples-yellow;
+      font-family: inherit;
+      font-size: 18pt;
+      margin: 0;
+      text-align: center;
+    }
+    p {
+      color: $color-snow;
+      margin-bottom: 0;
+
+      strong {
+        color: $color-celestial-blue;
+      }
+    }
+  }
+}
+
 .banner-preview {
   margin: 2rem 10%;
 

@@ -3,6 +3,7 @@ layout: post
 title: Our Outlook on the World in 2023
 tag: aside
 lang: en
+lang_ref: our-outlook-on-the-world-in-2023
 ---
 
 I encountered some deep pessimism wherein someone was really down about
@@ -38,9 +39,9 @@ Some of these truths are:
   memes are now happening at lightning-quick pace, to a population which while
   being [more educated than at any point in history][ed], too often falls prey
   to ideas & movements that end up contradicting their own interests.
-* War & armed conflict in general [is at a relative low point][wa] when compared
-  to the last 600 years, especially when modern populations, weapons, transport,
-  and money are taken into account.
+* War & armed conflict in general [are at a relative low point][wa] when
+  compared to the last 600 years, especially when modern populations, weapons,
+  transport, and money are taken into account.
 * We are seeing political, statistical, and sentimental regressions from
   all-time peaks over the past 6–12 years, which is wrapped up in a few of the
   major problems above, as well as several not mentioned.

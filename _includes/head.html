@@ -29,9 +29,12 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title |
   xml_escape }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend:
   site.url }}">
+  
+{% capture newline %}
+{% endcapture %}
   <meta
     name="description"
-    content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+    content="{% if page.excerpt %}{{ page.excerpt | strip_html | replace: newline, ' ' | strip | append: '…' }}{% else %}{{ site.description }}{% endif %}"
   />
 
   <link

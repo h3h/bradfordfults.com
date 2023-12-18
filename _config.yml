@@ -9,6 +9,7 @@ praxis_banner: true
 
 # Build settings
 markdown: kramdown
+page_excerpts: true
 
 exclude:
   - assets

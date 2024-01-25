@@ -29,5 +29,15 @@
   "[liquid]": {
     "editor.defaultFormatter": "sissel.shopify-liquid",
     "editor.formatOnSave": true
-  }
+  },
+  "liquid.format.rules": {
+    "wrap": 0,
+    "wrapLineLength": 80,
+    "liquid": {
+      "commentIndent": true
+    },
+    "markup": {
+      "commentIndent": true
+    }
+  },
 }

@@ -14,8 +14,8 @@ little to no guidance on how to level up.
 <p class="pullquote">“People get promoted for being on the right projects, and
 I’ve never had a chance to be on one of those projects.”</p>
 
-This method of rewarding only those who work on high-visibility projects, a poor
-measure of skills development and impact to the company, is nevertheless used by
+This method of rewarding only those who work on high-visibility projects—a poor
+measure of skills development and impact to the company—is nevertheless used by
 many companies to promote people. It’s not a good method for many reasons, an
 important one of which is its bias against people from underrepresented groups
 in tech. Getting promoted should not be the result of how well-liked you are,
@@ -33,9 +33,9 @@ benefits of doubts, it’s worth asking what it means, specifically, to become a
 more skilled software engineer, which behaviors should be demonstrated
 consistently, and what type of impact on the business matters most.
 
-Wouldn’t it be handy, then to have a relatively comprehensive set of skill and
-behavioral expectations for each level of the role Software Engineer? I agree:
-it would. I have written a few of these sets of expectations for a couple
+Wouldn’t it be handy, then, to have a relatively comprehensive set of skill and
+behavioral expectations for each level of the role of Software Engineer? I
+agree: it would. I have written a few of these sets of expectations for several
 different companies, and tuned them with feedback from real software engineers
 and managers, and I’m now open-sourcing my generic framework:
 

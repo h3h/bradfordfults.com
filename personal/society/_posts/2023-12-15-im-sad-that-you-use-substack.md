@@ -3,6 +3,7 @@ layout: post
 title: I’m Sad that You Use Substack
 lang: en
 tag: aside
+lang_ref: im-sad-that-you-use-substack
 ---
 
 I love independent publishing and especially platforms that enable authors to

@@ -2,6 +2,8 @@
 layout: default
 topic: personal
 body_class: personal-landing
+lang: en
+lang_ref: personal
 ---
 
 <!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
@@ -9,20 +11,21 @@ body_class: personal-landing
   <div class="post-content">
     <h2>Personal</h2>
     <p>
-      We all live complex and multi-faceted lives. Many professionals maintain a
-      strict separation of their personal lives from their professional ones, and
-      there are many good reasons for that. I take a slightly more integrated
-      approach, offering myself as a whole to anyone who cares to dive a little
-      deeper.
+      We all live complex and multi-faceted lives. Many professionals maintain
+      a strict separation of their personal lives from their professional ones,
+      and there are many good reasons for that. I take a slightly more
+      integrated approach, offering myself as a whole to anyone who cares to
+      dive a little deeper.
     </p>
     <p>
-      As part of revealing more of my personal life, I aim to show the consistency
-      of my attempts to live a thoughtful and principled life in every aspect. I
-      also expect more maturity, thoughtfulness, and respect for social boundaries
-      from my readers. I am interested to discuss and learn from more
-      perspectives about the topics on which I write, but I also expect that
-      anyone with discomfort or differences of opinion can adequately observe
-      boundaries that enable us to interact on whatever level we have chosen.
+      As part of revealing more of my personal life, I aim to show the
+      consistency of my attempts to live a thoughtful and principled life in
+      every aspect. I also expect more maturity, thoughtfulness, and respect
+      for social boundaries from my readers. I am interested to discuss and
+      learn from more perspectives about the topics on which I write, but I
+      also expect that anyone with discomfort or differences of opinion can
+      adequately observe boundaries that enable us to interact on whatever
+      level we have chosen.
     </p>
     <p>
       Accordingly, you will find the following notice on personal pages if you
@@ -34,33 +37,47 @@ body_class: personal-landing
     </div>
 
     <p>
-      I’m open to thoughts and feedback on what I write, but I also don’t need to
-      agree with everyone on every topic. I respect everyone who tries earnestly
-      to articulate their position on social and societal topics. Thank you for
-      your respect in return.
+      I’m open to thoughts and feedback on what I write, but I also don’t need
+      to agree with everyone on every topic. I respect everyone who tries
+      earnestly to articulate their position on social and societal topics.
+      Thank you for your respect in return.
     </p>
 
     <div class="layout-2col split23">
       <section class="col section-list essays">
         <h3>Essays</h3>
         {% if site.categories.personal %}
-        {% assign post_list = site.categories.personal | where: "tag", "essay" | where: "lang", "en" %}
-        {% include post_list.html %} {%
-        else %}
-        <p class="p-summary">It’s personal time.</p>
+          {% assign post_list = site.categories.personal
+            | where: 'tag', 'essay'
+            | where: 'lang', 'en' %}
+          {% include post_list.html %} {% else %}
+          <p class="p-summary">It’s personal time.</p>
         {% endif %}
       </section>
 
       <section class="col section-list asides">
         <h3>Asides</h3>
         {% if site.categories.personal %}
-        {% assign post_list = site.categories.personal | where: "tag", "aside" | where: "lang", "en" %}
-        {% include post_list.html %} {%
-        else %}
-        <p class="p-summary">It’s personal time.</p>
+          {% assign post_list = site.categories.personal
+            | where: 'tag', 'aside'
+            | where: 'lang', 'en' %}
+          {% include post_list.html %} {% else %}
+          <p class="p-summary">It’s personal time.</p>
         {% endif %}
       </section>
     </div>
 
+    {% if page.lang == "en" %}
+      {% assign other_lang = 'es' %}
+    {% else %}
+      {% assign other_lang = 'en' %}
+    {% endif %}
+    {% if page.lang_ref %}
+      {% assign other_post = site.pages
+        | where: 'lang_ref', page.lang_ref
+        | where: 'lang', other_lang
+        | first %}
+      {% include lang_ref_link.html %}
+    {% endif %}
   </div>
 </article>

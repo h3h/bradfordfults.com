@@ -1,0 +1,56 @@
+books:
+  en:
+    name: Books
+    url: books
+  es:
+    name: Libros
+    url: books
+business:
+  en:
+    name: Business
+    url: business
+  es:
+    name: Negocios
+    url: negocios
+leadership:
+  en:
+    name: Leadership
+    url: leadership
+  es:
+    name: Liderazgo
+    url: leadership
+management:
+  en:
+    name: Management
+    url: management
+  es:
+    name: Administración
+    url: management
+personal:
+  en:
+    name: Personal
+    url: personal
+  es:
+    name: Personal
+    url: seccion-personal
+recreation:
+  en:
+    name: Recreation
+    url: recreation
+  es:
+    name: Esparcimiento
+    url: recreation
+society:
+  en:
+    name: Society
+    url: society
+  es:
+    name: Sociedad
+    url: society
+software:
+  en:
+    name: Software
+    url: software
+  es:
+    name: Software
+    url: software

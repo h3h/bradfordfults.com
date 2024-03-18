@@ -508,20 +508,26 @@ label:hover {
     margin-left: 0.5rem;
   }
 
-  .subcategory:link,
-  .subcategory:visited {
-    background-color: darken($color-raisin-black, 3%);
+  .pill {
     border-radius: 1em;
-    color: lighten($color-raisin-black, 20%);
     font-size: 10pt;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1rem;
     margin-left: 0.5em;
     padding: 0.25em 0.75em;
+    background-color: darken($color-raisin-black, 3%);
+    color: lighten($color-raisin-black, 20%);
   }
+
   .subcategory:hover,
   .subcategory:active {
     background-color: $color-ut-orange;
+    color: $color-night;
+  }
+
+  .language:hover,
+  .language:active {
+    background-color: $color-chartreuse;
     color: $color-night;
   }
 
@@ -809,7 +815,7 @@ body.from-personal:not(.personal-landing) > section.main-content section.persona
 }
 
 // =============================================================================
-// Side nav
+// Navigation
 // =============================================================================
 
 nav.main {

@@ -1,13 +1,17 @@
 <header class="page-header">
-  <h1 class="project-name">
-    <a class="header-link" href="{{ site.baseurl }}/">
-      {{ site.title | xml_escape }}
-    </a>
-  </h1>
-
   {% if page.lang and page.lang == "es" %}
+    <h1 class="project-name">
+      <a class="header-link" href="{{ site.baseurl }}/hogar">
+        {{ site.title | xml_escape }}
+      </a>
+    </h1>
     <p class="project-tagline">{{ site.description_es }}</p>
   {% else %}
+    <h1 class="project-name">
+      <a class="header-link" href="{{ site.baseurl }}/">
+        {{ site.title | xml_escape }}
+      </a>
+    </h1>
     <p class="project-tagline">{{ site.description }}</p>
   {% endif %}
 </header>

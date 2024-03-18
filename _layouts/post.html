@@ -6,61 +6,72 @@ layout: default
   class="post content"
   itemscope
   itemtype="http://schema.org/BlogPosting">
-  {% if page and page.categories[0] and page.categories[0] == 'personal' %}
+  {% if page
+    and page.categories[0]
+    and page.categories[0] == 'personal' %}
     {% include banner_personal.html %}
   {% endif %}
   <div class="post-content" itemprop="articleBody">
     <header class="post-header">
-      {% assign title_words = page.title | xml_escape | split: " " %}
-      {% assign title_truncate_count_target = title_words | size | minus: 1 %}
-      {% assign title_first_many = title_words | join: " " | truncatewords: title_truncate_count_target, "" %}
-      {% assign title_final_word = title_words | last | prepend: "&nbsp;" %}
-      {% assign title_widont = title_first_many | append: title_final_word %}
+      {% assign title_words = page.title
+        | xml_escape
+        | split: ' ' %}
+      {% assign title_truncate_count_target = title_words
+        | size
+        | minus: 1 %}
+      {% assign title_first_many = title_words
+        | join: ' '
+        | truncatewords: title_truncate_count_target, '' %}
+      {% assign title_final_word = title_words
+        | last
+        | prepend: '&nbsp;' %}
+      {% assign title_widont = title_first_many
+        | append: title_final_word %}
       <h1 class="post-title" itemprop="name headline">{{ title_widont }}</h1>
     </header>
     {{ content }}
   </div>
 
-  {% if page.lang == "en" %}
-    {% assign other_lang = "es" %}
-  {% else %}
-    {% assign other_lang = "en" %}
-  {% endif %}
   {% if page.lang_ref %}
-    {% assign other_post = site.posts | where: "lang_ref", page.lang_ref | where: "lang", other_lang | first %}
-  <div class="lang-link">
-    <a href="{{ other_post.url }}">
-      {% if page.lang == "en" %}
-      Leer en español
-      {% else %}
-      Read in English
-      {% endif %}
-    </a>
-  </div>
+    {% assign other_post = site.posts
+      | where: 'lang_ref', page.lang_ref
+      | where: 'lang', other_lang
+      | first %}
+    {% include lang_ref_link.html %}
   {% endif %}
 
+  {% assign firstcat = page.categories | first %}
   {% assign subcat = page.categories | last %}
-  {% assign other_posts = site.categories[subcat] | where: "lang", "en" %}
+  {% assign other_posts = site.categories[subcat]
+    | where: 'lang', 'en' %}
   {% if other_posts.size > 1 %}
     <div class="post-others-in-cat">
-      <a href="/{{page.categories | first }}/{{page.categories | last }}/">Read more {{ page.categories | last }} posts…</a>
+      {% if page.lang == "en" %}
+        Read more posts about
+      {% else %}
+        Leer más posts de
+      {% endif %}
+      <a href="/{{ site.data.cats[firstcat][page.lang]["url"] }}/{{
+site.data.cats[subcat][page.lang]["url"] }}/">
+        {{ site.data.cats[subcat][page.lang]['name'] }}</a>
     </div>
   {% endif %}
 
-  {% if page.categories[0] == 'business' and site.praxis_banner %}
-  {% include banner_praxis.html %}
+  {% if page.categories[0] == 'business'
+    and site.praxis_banner %}
+    {% include banner_praxis.html %}
   {% endif %}
 
   <div class="post-meta">
     {% if page and page.categories %}
       <p>
-        <a href="/{{page.categories | first }}/">{{ page.categories | first | capitalize }}</a>
-        <a href="/{{page.categories | first }}/{{page.categories | last }}/">{{ page.categories | last | capitalize }}</a>
+        <a href="/{{ site.data.cats[firstcat][page.lang]["url"] }}/">{{ site.data.cats[firstcat][page.lang]['name'] }}</a>
+        <a href="/{{ site.data.cats[subcat][page.lang]["url"] }}/">{{ site.data.cats[subcat][page.lang]['name'] }}</a>
       </p>
     {% endif %}
     <p>Bradford Fults</p>
     <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %-d, %Y' }}</time>
       {% if page.author %}
         •
         <span

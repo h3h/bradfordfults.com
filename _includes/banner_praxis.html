@@ -1,9 +1,25 @@
-<section class="praxis-banner">
-  <a href="https://praxisefficax.com" target="_blank">
-    <h2>Could your business use top-notch consulting from the author of this post?</h2>
-    <p>
-        Head on over to <strong>Praxis Efficax</strong>, my consulting firm
-        site, to see if it would make sense for us to work together.
-    </p>
-  </a>
-</section>
+{% if page.lang and page.lang == 'en' %}
+  <section class="praxis-banner">
+    <a href="https://praxisefficax.com" target="_blank">
+      <h2>Could your business use top-notch consulting from the author of this
+        post?
+      </h2>
+      <p>
+        Head on over to
+        <strong>Praxis Efficax</strong>, my consulting firm site, to see if it
+          would make sense for us to work together.
+      </p>
+    </a>
+  </section>
+{% elsif page.lang and page.lang == 'es' %}
+  <section class="praxis-banner">
+    <a href="https://praxisefficax.com" target="_blank">
+      <h2>¿Puede su empresa utilizar consultoría de primera categoría?</h2>
+      <p>
+        Vaya usted a
+        <strong>Praxis Efficax</strong>, el sitio de mi firma consultoría, para
+          ver si vale la pena colaborar juntos.
+      </p>
+    </a>
+  </section>
+{% endif %}

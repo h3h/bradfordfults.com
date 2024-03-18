@@ -11,18 +11,17 @@
 {% endif %}
 
 <script>
-// dynamically inject styles to hide the content
+  // -- Spicy Sections Initializer --
 let style = document.head.appendChild(
   Object.assign(document.createElement('style'), {
     textContent: 'spicy-sections:not(:defined) { visibility: hidden; }'
   })
 );
-
 // remove these styles after one second
 setTimeout(() => style.remove(), 1000);
 
+  // -- Personal Banner Hider for Personal Pages --
 document.addEventListener('DOMContentLoaded', () => {
-  // hide personal banner if coming from a personal page already
   let rxPersonal = /\/personal\b/;
   if (rxPersonal.test(location.href) && rxPersonal.test(document.referrer)) {
     document.body.className += " from-personal"

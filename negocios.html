@@ -1,0 +1,78 @@
+---
+layout: default
+topic: business
+lang: es
+lang_ref: business
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content post h-entry">
+  <div class="post-content">
+    <h2>Negocios</h2>
+    <p>
+      He trabajado profesionalmente en la industria de software (y hardware)
+      desde 1998. He sido desarrollador de aplicaciones web, ingeniero de
+      interfaces de usuario, administrador de sistemas, ingeniero de sistemas
+      distribuidos, arquitecto de software, gerente de productos, jefe de
+      equipo, jefe de personal, jefe de operaciones, gerente de ingeniería,
+      director de ingeniería, y líder departamental y funcional de ingeniería,
+      varias veces.
+    </p>
+    <p>
+      A través de diversos roles en diferentes tipos de compañías (B2B, B2C;
+      empresas emergentes, empresas medianas, y corporaciones grandes), he
+      acumulado experiencias, observaciones y lecciones que a veces intento
+      escribir, tanto para mi futuro como para el beneficio de los demás. Aquí
+      es donde termina este escrito.
+    </p>
+    <p>
+      Usted puede esperar ensayos (tesis más o menos eternas con mayor
+      profundidad) y apartes (pensamientos más breves que sean más apegados a
+      sus contextos efímeros) sobre temas de toda la industria tecnológica en
+      general. Mi perspectiva es la de alguien a quien le gustaría que la
+      tecnología fuera una ayuda ocasional y una mejora para la vida, pero que
+      no reemplace nuestras experiencias fundamentales.
+    </p>
+    <p>
+      Enseño y practico la paciencia, la eficacia, la eficiencia, la balanza y
+      sobre todo la necesidad de ser un humano quien cuida a otros humanos
+      primero. Podría pensarlo como el anti-ajetreo.
+    </p>
+    <div class="layout-2col split23">
+      <section class="col essays">
+        <h3>Ensayos</h3>
+        {% if site.categories.business %}
+          {% assign post_list = site.categories.business
+            | where: 'tag', 'essay'
+            | where: 'lang', 'en' %}
+          {% include post_list.html %} {% else %}
+          <p class="p-summary">It’s business time.</p>
+        {% endif %}
+      </section>
+      <section class="col asides">
+        <h3>Apartes</h3>
+        {% if site.categories.business %}
+          {% assign post_list = site.categories.business
+            | where: 'tag', 'aside'
+            | where: 'lang', 'en' %}
+          {% include post_list.html %} {% else %}
+          <p class="p-summary">It’s business time.</p>
+        {% endif %}
+      </section>
+    </div>
+
+
+    {% if page.lang == "en" %}
+      {% assign other_lang = 'es' %}
+    {% else %}
+      {% assign other_lang = 'en' %}
+    {% endif %}
+    {% if page.lang_ref %}
+      {% assign other_post = site.pages
+        | where: 'lang_ref', page.lang_ref
+        | where: 'lang', other_lang
+        | first %}
+      {% include lang_ref_link.html %}
+    {% endif %}
+  </div>
+</article>

@@ -1,12 +1,26 @@
 <nav class="main">
+  {% if page.lang %}
+    {% assign lang = page.lang %}
+  {% else %}
+    {% assign lang = 'en' %}
+  {% endif %}
+  {% assign topics = 'business,personal' | split: ',' %}
   <p class="headshot">
-    <a href="/"><img src="/img/headshot.jpg" alt="Author headshot" /></a>
+    {% if lang == 'en' %}
+      <a href="/"><img src="/img/headshot.jpg" alt="Author headshot" /></a>
+    {% else %}
+      <a href="/hogar"><img src="/img/headshot.jpg" alt="La foto de rostro del autor" /></a>
+    {% endif %}
   </p>
   <ul>
-    {% for topic in site.data.topics %}
-    <li><a
-      {% if topic[0] == page.topic %}class="current"{% endif %}
-      href="/{{ topic[0] }}/">{{ topic[1] }}</a></li>
+    {% for topic in topics %}
+      <li>
+        <a
+          {% if topic == page.topic %}
+            class="current"
+          {% endif %}
+          href="/{{ site.data.cats[topic][lang]['url'] }}/">{{ site.data.cats[topic][lang]['name'] }}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>

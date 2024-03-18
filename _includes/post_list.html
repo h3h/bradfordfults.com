@@ -1,20 +1,27 @@
 <ul class="post-index">
-    {% for post in post_list %}
+  {% for post in post_list %}
     {% if post.layout == "book_review" %}
-    <li class="book-review">
-      <a href="{{ post.url }}">{{ post.book_name | xml_escape }}</a>
-      {%- assign book_rating = post.book_rating -%}
-      <span class="book-rating">{%include book_stars.html %}</span>
-      <span class="published">{{ post.date | date: "%B %-d, %Y" }}</span>
-    </li>
+      <li class="book-review">
+        <a href="{{ post.url }}">{{ post.book_name | xml_escape }}</a>
+        {%- assign book_rating = post.book_rating -%}
+        <span class="book-rating">{% include book_stars.html %}</span>
+        <span class="published">{{ post.date | date: '%B %-d, %Y' }}</span>
+      </li>
     {% else %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title | xml_escape }}</a>
-      <a class="subcategory" href="/{{ post.categories | first }}/{{ post.categories | last }}/">
-        {{ post.categories | last }}
-      </a>
-      <span class="published">{{ post.date | date: "%B %-d, %Y" }}</span>
-    </li>
+      <li>
+        <a href="{{ post.url }}">{{ post.title | xml_escape }}</a>
+        <a class="pill subcategory" href="/{{ post.categories | first }}/{{ post.categories | last }}/">
+          {{ post.categories | last }}
+        </a>
+        {% if post.lang_ref %}
+          {% assign other_post = site.posts
+            | where: 'lang_ref', post.lang_ref
+            | where: 'lang', 'es'
+            | first %}
+          <a class="pill language" href="{{ other_post.url }}">español</a>
+        {% endif %}
+        <span class="published">{{ post.date | date: '%B %-d, %Y' }}</span>
+      </li>
     {% endif %}
-    {% endfor %}
+  {% endfor %}
 </ul>

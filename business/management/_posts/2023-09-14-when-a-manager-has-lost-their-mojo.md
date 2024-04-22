@@ -23,15 +23,15 @@ issues, and what have you tried in terms of solutions?”
 
 It turns out that the manager is competent, well-informed, and genuinely wants
 to see a recovery from what seems like a team-wide breakdown in morale and
-success. But they seem stuck. Not completely out of ideas or motivation to get
-their team to a good place, but *strategically tapped out*—they’re not reaching
-in new directions, not seeing from new perspectives, and not successfully
-drawing from others. They’ve lost their mojo.
+ability to deliver. But they seem stuck. Not completely out of ideas or
+motivation to get their team to a good place, but *strategically tapped
+out*—they’re not reaching in new directions, not seeing from new perspectives,
+and not successfully drawing from others. They’ve lost their mojo.
 
 There are many paths that can lead to a lack of mojo for a manager, I’m sure,
 but I’m more interested here in the question of *“What next?”* for their
-leadership. Here are a few things to try that have been effective (or that I
-failed to do, and in hindsight would have been effective).
+leadership. Here are a few things to try that have been effective for me (or
+that I failed to do, and in hindsight would have been effective).
 
 ## Resets
 
@@ -71,7 +71,7 @@ failed to do, and in hindsight would have been effective).
   critical role at the nexus of many teams, problems with morale and
   inefficiency more often end up being problems of trust across teams or
   functions, at bottom. Start with people, trust, common goals, and build
-  process and feedback loops on top those of those.
+  processes and feedback loops on top of those.
 * Or maybe the team is trying to do things the way they always have while the
   environment or systems have changed around them. Would it make sense to
   partner with the manager to change some of their processes (with a feedback
@@ -103,12 +103,12 @@ going to be the feedback loop.
 
 ### 1:1 feedback loop
 
-* Lastly, and maybe most obviously, make sure that
-  you’re following up directly on the initial issues with the manager in your
-  1:1s. Don’t let it slide under the rug or treat it like a shameful or
-  embarrassing past. Every state of failure is a learning opportunity and every
-  recovery is a story of hope and a source of energy for the manager, their
-  team, and your organization at large.
+* Lastly, and maybe most obviously, make sure that you’re following up directly
+  on the initial issues with the manager in your 1:1s. Don’t let them slide
+  under the rug or treat them as part of a shameful or embarrassing past. Every
+  state of failure is a learning opportunity and every recovery is a story of
+  hope and a source of energy for the manager, their team, and your organization
+  at large.
 
 This has been a brief look at some key factors to consider when you notice that
 a manager reporting to you is running out of strategic perspective to

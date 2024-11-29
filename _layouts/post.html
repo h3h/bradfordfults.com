@@ -32,6 +32,11 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.lang == "en" %}
+    {% assign other_lang = 'es' %}
+  {% else %}
+    {% assign other_lang = 'en' %}
+  {% endif %}
   {% if page.lang_ref %}
     {% assign other_post = site.posts
       | where: 'lang_ref', page.lang_ref

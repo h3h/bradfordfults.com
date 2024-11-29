@@ -1,7 +1,7 @@
 ---
 ---
 
-@use "palette";
+@use "palette" as *;
 @use "sass:color";
 @forward "palette";
 @import "normalize.css";
@@ -32,20 +32,20 @@ body {
   display: grid;
   grid: "header" auto "main" 1fr "footer" auto / 100%;
 
-  background-color: palette.$color-paynes-gray;
-  color: palette.$color-raisin-black;
+  background-color: $color-paynes-gray;
+  color: $color-raisin-black;
 }
 
 b,
 em,
 i,
 strong {
-  color: palette.$color-alice-blue;
+  color: $color-alice-blue;
 }
 
 ::selection {
-  color: palette.$color-alice-blue;
-  background-color: palette.$color-tropical-indigo;
+  color: $color-alice-blue;
+  background-color: $color-tropical-indigo;
 }
 
 b,
@@ -58,11 +58,11 @@ a:link {
 }
 a:link,
 a:visited {
-  color: palette.$color-russian-violet;
+  color: $color-russian-violet;
 }
 a:hover,
 a:active {
-  color: palette.$color-celestial-blue;
+  color: $color-celestial-blue;
 }
 
 label:hover {
@@ -100,12 +100,12 @@ label:hover {
   }
 
   a.header-link {
-    color: palette.$color-raisin-black;
+    color: $color-raisin-black;
     font-weight: 800;
   }
 
   .project-tagline {
-    color: palette.$color-raisin-black;
+    color: $color-raisin-black;
     font-size: 1rem;
     font-weight: normal;
     margin: 0.25rem auto 2rem;
@@ -152,8 +152,8 @@ label:hover {
   article {
     padding: 0;
     position: relative;
-    background-color: palette.$color-raisin-black;
-    color: palette.$color-powder-blue;
+    background-color: $color-raisin-black;
+    color: $color-powder-blue;
     box-shadow: 0 2rem 3rem rgba(30, 30, 30, 0.75);
     font-family: "Source Serif 4", Georgia, Times, serif;
 
@@ -163,11 +163,11 @@ label:hover {
 
     a:link,
     a:visited {
-      color: palette.$color-tropical-indigo;
+      color: $color-tropical-indigo;
     }
     a:hover,
     a:active {
-      color: palette.$color-celestial-blue;
+      color: $color-celestial-blue;
     }
 
     h1,
@@ -176,19 +176,19 @@ label:hover {
     h4,
     h5,
     h6 {
-      color: palette.$color-celestial-blue;
+      color: $color-celestial-blue;
       font-weight: 600;
 
       a:link,
       a:visited {
-        color: palette.$color-celestial-blue;
+        color: $color-celestial-blue;
       }
     }
 
     h1.post-title {
-      color: palette.$color-tropical-indigo;
+      color: $color-tropical-indigo;
       text-shadow: 0 0.1em 0.15em
-        color.scale(palette.$color-raisin-black, $lightness: -5%);
+        color.scale($color-raisin-black, $lightness: -5%);
     }
 
     .post-content {
@@ -213,12 +213,12 @@ label:hover {
       }
       a:link,
       a:visited {
-        background-color: palette.$color-night;
-        color: palette.$color-ut-orange;
+        background-color: $color-night;
+        color: $color-ut-orange;
       }
       a:hover,
       a:active {
-        color: palette.$color-celestial-blue;
+        color: $color-celestial-blue;
       }
     }
 
@@ -244,13 +244,13 @@ label:hover {
         }
         a:link,
         a:visited {
-          background-color: palette.$color-raisin-black-o50;
-          color: palette.$color-ut-orange;
+          background-color: $color-raisin-black-o50;
+          color: $color-ut-orange;
         }
         a:hover,
         a:active {
-          background-color: palette.$color-raisin-black;
-          color: palette.$color-celestial-blue;
+          background-color: $color-raisin-black;
+          color: $color-celestial-blue;
         }
       }
     }
@@ -267,7 +267,7 @@ label:hover {
   h4,
   h5,
   h6 {
-    color: palette.$color-tropical-indigo;
+    color: $color-tropical-indigo;
     font-family: "Roboto Slab", Georgia, serif;
     margin-bottom: 1rem;
 
@@ -414,7 +414,7 @@ label:hover {
   padding: 0 1rem;
   margin: 2rem 0.75rem;
   border-left: 3px solid;
-  border-color: palette.$color-paynes-gray;
+  border-color: $color-paynes-gray;
 }
 .main-content blockquote > :first-child {
   margin-top: 0;
@@ -455,11 +455,11 @@ label:hover {
   margin: 2rem auto;
   border: none;
   border-top: 3px solid;
-  border-color: palette.$color-celestial-blue;
+  border-color: $color-celestial-blue;
   width: 33%;
 }
 .main-content p.pullquote {
-  color: palette.$color-celestial-blue;
+  color: $color-celestial-blue;
   font-size: 133%;
   margin: 2.5rem;
 }
@@ -470,7 +470,7 @@ label:hover {
 }
 
 .main-content .post-meta {
-  background-color: palette.$color-electric-indigo;
+  background-color: $color-electric-indigo;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   display: flex;
@@ -487,11 +487,11 @@ label:hover {
 
   a:link,
   a:visited {
-    color: palette.$color-columbia-blue;
+    color: $color-columbia-blue;
   }
   a:hover,
   a:active {
-    color: palette.$color-alice-blue;
+    color: $color-alice-blue;
   }
 
   p {
@@ -525,20 +525,20 @@ label:hover {
     line-height: 1rem;
     margin-left: 0.5em;
     padding: 0.25em 0.75em;
-    background-color: color.scale(palette.$color-raisin-black, $lightness: -3%);
-    color: color.scale(palette.$color-raisin-black, $lightness: 20%);
+    background-color: color.scale($color-raisin-black, $lightness: -3%);
+    color: color.scale($color-raisin-black, $lightness: 20%);
   }
 
   .subcategory:hover,
   .subcategory:active {
-    background-color: palette.$color-ut-orange;
-    color: palette.$color-night;
+    background-color: $color-ut-orange;
+    color: $color-night;
   }
 
   .language:hover,
   .language:active {
-    background-color: palette.$color-chartreuse;
-    color: palette.$color-night;
+    background-color: $color-chartreuse;
+    color: $color-night;
   }
 
   .published {
@@ -561,11 +561,11 @@ label:hover {
   }
 
   a:link {
-    color: palette.$color-raisin-black;
+    color: $color-raisin-black;
     transition: color 0.25s;
   }
   a:hover {
-    color: palette.$color-tropical-indigo;
+    color: $color-tropical-indigo;
   }
   svg {
     width: 32px;
@@ -593,7 +593,7 @@ label:hover {
     margin: 1rem;
 
     h2:first-of-type {
-      color: palette.$color-celestial-blue;
+      color: $color-celestial-blue;
       margin-top: 0;
       text-align: center;
     }
@@ -664,12 +664,12 @@ body.home .layout-2col:nth-of-type(1) .col {
   font-size: 2.65em;
   margin: 0 0 2rem;
   padding: 0;
-  color: palette.$color-celestial-blue;
+  color: $color-celestial-blue;
 }
 
 section.principles {
   h3 {
-    color: palette.$color-tropical-indigo;
+    color: $color-tropical-indigo;
   }
 
   spicy-sections {
@@ -687,15 +687,15 @@ section.principles {
       }
 
       h3[tabindex="0"] {
-        border-bottom: 4px solid palette.$color-paynes-gray;
+        border-bottom: 4px solid $color-paynes-gray;
       }
     }
   }
 }
 
 section.personal-banner {
-  background-color: palette.$color-celestial-blue;
-  color: palette.$color-raisin-black;
+  background-color: $color-celestial-blue;
+  color: $color-raisin-black;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   padding: 0.5rem 1rem;
@@ -709,7 +709,7 @@ section.personal-banner {
   }
 
   h2 {
-    color: palette.$color-night;
+    color: $color-night;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.25em;
     margin: 0;
@@ -723,15 +723,15 @@ section.personal-banner {
   }
   a:link,
   a:visited {
-    color: palette.$color-raisin-black;
+    color: $color-raisin-black;
     font-weight: 700;
   }
   a:hover,
   a:active {
-    color: palette.$color-night;
+    color: $color-night;
   }
   em {
-    color: palette.$color-night;
+    color: $color-night;
   }
   p {
     font-style: italic;
@@ -755,9 +755,9 @@ section.praxis-banner {
 
   a {
     display: block;
-    background-color: palette.$color-indigo-dye;
+    background-color: $color-indigo-dye;
     border-radius: 8px;
-    box-shadow: 3px 3px 6px palette.$color-near-black-mid-opaque;
+    box-shadow: 3px 3px 6px $color-near-black-mid-opaque;
     margin: 1.5rem auto 2.5rem;
     padding: 1rem;
 
@@ -772,22 +772,22 @@ section.praxis-banner {
 
     &:hover,
     &:active {
-      box-shadow: 0 0 8px 8px palette.$color-naples-yellow;
+      box-shadow: 0 0 8px 8px $color-naples-yellow;
     }
 
     h2 {
-      color: palette.$color-naples-yellow;
+      color: $color-naples-yellow;
       font-family: inherit;
       font-size: 18pt;
       margin: 0;
       text-align: center;
     }
     p {
-      color: palette.$color-snow;
+      color: $color-snow;
       margin-bottom: 0;
 
       strong {
-        color: palette.$color-celestial-blue;
+        color: $color-celestial-blue;
       }
     }
   }

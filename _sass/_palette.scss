@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // https://coolors.co/090a0b-1e232c-702bf4-a374fb-0095d5-fb8b24-66727f-acc4dd-c6d9ec-ddeaf8
 
 $color-night: hsla(210, 10%, 4%, 1);
@@ -13,7 +15,8 @@ $color-powder-blue: hsla(211, 42%, 77%, 1);
 $color-columbia-blue: hsla(210, 50%, 85%, 1);
 $color-alice-blue: hsla(211, 66%, 92%, 1);
 
-$color-raisin-black-o50: transparentize($color-raisin-black, 0.5);
+/* $color-raisin-black-o50: transparentize($color-raisin-black, 0.5); */
+$color-raisin-black-o50: color.scale($color-raisin-black, $alpha: -50%);
 
 // Praxis Efficax
 $color-indigo-dye: hsla(204, 80%, 19%, 1);

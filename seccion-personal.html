@@ -52,7 +52,7 @@ lang_ref: personal
         {% if site.categories.personal %}
           {% assign post_list = site.categories.personal
             | where: 'tag', 'essay'
-            | where: 'lang', 'en' %}
+            | where: 'lang', page.lang %}
           {% include post_list.html %} {% else %}
           <p class="p-summary">Es el tiempo personal.</p>
         {% endif %}
@@ -63,7 +63,7 @@ lang_ref: personal
         {% if site.categories.personal %}
           {% assign post_list = site.categories.personal
             | where: 'tag', 'aside'
-            | where: 'lang', 'en' %}
+            | where: 'lang', page.lang %}
           {% include post_list.html %} {% else %}
           <p class="p-summary">Es el tiempo personal.</p>
         {% endif %}

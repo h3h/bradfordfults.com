@@ -43,7 +43,7 @@ lang_ref: business
         {% if site.categories.business %}
           {% assign post_list = site.categories.business
             | where: 'tag', 'essay'
-            | where: 'lang', 'en' %}
+            | where: 'lang', page.lang %}
           {% include post_list.html %} {% else %}
           <p class="p-summary">Es el tiempo de negocios.</p>
         {% endif %}
@@ -53,7 +53,7 @@ lang_ref: business
         {% if site.categories.business %}
           {% assign post_list = site.categories.business
             | where: 'tag', 'aside'
-            | where: 'lang', 'en' %}
+            | where: 'lang', page.lang %}
           {% include post_list.html %} {% else %}
           <p class="p-summary">Es el tiempo de negocios.</p>
         {% endif %}

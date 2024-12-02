@@ -48,7 +48,7 @@ layout: default
   {% assign firstcat = page.categories | first %}
   {% assign subcat = page.categories | last %}
   {% assign other_posts = site.categories[subcat]
-    | where: 'lang', 'en' %}
+    | where: 'lang', page.lang %}
   {% if other_posts.size > 1 %}
     <div class="post-others-in-cat">
       {% if page.lang == "en" %}

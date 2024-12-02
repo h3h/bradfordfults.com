@@ -1,3 +1,8 @@
+{% if page.lang == "en" %}
+  {% assign other_lang = 'es' %}
+{% else %}
+  {% assign other_lang = 'en' %}
+{% endif %}
 <ul class="post-index">
   {% for post in post_list %}
     {% if post.layout == "book_review" %}
@@ -16,9 +21,15 @@
         {% if post.lang_ref %}
           {% assign other_post = site.posts
             | where: 'lang_ref', post.lang_ref
-            | where: 'lang', 'es'
+            | where: 'lang', other_lang
             | first %}
-          <a class="pill language" href="{{ other_post.url }}">español</a>
+          <a class="pill language" href="{{ other_post.url }}">
+            {% if other_lang == 'en' %}
+            inglés
+            {% else %}
+            español
+            {% endif %}
+          </a>
         {% endif %}
         <span class="published">{{ post.date | date: '%B %-d, %Y' }}</span>
       </li>

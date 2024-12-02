@@ -12,7 +12,7 @@ layout: default
     <div class="layout-2col split23">
       {% assign post_list = site.categories[page.subcategory]
         | where: 'tag', 'essay'
-        | where: 'lang', 'en' %}
+        | where: 'lang', page.lang %}
       {% if post_list.size > 0 %}
         <section class="col essays">
           <h3>Essays</h3>
@@ -21,7 +21,7 @@ layout: default
       {% endif %}
       {% assign post_list = site.categories[page.subcategory]
         | where: 'tag', 'aside'
-        | where: 'lang', 'en' %}
+        | where: 'lang', page.lang %}
       {% if post_list.size > 0 %}
         <section class="col asides">
           <h3>Asides</h3>

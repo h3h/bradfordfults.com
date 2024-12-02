@@ -45,7 +45,7 @@ lang_ref: personal
       <section class="col section-list essays">
         <h3>Essays</h3>
         {% if site.categories.personal %} {% assign post_list =
-        site.categories.personal | where: 'tag', 'essay' | where: 'lang', 'en'
+        site.categories.personal | where: 'tag', 'essay' | where: 'lang', page.lang
         %} {% include post_list.html %} {% else %}
         <p class="p-summary">It’s personal time.</p>
         {% endif %}
@@ -54,7 +54,7 @@ lang_ref: personal
       <section class="col section-list asides">
         <h3>Asides</h3>
         {% if site.categories.personal %} {% assign post_list =
-        site.categories.personal | where: 'tag', 'aside' | where: 'lang', 'en'
+        site.categories.personal | where: 'tag', 'aside' | where: 'lang', page.lang
         %} {% include post_list.html %} {% else %}
         <p class="p-summary">It’s personal time.</p>
         {% endif %}

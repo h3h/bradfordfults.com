@@ -19,6 +19,13 @@ leadership:
   es:
     name: Liderazgo
     url: leadership
+learning:
+  en:
+    name: Learning
+    url: learning
+  es:
+    name: Aprendizaje
+    url: aprendizaje
 management:
   en:
     name: Management

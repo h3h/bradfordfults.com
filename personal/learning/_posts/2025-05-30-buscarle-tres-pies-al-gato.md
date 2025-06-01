@@ -6,10 +6,11 @@ lang: en
 ---
 
 Today I learned the idiom “Buscarle tres pies al gato,” which, literally
-translated, means “to look for three legs on a cat.” The meaning (in which I’m
-assisted by my friend and native Spanish speaker [@kinduff][KI]), is: when
-someone is unnecessarily complicating a situation or looking for trouble that
-doesn’t exist.
+translated, means “to look for three feet on a cat.”
+
+The meaning (in which I’m assisted by my friend and native Spanish speaker
+[@kinduff][KI]), is: when someone is unnecessarily complicating a situation or
+looking for trouble that doesn’t exist.
 
 Example:
 

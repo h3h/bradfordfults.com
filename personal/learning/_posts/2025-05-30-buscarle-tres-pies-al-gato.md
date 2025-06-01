@@ -18,9 +18,12 @@ Example:
 
 I don’t know that there’s a good direct idiomatic analog in my dialect of
 American English, but just the phrase “Don’t overcomplicate things.” gets the
-meaning across. Google Translate thinks that “splitting hairs” works.
+meaning across.
 
-Amusingly, it shares something in common with one of [Occam’s] original
+[Google Translate][GT] thinks that “splitting hairs” works. [Kagi Translate][KT]
+offers up “making a mountain out of a molehill.”
+
+Amusingly, it also shares something in common with one of [Occam’s] original
 formulations of [Occam’s razor][OR]:
 
 > Non sunt multiplicanda entia sine necessitate
@@ -29,3 +32,5 @@ Which, translated, means “Entities should not be multiplied unnecessarily.”
 
 [OR]: https://en.wikipedia.org/wiki/Occam's_razor
 [KI]: https://kinduff.com
+[GT]: https://translate.google.com/
+[KT]: https://translate.kagi.com/

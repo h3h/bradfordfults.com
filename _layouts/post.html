@@ -56,7 +56,7 @@ layout: default
       {% else %}
         Leer más posts de
       {% endif %}
-      <a href="/{{ site.data.cats[firstcat][page.lang]["url"] }}/{{
+      <a href="/{{ site.data.cats[firstcat]["en"]["url"] }}/{{
 site.data.cats[subcat][page.lang]["url"] }}/">
         {{ site.data.cats[subcat][page.lang]['name'] }}</a>
     </div>
@@ -71,7 +71,7 @@ site.data.cats[subcat][page.lang]["url"] }}/">
     {% if page and page.categories %}
       <p>
         <a href="/{{ site.data.cats[firstcat][page.lang]["url"] }}/">{{ site.data.cats[firstcat][page.lang]['name'] }}</a>
-        <a href="/{{ site.data.cats[firstcat][page.lang]["url"] }}/{{ site.data.cats[subcat][page.lang]["url"] }}/">{{ site.data.cats[subcat][page.lang]['name'] }}</a>
+        <a href="/{{ site.data.cats[firstcat]["en"]["url"] }}/{{ site.data.cats[subcat][page.lang]["url"] }}/">{{ site.data.cats[subcat][page.lang]['name'] }}</a>
       </p>
     {% endif %}
     <p>Bradford Fults</p>

@@ -6,17 +6,18 @@ lang: en
 ---
 
 Today I learned the idiom “Buscarle tres pies al gato,” which, literally
-translated, means “to look for three legs on a cat.” The meaning is relatively
-clear: it’s when someone is unnecessarily complicating a situation or looking
-toward a solution that doesn’t exist.
+translated, means “to look for three legs on a cat.” The meaning (in which I’m
+assisted by my friend and native Spanish speaker [@kinduff][KI]), is: when
+someone is unnecessarily complicating a situation or looking for trouble that
+doesn’t exist.
 
 Example:
 
-> No le busques tres pies al gato; la solución es más sencilla.
+> Maria no debe buscarle tres pies al gato; ya tenemos bastante problemas.
 
 I don’t know that there’s a good direct idiomatic analog in my dialect of
 American English, but just the phrase “Don’t overcomplicate things.” gets the
-meaning across.
+meaning across. Google Translate thinks that “splitting hairs” works.
 
 Amusingly, it shares something in common with one of [Occam’s] original
 formulations of [Occam’s razor][OR]:
@@ -26,3 +27,4 @@ formulations of [Occam’s razor][OR]:
 Which, translated, means “Entities should not be multiplied unnecessarily.”
 
 [OR]: https://en.wikipedia.org/wiki/Occam's_razor
+[KI]: https://kinduff.com

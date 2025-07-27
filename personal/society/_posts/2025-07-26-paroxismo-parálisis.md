@@ -7,7 +7,7 @@ date: 2025-07-26 15:20 -0500
 lang_ref: paroxysm-paralysis
 ---
 
-Es difícil viviendo en medio de la destrucción de su sociedad. Lo parece aún más
+Es difícil viviendo en medio de la destrucción de su sociedad. Parece aún más
 difícil escribir sobre ella. Ya hay demasiado. ¿Cómo debería uno elegir sobre
 qué escribir?
 
@@ -27,7 +27,7 @@ poderosos de sus tiempos. Autores como [Žižek][SZ], [Havel][VH], [Sartre][JPS]
 [AP]: https://es.wikipedia.org/wiki/Aleksandr_Pushkin
 
 Periodistas, también, merecen el respeto por su coraje, pero su enfoque limitado
-necesariamente hace que su trabajo sea un poco más fácil: sólo reportar las
+necesariamente hace que su trabajo sea un poco más fácil: solo reportar las
 noticias. Teje una narrativa coherente de la verdad y el análisis. Di a la
 gente lo que está pasando. Pero autores y ensayistas a menudo están descolgados;
 paralizados sobre lo que decir que sería tanto vital y verdadero.
@@ -35,8 +35,8 @@ paralizados sobre lo que decir que sería tanto vital y verdadero.
 ## Reaccionar: hábilmente y no
 
 El genio cómico siempre será la piedra angular de nuestra capacidad colectiva
-para procesar el trauma. Los cómicos que se encuentran una manera de compartir
-la verdad están utilizando una habilidad para traer coherencia y atención a la
+para procesar el trauma. Los cómicos que encuentran una manera de compartir la
+verdad están utilizando una habilidad para traer coherencia y atención a la
 caos. También merecen nuestro respeto y aprecio.
 
 Pero la mayoría de la gente simplemente no parece poder callarse. Como si
@@ -81,8 +81,8 @@ verdadero?
 
 1. El hecho del poder de una persona o un gobierno es el resultado de una
    creencia colectiva y un permiso social, no una verdad universal como la
-   gravedad. La voluntad colectiva contra los poderosos ya llevó, puede llevar,
-   y siempre llevará a un cambio en los poderosos.
+   gravedad. La voluntad colectiva contra los poderosos ya ha llevado, puede
+   llevar, y siempre llevará a un cambio en los poderosos.
 
 ## Opiniones, fascismo y tragedia
 
@@ -90,7 +90,7 @@ Hay mucho más que vale la pena decir, pero que devolvería rápidamente a las
 opiniones, preferencias o observaciones que, aunque apoyadas por la
 investigación y la historia, pueden ser discutibles en los bordes. Como:
 _Albergar y apoyar la diversidad cultural, de opiniones, de personalidades y de
-deseos construye sociedades duraderas y fructíferas._
+deseos construyen sociedades duraderas y fructíferas._
 
 Pero uno de las primeras cosas que le enseñan en la Escuela Fascista es que no
 hay ningún hecho, no de verdad. Hay solo lo que _siente bien_, y lo que _siente
@@ -102,7 +102,7 @@ No hay nada terriblemente nuevo o interesante sobre esta historia, en que un
 grupo de humanos explota los temores del cerebro reptiliano de la masa para
 ganar poder inmenso y extinguir la oposición a ese mismo poder. Quizás solo que
 haya una yuxtaposición reciente con una historia de relativa calma, progreso y
-respeto por un precioso nuevo concepto llamado “derechos humanos”. Creo que eso
+respeto por un precioso nuevo concepto llamado «derechos humanos». Creo que eso
 hace que es un arco trágico, pero no nuevo.
 
 ## De donde vino
@@ -135,10 +135,9 @@ solo el punto de hacer palanca.
 
 Alguna gente ya ha salido del país, incluso, no ironicamente, los expertos
 académicos más destacados sobre el fascismo. Esta es una reacción bien
-comprensible: moverse tu mismo para asegurar la libertad sobre su cuerpo físico
-y su familia. (Nota: Irse del país para los mismos motivos de libertad y
-seguridad mientras los sombreros rojos gritan sobre «libertad» _es_, de hecho,
-irónico.)
+comprensible: moverse para asegurar la libertad sobre su cuerpo físico y su
+familia. (Nota: Irse del país para los mismos motivos de libertad y seguridad
+mientras los sombreros rojos gritan sobre «libertad» _es_, de hecho, irónico.)
 
 La mayoría de gente no va a tener esa opción. Entonces, ¿qué queda? Protestar
 pacíficamente, por supuesto. Y de verdad es efectivo, historicamente.

@@ -101,7 +101,7 @@ with a recent history of relative calm, progress, and respect for a preciously
 new concept we call “human rights.” I think that makes it a tragic arc, but not
 a new one.
 
-## From Whence It Came
+## Whence It Came
 
 I’m sure the hand-wringing and whining about _how this could possibly happen_ is
 also not new. It’s not even like these particular masses were uneducated about
@@ -143,7 +143,7 @@ Which is a lot.
 But if you can’t protest visibly? Funding, organizing, encouraging, conversing,
 and writing are all good options. Ask your red hat acquaintances and family
 members specific questions about abuses of power and if they personally want
-to  see them perpetrated against innocent people. Most don’t.
+to see them perpetrated against innocent people. Most don’t.
 
 And for those who do want inhuman treatment of some hated group of the moment? I
 don’t think punching Nazis in the face will ever go out of style.

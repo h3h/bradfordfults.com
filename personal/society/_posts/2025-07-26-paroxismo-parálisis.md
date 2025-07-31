@@ -103,7 +103,7 @@ grupo de humanos explota los temores del cerebro reptiliano de la masa para
 ganar poder inmenso y extinguir la oposición a ese mismo poder. Quizás solo que
 haya una yuxtaposición reciente con una historia de relativa calma, progreso y
 respeto por un precioso nuevo concepto llamado «derechos humanos». Creo que eso
-hace que es un arco trágico, pero no nuevo.
+hace que sea un arco trágico, pero no nuevo.
 
 ## De donde vino
 

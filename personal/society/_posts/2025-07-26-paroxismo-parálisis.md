@@ -14,9 +14,9 @@ qué escribir?
 Ahora es más facil entender por qué admiramos a autores del pasado que
 escribieron durante crisis sociales: encontraron algo vital y verdadero en medio
 del caos y lograron expresarlo en palabras para otros. Arriesgando sus
-reputaciones, castigos, y incluso el muerto, dieron voz a una experiencia
-humana que era verdadera _a pesar de_ los deseos de los celosos y asesinos
-poderosos de sus tiempos. Autores como [Žižek][SZ], [Havel][VH], [Sartre][JPS],
+reputaciones, castigos, e incluso la muerte, dieron voz a una experiencia humana
+que era verdadera _a pesar de_ los deseos de los poderoses, celosos y asesinos,
+de sus tiempos. Autores como [Žižek][SZ], [Havel][VH], [Sartre][JPS],
 [Borges][JLB], [Poniatowska][EP], y [Pushkin][AP].
 
 [SZ]: https://es.wikipedia.org/wiki/Slavoj_Žižek
@@ -26,11 +26,11 @@ poderosos de sus tiempos. Autores como [Žižek][SZ], [Havel][VH], [Sartre][JPS]
 [EP]: https://es.wikipedia.org/wiki/Elena_Poniatowska
 [AP]: https://es.wikipedia.org/wiki/Aleksandr_Pushkin
 
-Periodistas, también, merecen el respeto por su coraje, pero su enfoque limitado
-necesariamente hace que su trabajo sea un poco más fácil: solo reportar las
-noticias. Teje una narrativa coherente de la verdad y el análisis. Di a la
-gente lo que está pasando. Pero autores y ensayistas a menudo están descolgados;
-paralizados sobre lo que decir que sería tanto vital y verdadero.
+Los periodistas, también, merecen el respeto por su coraje, pero su enfoque
+limitado necesariamente hace que su trabajo sea un poco más fácil: solo reportar
+las noticias. Teje tú una narrativa coherente de la verdad y el análisis. Di a
+la gente lo que está pasando. Pero autores y ensayistas a menudo están
+descolgados; paralizados sobre lo que decir que sería tan vital y verdadero.
 
 ## Reaccionar: hábilmente y no
 
@@ -40,13 +40,13 @@ verdad están utilizando una habilidad para traer coherencia y atención a la
 caos. También merecen nuestro respeto y aprecio.
 
 Pero la mayoría de la gente simplemente no parece poder callarse. Como si
-escribiendo ochocientos palabras sobre su esquema de marketing para startups o
+escribiendo ochocientas palabras sobre su esquema de marketing para startups o
 los mejores consejos de viaje para aquellos que pueden ignorar con éxito una
-tribu indígena que está a punto de morir en una isla hermosa que está hundiendo
-sería lo suficientemente bueno para ellos. Pero eso no es lo que es, ¿verdad?
-Ellos están haciendo el “hustle”. Cualquier cosa por un dólar. Alguien debe
-exprimir por el rendimiento de la inversión mientras otros se dedican a la
-construcción de los campos de concentración.
+tribu indígena que está a punto de morir en una isla hermosa que está
+hundiendose sería lo suficientemente bueno para ellos. Pero eso no es lo que es,
+¿verdad? Ellos están haciendo el “hustle”. Cualquier cosa por un dólar. Alguien
+debe exprimirse por el rendimiento de la inversión mientras otros se dedican a
+la construcción de los campos de concentración.
 
 > Personas sabias hablan porque tienen algo que decir; personas tontas porque
 > tienen que decir algo.
@@ -55,24 +55,24 @@ Suena bien.
 
 ## Buscando la sabiduría
 
-¿Quízas empezáramos por lo básico y de ahí partir? ¿Qué es vital? ¿Qué es
+¿Quízas empecemos por lo básico y de ahí partir? ¿Qué es vital? ¿Qué es
 verdadero?
 
 1. Es inmoral que un gobierno detenga a personas y las ponga en condiciones
    peligrosas o inseguras, sin importar las razones o las personas.
 
 1. La policía gobernamental que opera en secreto y sin identificación, arrestando
-   y desapareciendo personas de las calles, es un uso ilegítimo del monopolio
+   y desapareciendo a personas de las calles, es un uso ilegítimo del monopolio
    sobre la violencia.
 
 1. Un ciudadano ignorando las acciones inmorales de su gobierno es una acta de
-   evitación moral. Para una persona privilegiada, es la cobardía. Persistiendo
+   evación moral. Para una persona privilegiada, es la cobardía. Persistiendo
    en la ignorancia voluntaria mientras ese gobierno desaparece, mutila y mata a
    sus vecinos es una invitación directa a convertirse en víctima de los
    caprichos del mismo gobierno.
 
 1. Las magnitudes de las mentiras de un gobierno están directamente relacionadas
-   con la cantidad de corrupción y inmoralidad de ese gobierno.
+   con la cantidad de corrupción e inmoralidad de ese gobierno.
 
 1. Buscando la verdad y revelando mentiras, corrupción, alianzas con actores
    malos, violencia y asesinatos siempre es vital para proteger grandes grupos
@@ -82,21 +82,21 @@ verdadero?
 1. El hecho del poder de una persona o un gobierno es el resultado de una
    creencia colectiva y un permiso social, no una verdad universal como la
    gravedad. La voluntad colectiva contra los poderosos ya ha llevado, puede
-   llevar, y siempre llevará a un cambio en los poderosos.
+   llevar, y siempre llevará a un cambio a los poderosos.
 
 ## Opiniones, fascismo y tragedia
 
 Hay mucho más que vale la pena decir, pero que devolvería rápidamente a las
-opiniones, preferencias o observaciones que, aunque apoyadas por la
+opiniones, preferencias u observaciones que, aunque apoyadas por la
 investigación y la historia, pueden ser discutibles en los bordes. Como:
 _Albergar y apoyar la diversidad cultural, de opiniones, de personalidades y de
 deseos construyen sociedades duraderas y fructíferas._
 
 Pero uno de las primeras cosas que le enseñan en la Escuela Fascista es que no
-hay ningún hecho, no de verdad. Hay solo lo que _siente bien_, y lo que _siente
-mal_ (y luego los fascistas le dicen cómo sentirse, ayudablemente). Y los malos.
-Hay siempre malos. De alguna manera, ellos nunca son los que hacen las
-desapariciones o el genocidio. Qué curioso.
+hay ningún hecho, no de verdad. Hay solo lo que se _siente bien_, y lo que se
+_siente mal_ (y luego los fascistas le dicen cómo sentirse, útilmente). Y
+los malos. Hay siempre malos. De alguna manera, ellos nunca son los que hacen
+las desapariciones o el genocidio. Qué curioso.
 
 No hay nada terriblemente nuevo o interesante sobre esta historia, en que un
 grupo de humanos explota los temores del cerebro reptiliano de la masa para
@@ -107,9 +107,9 @@ hace que sea un arco trágico, pero no nuevo.
 
 ## De donde vino
 
-Estoy seguro de que las lamentaciones y los quejos sobre _¿cómo esto podría
+Estoy seguro de que las lamentaciones y los quejidos sobre _¿cómo esto podría
 haber ocurrido?_ también no son nuevos. Ni siquiera es como si estas masas
-particulares fueran ineducadas sobre la historia del fascismo, el genocidio, los
+particulares fueran incultos sobre la historia del fascismo, el genocidio, los
 abusos de derechos humanos, o los fallecimientos de imperios pasados. Al menos,
 estas cosas estaban en el currículo. ¿Ponían atención alguien, o simplemente
 estaban preocupados por el resultado del partido del viernes de fútbol?

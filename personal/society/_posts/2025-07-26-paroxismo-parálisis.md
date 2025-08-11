@@ -93,8 +93,8 @@ _Albergar y apoyar la diversidad cultural, de opiniones, de personalidades y de
 deseos construyen sociedades duraderas y fructíferas._
 
 Pero uno de las primeras cosas que le enseñan en la Escuela Fascista es que no
-hay ningún hecho, no de verdad. Hay solo lo que se _siente bien_, y lo que se
-_siente mal_ (y luego los fascistas le dicen cómo sentirse, útilmente). Y
+hay ningún hecho, no de verdad. Hay solo lo que _se siente bien_, y lo que
+_se siente mal_ (y luego los fascistas le dicen cómo sentirse, útilmente). Y
 los malos. Hay siempre malos. De alguna manera, ellos nunca son los que hacen
 las desapariciones o el genocidio. Qué curioso.
 

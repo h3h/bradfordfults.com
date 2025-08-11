@@ -137,7 +137,8 @@ Alguna gente ya ha salido del país, incluso, no ironicamente, los expertos
 académicos más destacados sobre el fascismo. Esta es una reacción bien
 comprensible: moverse para asegurar la libertad sobre su cuerpo físico y su
 familia. (Nota: Irse del país para los mismos motivos de libertad y seguridad
-mientras los sombreros rojos gritan sobre «libertad» _es_, de hecho, irónico.)
+mientras los sombreros rojos gritan sobre «la libertad» _es_, de hecho,
+irónico.)
 
 La mayoría de gente no va a tener esa opción. Entonces, ¿qué queda? Protestar
 pacíficamente, por supuesto. Y de verdad es efectivo, historicamente.

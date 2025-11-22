@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lamento que usted use Substack
+title: Lamento que uses Substack
 lang: es
 tag: aside
 lang_ref: im-sad-that-you-use-substack
@@ -29,8 +29,8 @@ de «la libertad de expresión» y específicamente quién está empoderado para
 censurar la expresión. La gente ha aplicado la idea de manera más amplia a la
 publicación independiente.
 
-De hecho, **como compañía o persona, usted no tiene la obligación en lo absoluto
-de publicar la expresión con la que no esté de acuerdo**, o la que usted piense
+De hecho, **como compañía o persona, tú no tienes la obligación en lo absoluto
+de publicar la expresión con la que no estés de acuerdo**, o la que tú pienses
 que no debería ser compartida. Además, no debería ser un acto de revolución
 defender unos principios como una plataforma de publicación, por lo menos a un
 nivel que no equivalga a «todas las personas que tengan pulso tienen una opinión
@@ -56,15 +56,15 @@ editores pueden y deben tomar sus propias decisiones sobre dónde están sus
 líneas, con voz fuerte y con firmeza. Luego, podemos elegir cuáles de ellos
 apoyar basado en sus valores.
 
-## Dibuje la línea
+## Dibuja la línea
 
-¿Puede usted condenar moralmente los llamados a la limpieza étnica? ¿Puede usted
+¿Puedes condenar moralmente los llamados a la limpieza étnica? ¿Puedes
 estar de acuerdo con detener la promoción de la transfobia, la homofobia y negar
-los derechos de otros seres humanos a existir? ¿Puede usted desarmar en lugar de
+los derechos de otros seres humanos a existir? ¿Puedes desarmar en lugar de
 diseminar las idioteces seudointelectuales, las patologías a escala poblacional
 de la inseguridad emocional de los machos y la supremacía blanca?
 
-Yo puedo. Usted debería poder. Substack no lo hará. Usted debería llevar sus
+Yo puedo. Tú deberías poder. Substack no lo hará. Deberías llevar tus
 buenos pensamientos a un competidor como [Ghost.org][GO], que resulta ser una
 organización sin fines de lucro con unos [términos de servicio][TS] que incluyen
 esto:
@@ -78,7 +78,7 @@ esto:
 
 ¿Es Ghost una organización de personas perfectas? Probablemente no. Pero ellos
 han dibujado una línea y no tienen la historia falsa de Substack, o su
-aplicación ridículamente laxa. Quizás esa sea una solución. Quizás usted pueda
+aplicación ridículamente laxa. Quizás esa sea una solución. Quizás puedas
 encontrar mejores soluciones.
 
  [SU]: https://mashable.com/article/substack-writers-leaving-misinformation

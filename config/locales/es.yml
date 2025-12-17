@@ -1,0 +1,16 @@
+es:
+  site:
+    name: "Bradford Fults"
+    description: "Sentido y encanto texano."
+  categories:
+    business: "Negocios"
+    business_url: "negocios"
+    personal: "Personal"
+    personal_url: "seccion-personal"
+    software: "Software"
+    management: "Administración"
+    leadership: "Liderazgo"
+    books: "Libros"
+    society: "Sociedad"
+    recreation: "Esparcimiento"
+    learning: "Aprendizaje"

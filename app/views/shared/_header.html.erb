@@ -1,0 +1,17 @@
+<header class="page-header">
+  <% if lang == "es" %>
+    <h1 class="project-name">
+      <a class="header-link" href="/hogar">
+        <%= Perron.configuration.site_name %>
+      </a>
+    </h1>
+    <p class="project-tagline"><%= t("site.description", locale: :es) %></p>
+  <% else %>
+    <h1 class="project-name">
+      <a class="header-link" href="/">
+        <%= Perron.configuration.site_name %>
+      </a>
+    </h1>
+    <p class="project-tagline"><%= Perron.configuration.site_description %></p>
+  <% end %>
+</header>

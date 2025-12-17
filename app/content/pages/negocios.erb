@@ -1,0 +1,60 @@
+---
+title: Negocios
+description: Escritos sobre ser gerente, líder organizacional, ingeniero de software y muchas cosas intermedias.
+lang: es
+lang_ref: business
+topic: business
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content post h-entry">
+  <div class="post-content">
+    <h2>Negocios</h2>
+    <p>
+      He trabajado en la industria del software (y hardware) de computadoras
+      profesionalmente desde 1998. He sido un desarrollador web exitoso,
+      ingeniero de UI web, administrador de sistemas, ingeniero de sistemas
+      distribuidos, arquitecto de software, gerente de producto, líder de equipo,
+      jefe de personal, líder de operaciones, gerente de ingeniería, gerente de
+      gerentes de ingeniería, y líder de departamento y función de ingeniería,
+      varias veces.
+    </p>
+    <p>
+      A través de estos muchos roles en diferentes tipos de empresas (B2B, B2C;
+      pequeñas startups, medianas empresas y grandes corporaciones), he acumulado
+      experiencias, observaciones y lecciones que a veces trato de escribir,
+      tanto para mi futuro yo como para el beneficio de otros. Aquí es donde
+      termina esa escritura.
+    </p>
+    <p>
+      Puedes esperar ensayos (tesis más o menos atemporales exploradas con cierta
+      profundidad) y apartes (pensamientos más breves que pueden estar más
+      atados a su contexto efímero) sobre temas de toda la industria tecnológica
+      en general. Mi perspectiva es la de alguien que quisiera que la tecnología
+      fuera una ayuda y mejora ocasional a la vida, pero no una que deba
+      reemplazar nuestras experiencias fundamentales.
+    </p>
+    <p>
+      Enseño y practico la paciencia, la efectividad, la eficiencia, el
+      equilibrio, y sobre todo la necesidad de ser un humano que se preocupa por
+      otros humanos primero. Podrías pensarlo como un anti-hustle.
+    </p>
+    <div class="layout-2col split23">
+      <section class="col essays">
+        <h3>Ensayos</h3>
+        <% essays = Content::Post.all.select { |p| p.published? && p.category == "business" && p.essay? && p.lang == "es" }.sort_by(&:published_at).reverse %>
+        <%= render "shared/post_list", posts: essays, lang: "es" %>
+      </section>
+      <section class="col asides">
+        <h3>Apartes</h3>
+        <% asides = Content::Post.all.select { |p| p.published? && p.category == "business" && p.aside? && p.lang == "es" }.sort_by(&:published_at).reverse %>
+        <%= render "shared/post_list", posts: asides, lang: "es" %>
+      </section>
+    </div>
+  </div>
+
+  <% translated = Content::Page.all.find { |p| p.lang_ref == "business" && p.lang == "en" } %>
+  <% if translated %>
+    <%= render "shared/lang_ref_link_page", other_page: translated, other_lang: "en" %>
+  <% end %>
+</article>

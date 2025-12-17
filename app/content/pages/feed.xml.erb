@@ -1,0 +1,32 @@
+---
+title: RSS Feed
+layout: false
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title><%= Perron.configuration.site_name %></title>
+    <description><%= Perron.configuration.site_description %></description>
+    <link>https://bradfordfults.com/</link>
+    <atom:link href="https://bradfordfults.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate><%= Time.now.rfc2822 %></pubDate>
+    <lastBuildDate><%= Time.now.rfc2822 %></lastBuildDate>
+    <generator>Perron</generator>
+    <% Content::Post.all.select(&:published?).sort_by(&:published_at).reverse.first(10).each do |post| %>
+    <item>
+      <title><%= post.display_title.encode(xml: :text) %></title>
+      <description><%= post.content.encode(xml: :text) %></description>
+      <pubDate><%= post.published_at.to_time.rfc2822 %></pubDate>
+      <link>https://bradfordfults.com<%= post_path(post.id) %></link>
+      <guid isPermaLink="true">https://bradfordfults.com<%= post_path(post.id) %></guid>
+      <% if post.category.present? %>
+      <category><%= post.category.encode(xml: :text) %></category>
+      <% end %>
+      <% if post.subcategory.present? %>
+      <category><%= post.subcategory.encode(xml: :text) %></category>
+      <% end %>
+    </item>
+    <% end %>
+  </channel>
+</rss>

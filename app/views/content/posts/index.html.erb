@@ -1,0 +1,29 @@
+<article class="content">
+  <div class="post-content">
+    <h1>All Posts</h1>
+    <ul class="post-index">
+      <% @posts.sort_by(&:published_at).reverse.each do |post| %>
+        <% if post.book_review? %>
+          <li class="book-review">
+            <%= link_to post.book_name, "/posts/#{post.slug}" %>
+            <%= render "shared/book_stars", rating: post.book_rating %>
+            <span class="published"><%= post.published_at.strftime("%B %-d, %Y") %></span>
+          </li>
+        <% else %>
+          <li>
+            <%= link_to post.title, "/posts/#{post.slug}" %>
+            <% if post.subcategory.present? %>
+              <a class="pill subcategory" href="/<%= post.category %>/<%= post.subcategory %>/"><%= post.subcategory %></a>
+            <% end %>
+            <% if post.translated_post.present? %>
+              <a class="pill language" href="/posts/<%= post.translated_post.slug %>">
+                <%= post.english? ? "español" : "inglés" %>
+              </a>
+            <% end %>
+            <span class="published"><%= post.published_at.strftime("%B %-d, %Y") %></span>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</article>

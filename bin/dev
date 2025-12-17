@@ -1,2 +1,8 @@
-#!/usr/bin/env ruby
-exec "./bin/rails", "server", *ARGV
+#!/usr/bin/env sh
+
+if ! which goreman; then
+  echo "You need goreman: https://github.com/mattn/goreman"
+  exit 1
+fi
+
+exec goreman -f Procfile start "$@"

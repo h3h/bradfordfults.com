@@ -1,0 +1,16 @@
+<%# Renders star rating for books %>
+<span class="book-rating">
+  <% full_stars = rating.to_i %>
+  <% half_star = (rating % 1) >= 0.5 %>
+  <% empty_stars = 5 - full_stars - (half_star ? 1 : 0) %>
+
+  <% full_stars.times do %>
+    <%= image_tag "star.svg", class: "star full", alt: "Full star" %>
+  <% end %>
+  <% if half_star %>
+    <%= image_tag "star.svg", class: "star half", alt: "Half star" %>
+  <% end %>
+  <% empty_stars.times do %>
+    <%= image_tag "star.svg", class: "star empty", alt: "Empty star" %>
+  <% end %>
+</span>

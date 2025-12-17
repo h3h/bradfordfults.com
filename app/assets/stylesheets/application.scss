@@ -1,0 +1,888 @@
+@use "palette" as *;
+@use "sass:color";
+@forward "palette";
+@import "normalize.css";
+
+// =============================================================================
+// Globals
+// =============================================================================
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 18px;
+  height: 100vh;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+
+  display: grid;
+  grid: "header" auto "main" 1fr "footer" auto / 100%;
+
+  background-color: $color-paynes-gray;
+  color: $color-raisin-black;
+}
+
+b,
+em,
+i,
+strong {
+  color: $color-alice-blue;
+}
+
+::selection {
+  color: $color-alice-blue;
+  background-color: $color-tropical-indigo;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: $color-russian-violet;
+}
+a:hover,
+a:active {
+  color: $color-celestial-blue;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+// =============================================================================
+// Header
+// =============================================================================
+
+.page-header {
+  grid-area: header;
+
+  background: url("texas-dark.svg") no-repeat center 95%/1.5em;
+  box-sizing: border-box;
+  margin: 1rem auto;
+  padding-bottom: 0.25rem;
+  text-align: center;
+
+  .project-name {
+    line-height: 0.9em;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Roboto Slab", Georgia, serif;
+
+    @media screen and (min-width: 64em) {
+      font-size: 2.25rem;
+    }
+    @media screen and (min-width: 42em) and (max-width: 64em) {
+      font-size: 2.25rem;
+    }
+    @media screen and (max-width: 42em) {
+      font-size: 1.75rem;
+    }
+  }
+
+  a.header-link {
+    color: $color-raisin-black;
+    font-weight: 800;
+  }
+
+  .project-tagline {
+    color: $color-raisin-black;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0.25rem auto 2rem;
+  }
+}
+
+.home .page-header::before {
+  content: " ";
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  background-image: url("headshot.jpg");
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: 10rem;
+}
+
+// =============================================================================
+// Main content
+// =============================================================================
+
+.main-content {
+  grid-area: main;
+  max-width: 64rem;
+
+  @media screen and (min-width: 64em) {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 1.25rem 3rem 0.5rem;
+  }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    padding: 1.15rem 4rem 1rem;
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 42em) {
+    padding: 1rem 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  article {
+    padding: 0;
+    position: relative;
+    background-color: $color-raisin-black;
+    color: $color-powder-blue;
+    box-shadow: 0 2rem 3rem rgba(30, 30, 30, 0.75);
+    font-family: "Source Serif 4", Georgia, Times, serif;
+
+    @media screen and (min-width: 42em) {
+      border-radius: 0.5rem;
+    }
+
+    a:link,
+    a:visited {
+      color: $color-tropical-indigo;
+    }
+    a:hover,
+    a:active {
+      color: $color-celestial-blue;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $color-celestial-blue;
+      font-weight: 600;
+
+      a:link,
+      a:visited {
+        color: $color-celestial-blue;
+      }
+    }
+
+    h1.post-title {
+      color: $color-tropical-indigo;
+      text-shadow: 0 0.1em 0.15em
+        color.scale($color-raisin-black, $lightness: -5%);
+    }
+
+    .post-content {
+      padding: 0.5rem 1rem;
+
+      @media screen and (min-width: 42em) and (max-width: 64em) {
+        padding: 0.5rem 2rem;
+      }
+      @media screen and (min-width: 64em) {
+        padding: 1rem 3rem;
+      }
+    }
+
+    .lang-link {
+      margin: 2rem auto 4rem;
+      text-align: center;
+
+      a {
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+      a:link,
+      a:visited {
+        background-color: $color-night;
+        color: $color-ut-orange;
+      }
+      a:hover,
+      a:active {
+        color: $color-celestial-blue;
+      }
+    }
+
+    @media screen and (min-width: 64em) {
+      .lang-link {
+        position: absolute;
+        margin: 0;
+        right: -25rem;
+        top: 15rem;
+        width: 20rem;
+        height: 5rem;
+
+        a {
+          border-radius: 0;
+          display: block;
+          width: 100%;
+          line-height: 3rem;
+          padding: 1rem 2rem;
+          text-align: center;
+          transform: rotate(90deg);
+          transform-origin: 0 0;
+          clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+        }
+        a:link,
+        a:visited {
+          background-color: $color-raisin-black-o50;
+          color: $color-ut-orange;
+        }
+        a:hover,
+        a:active {
+          background-color: $color-raisin-black;
+          color: $color-celestial-blue;
+        }
+      }
+    }
+  }
+
+  article.post {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-tropical-indigo;
+    font-family: "Roboto Slab", Georgia, serif;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 64em) {
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 64em) {
+      margin-top: 0.25rem;
+    }
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-left: 0.1rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    margin-left: 0.2rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    margin-left: 0.3rem;
+  }
+
+  h6 {
+    font-size: 1.15rem;
+  }
+}
+.main-content h1 {
+  font-size: 2.2rem;
+
+  @media screen and (max-width: 50em) {
+    font-size: 1.85rem;
+    margin: 1.25rem 0 2rem;
+    text-align: center;
+  }
+}
+.main-content:first-child {
+  margin-top: 0;
+}
+.main-content img {
+  max-width: 100%;
+}
+.main-content p {
+  margin-bottom: 1em;
+}
+.main-content code {
+  padding: 2px 4px;
+  font-family: Consolas, Monaco, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+.main-content pre {
+  padding: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font:
+    1rem Consolas,
+    Monaco,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace;
+  word-wrap: normal;
+  border: solid 1px #dce6f0;
+  border-radius: 0.3rem;
+}
+.main-content pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.main-content .emdash {
+  padding: 0 0.1rem;
+}
+.main-content .highlight {
+  margin-bottom: 1rem;
+}
+.main-content .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+.main-content .highlight pre,
+.main-content pre {
+  padding: 0.8rem;
+  overflow: auto;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-radius: 0.3rem;
+}
+.main-content pre code,
+.main-content pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.main-content pre code:before,
+.main-content pre code:after,
+.main-content pre tt:before,
+.main-content pre tt:after {
+  content: normal;
+}
+
+.main-content div.svg {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-content ul,
+.main-content ol {
+  margin-top: 0;
+}
+.main-content ul {
+  list-style-type: square;
+}
+.main-content li {
+  margin: 0.8333rem 0;
+}
+.main-content blockquote {
+  padding: 0 1rem;
+  margin: 2rem 0.75rem;
+  border-left: 3px solid;
+  border-color: $color-paynes-gray;
+}
+.main-content blockquote > :first-child {
+  margin-top: 0;
+}
+.main-content blockquote > :last-child {
+  margin-bottom: 0;
+}
+.main-content table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+}
+.main-content table th {
+  font-weight: bold;
+}
+.main-content table th,
+.main-content table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e9ebec;
+}
+.main-content dl {
+  padding: 0;
+}
+.main-content dl dt {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.main-content dl dd {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.main-content hr {
+  height: 2px;
+  padding: 0;
+  margin: 2rem auto;
+  border: none;
+  border-top: 3px solid;
+  border-color: $color-celestial-blue;
+  width: 33%;
+}
+.main-content p.pullquote {
+  color: $color-celestial-blue;
+  font-size: 133%;
+  margin: 2.5rem;
+}
+
+.main-content .post-others-in-cat {
+  padding: 0 3rem 1rem;
+  text-align: center;
+}
+
+.main-content .post-meta {
+  background-color: $color-electric-indigo;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0;
+  padding: 1rem;
+
+  @media screen and (max-width: 42em) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 42em) {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  a:link,
+  a:visited {
+    color: $color-columbia-blue;
+  }
+  a:hover,
+  a:active {
+    color: $color-alice-blue;
+  }
+
+  p {
+    flex: 1;
+    margin: 0.5rem 0;
+    text-align: center;
+
+    a:nth-of-type(2)::before {
+      content: " · ";
+    }
+  }
+}
+
+.main-content ul.post-index {
+  li {
+    padding-left: 0.5rem;
+  }
+
+  li.book-review {
+    list-style-image: url("book.svg");
+  }
+
+  .book-rating {
+    margin-left: 0.5rem;
+  }
+
+  .pill {
+    border-radius: 1em;
+    font-size: 10pt;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1rem;
+    margin-left: 0.5em;
+    padding: 0.25em 0.75em;
+    background-color: color.scale($color-raisin-black, $lightness: -3%);
+    color: color.scale($color-raisin-black, $lightness: 20%);
+  }
+
+  .subcategory:hover,
+  .subcategory:active {
+    background-color: $color-ut-orange;
+    color: $color-night;
+  }
+
+  .language:hover,
+  .language:active {
+    background-color: $color-chartreuse;
+    color: $color-night;
+  }
+
+  .published {
+    display: block;
+    font-size: 0.7em;
+    opacity: 70%;
+  }
+}
+
+.main-content ul.social-links {
+  display: flex;
+  list-style-type: none;
+  margin: 4rem auto 2rem;
+  max-width: 30rem;
+  padding-inline-start: 0;
+  padding: 0 1.5rem;
+
+  li {
+    flex: 1;
+  }
+
+  a:link {
+    color: $color-raisin-black;
+    transition: color 0.25s;
+  }
+  a:hover {
+    color: $color-tropical-indigo;
+  }
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.main-content section.essays ul.post-index .published {
+  display: none;
+}
+
+.home .main-content {
+  max-width: 90rem;
+}
+
+// =============================================================================
+// Columnar layout
+// =============================================================================
+.layout-2col {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col {
+    flex: 1 0 16rem;
+    margin: 1rem;
+
+    h2:first-of-type {
+      color: $color-celestial-blue;
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 54em) {
+    .col:first-of-type {
+      margin-right: 3rem;
+    }
+  }
+  &.split23 {
+    .col:first-of-type {
+      flex: 2 0 16rem;
+    }
+  }
+}
+body.home .layout-2col:nth-of-type(1) .col {
+  margin-bottom: 0;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// =============================================================================
+// Specific stray styles
+// =============================================================================
+
+.pagination {
+  text-align: center;
+}
+
+.main-content .book-review {
+  h1.post-title {
+    margin-bottom: 0;
+  }
+
+  p.book-author {
+    margin: 0;
+  }
+
+  p.book-rating {
+    font-size: 2.5rem;
+    margin: 1.33rem 0 0;
+    text-align: center;
+
+    .book-rating-number {
+      display: none;
+    }
+  }
+
+  p.book-spoilers {
+    font-size: 0.9rem;
+    margin: 0 0 1.33rem;
+    text-align: center;
+  }
+}
+
+.main-content p.read-on {
+  text-align: right;
+
+  a::after {
+    content: " \2192";
+  }
+}
+
+.main-content p.salutation {
+  font-family: "Rancho", "Source Serif 4", Georgia, serif;
+  font-size: 2.65em;
+  margin: 0 0 2rem;
+  padding: 0;
+  color: $color-celestial-blue;
+}
+
+section.principles {
+  h3 {
+    color: $color-tropical-indigo;
+  }
+
+  spicy-sections {
+    --const-mq-affordances: [screen and (max-width: 54em)] exclusive-collapse |
+      [screen and (min-width: 54em)] tab-bar;
+    display: block;
+
+    h3 {
+      cursor: pointer;
+    }
+
+    &[affordance="tab-bar"] {
+      h3 {
+        margin-right: 2rem;
+      }
+
+      h3[tabindex="0"] {
+        border-bottom: 4px solid $color-paynes-gray;
+      }
+    }
+  }
+}
+
+section.personal-banner {
+  background-color: $color-celestial-blue;
+  color: $color-raisin-black;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    padding: 0.5rem 2rem;
+  }
+  @media screen and (min-width: 64em) {
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem 3rem;
+  }
+
+  h2 {
+    color: $color-night;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    margin: 0;
+
+    svg {
+      height: 1.75ex;
+      width: 1.75ex;
+      position: relative;
+      top: 0.25ex;
+    }
+  }
+  a:link,
+  a:visited {
+    color: $color-raisin-black;
+    font-weight: 700;
+  }
+  a:hover,
+  a:active {
+    color: $color-night;
+  }
+  em {
+    color: $color-night;
+  }
+  p {
+    font-style: italic;
+    font-weight: 500;
+    margin: 0.33em 0.5em;
+
+    &:first-of-type {
+      margin-top: 1em;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+}
+
+section.praxis-banner {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  line-height: 1.6;
+
+  a {
+    display: block;
+    background-color: $color-indigo-dye;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px $color-near-black-mid-opaque;
+    margin: 1.5rem auto 2.5rem;
+    padding: 1rem;
+
+    @media screen and (max-width: 64em) {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    @media screen and (min-width: 64em) {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+
+    &:hover,
+    &:active {
+      box-shadow: 0 0 8px 8px $color-naples-yellow;
+    }
+
+    h2 {
+      color: $color-naples-yellow;
+      font-family: inherit;
+      font-size: 18pt;
+      margin: 0;
+      text-align: center;
+    }
+    p {
+      color: $color-snow;
+      margin-bottom: 0;
+
+      strong {
+        color: $color-celestial-blue;
+      }
+    }
+  }
+}
+
+.banner-preview {
+  margin: 2rem 10%;
+
+  section.personal-banner {
+    font-size: 12px;
+  }
+}
+
+body.from-personal:not(.personal-landing)
+  > section.main-content
+  section.personal-banner {
+  display: none;
+}
+
+// =============================================================================
+// Footer
+// =============================================================================
+
+.site-footer {
+  grid-area: footer;
+  margin: 2rem 2rem 0;
+  padding-top: 2rem;
+
+  @media screen and (max-width: 42em) {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  @media screen and (min-width: 42em) {
+    font-size: 0.75rem;
+    text-align: right;
+  }
+}
+
+// =============================================================================
+// Navigation
+// =============================================================================
+
+nav.main {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  width: min-content;
+
+  @media screen and (min-width: 36em) {
+    margin-top: 4rem;
+  }
+
+  p.headshot {
+    margin: 0 1rem 0 0;
+
+    img {
+      border-radius: 128px;
+      max-width: 128px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (max-width: 36em) {
+      text-align: right;
+
+      & > li {
+        margin: 0.25rem 0;
+      }
+    }
+
+    @media screen and (max-width: 64em) {
+      a {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+.home nav.main {
+  p.headshot {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  ul > li a {
+    display: inline;
+    margin: 0 1rem;
+  }
+  ul > li:last-of-type {
+    list-style-type: square;
+    margin-left: 2rem;
+  }
+}

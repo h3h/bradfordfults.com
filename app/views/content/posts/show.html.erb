@@ -1,0 +1,5 @@
+<% if @resource.book_review? %>
+  <%= render "content/posts/book_review", post: @resource %>
+<% else %>
+  <%= render "content/posts/post", post: @resource %>
+<% end %>

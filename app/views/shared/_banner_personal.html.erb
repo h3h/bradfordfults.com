@@ -1,0 +1,39 @@
+<section class="personal-banner">
+<% if lang == "es" %>
+  <h2>
+    <%= render "shared/exclamation" %>
+    Contenido personal sigue
+  </h2>
+  <p>
+    Hola amigo,
+  </p>
+  <p>
+    Contenido publicado en la sección <a href="/seccion-personal/">Personal</a> de este
+    sitio es, como lo suena, <em>personal</em>. ¡Espero que encuentre
+    contenido interesante y que tenga buenas vibras para usted!
+  </p>
+  <p>
+    Por favor <a href="/seccion-personal/">lea la introducción de esta sección</a>, y
+    ocúpese de su propia comodidad y sus límites de mente.
+  </p>
+  <p>Atentamente,<br>Bradford</p>
+<% else %>
+  <h2>
+    <%= render "shared/exclamation" %>
+    Personal Content Follows
+  </h2>
+  <p>
+    Hi friend,
+  </p>
+  <p>
+    Content published in the <a href="/personal/">Personal</a> section of this
+    website is, as it sounds, <em>personal</em>. I hope you will find
+    interesting content that resonates with you!
+  </p>
+  <p>
+    Please <a href="/personal/">read my intro to this section</a>, and mind your
+    own comfort and boundaries.
+  </p>
+  <p>My best,<br>Bradford</p>
+<% end %>
+</section>

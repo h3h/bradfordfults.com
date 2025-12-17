@@ -1,0 +1,23 @@
+<% other_lang = lang == "en" ? "es" : "en" %>
+<ul class="post-index">
+  <% posts.each do |post| %>
+    <% if post.book_review? %>
+      <li class="book-review">
+        <%= link_to post.book_name, "/posts/#{post.slug}" %>
+        <span class="book-rating"><%= render "shared/book_stars", rating: post.book_rating %></span>
+        <span class="published"><%= post.published_at.strftime("%B %-d, %Y") %></span>
+      </li>
+    <% else %>
+      <li>
+        <%= link_to post.title, "/posts/#{post.slug}" %>
+        <a class="pill subcategory" href="/<%= post.category %>/<%= post.subcategory %>/"><%= post.subcategory %></a>
+        <% if post.translated_post.present? %>
+          <a class="pill language" href="/posts/<%= post.translated_post.slug %>">
+            <%= other_lang == "en" ? "inglés" : "español" %>
+          </a>
+        <% end %>
+        <span class="published"><%= post.published_at.strftime("%B %-d, %Y") %></span>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

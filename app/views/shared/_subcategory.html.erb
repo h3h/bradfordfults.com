@@ -1,0 +1,29 @@
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content post h-entry">
+  <% if topic == "personal" %>
+    <%= render "shared/banner_personal", lang: lang %>
+  <% end %>
+  <div class="post-content">
+    <h2><%= title %></h2>
+    <div class="layout-2col split23">
+      <% essays = Content::Post.all.select { |p| p.published? && p.subcategory == subcategory && p.essay? && p.lang == lang }.sort_by(&:published_at).reverse %>
+      <% if essays.any? %>
+        <section class="col essays">
+          <h3><%= lang == "en" ? "Essays" : "Ensayos" %></h3>
+          <%= render "shared/post_list", posts: essays, lang: lang %>
+        </section>
+      <% end %>
+      <% asides = Content::Post.all.select { |p| p.published? && p.subcategory == subcategory && p.aside? && p.lang == lang }.sort_by(&:published_at).reverse %>
+      <% if asides.any? %>
+        <section class="col asides">
+          <h3><%= lang == "en" ? "Asides" : "Apartes" %></h3>
+          <%= render "shared/post_list", posts: asides, lang: lang %>
+        </section>
+      <% end %>
+    </div>
+    <p>
+      <% topic_url = lang == "en" ? topic : (topic == "business" ? "negocios" : "seccion-personal") %>
+      <a href="/<%= topic_url %>/"><%= lang == "en" ? "Read more #{topic} posts..." : "Leer más posts de #{topic == 'business' ? 'negocios' : 'personal'}..." %></a>
+    </p>
+  </div>
+</article>

@@ -1,0 +1,229 @@
+Started GET "/" for ::1 at 2025-12-16 20:48:05 -0600
+Processing by Content::PagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/social/_github.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_mastodon.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_map.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_medium.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_linkedin.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_instagram.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_threads.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered inline template (Duration: 1.7ms | GC: 0.0ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 13ms (GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (kramdown has no parser to handle the specified input format: GFM)
+Caused by: Kramdown::Error (kramdown has no parser to handle the specified input format: GFM)
+
+Information for: ActionView::Template::Error (kramdown has no parser to handle the specified input format: GFM):
+    1: <%= markdownify @resource.content %>
+  
+app/views/content/pages/show.html.erb:2
+
+Information for cause: Kramdown::Error (kramdown has no parser to handle the specified input format: GFM):
+  
+app/views/content/pages/show.html.erb:2
+Started GET "/favicon.ico" for ::1 at 2025-12-16 20:48:06 -0600
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2025-12-16 20:48:06 -0600
+Processing by Content::PagesController#show as PNG
+Processing by Content::PagesController#show as */*
+  Parameters: {"id" => "apple-touch-icon-precomposed"}
+  Parameters: {"id" => "favicon"}
+Completed 500 Internal Server Error in 7ms (GC: 0.0ms)
+
+
+Completed 500 Internal Server Error in 7ms (GC: 0.0ms)
+
+
+  
+Perron::Errors::ResourceNotFoundError (Resource not found with slug: favicon):
+  
+app/controllers/content/pages_controller.rb:7:in 'Content::PagesController#show'
+  
+Perron::Errors::ResourceNotFoundError (Resource not found with slug: apple-touch-icon-precomposed):
+  
+app/controllers/content/pages_controller.rb:7:in 'Content::PagesController#show'
+Started GET "/apple-touch-icon.png" for ::1 at 2025-12-16 20:48:06 -0600
+Processing by Content::PagesController#show as PNG
+  Parameters: {"id" => "apple-touch-icon"}
+Completed 500 Internal Server Error in 3ms (GC: 0.0ms)
+
+
+  
+Perron::Errors::ResourceNotFoundError (Resource not found with slug: apple-touch-icon):
+  
+app/controllers/content/pages_controller.rb:7:in 'Content::PagesController#show'
+Started GET "/" for ::1 at 2025-12-16 20:49:32 -0600
+Processing by Content::PagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/social/_github.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_mastodon.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_map.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_medium.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_linkedin.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_instagram.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_threads.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered inline template (Duration: 1.8ms | GC: 0.0ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 9.4ms | GC: 0.0ms)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | GC: 7.2ms)
+Completed 200 OK in 30ms (Views: 26.6ms | GC: 7.2ms)
+
+
+Unable to resolve '/img/texas-dark.svg' for missing asset 'img/texas-dark.svg' in application.css
+Unable to resolve '/img/headshot.jpg' for missing asset 'img/headshot.jpg' in application.css
+Unable to resolve '/img/book.svg' for missing asset 'img/book.svg' in application.css
+Started GET "/" for ::1 at 2025-12-16 20:51:28 -0600
+Processing by Content::PagesController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/social/_github.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_mastodon.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_map.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_medium.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_linkedin.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_instagram.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/social/_threads.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered inline template (Duration: 1.7ms | GC: 0.0ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 7.5ms | GC: 0.0ms)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | GC: 7.6ms)
+Completed 200 OK in 28ms (Views: 25.0ms | GC: 7.6ms)
+
+
+Started GET "/personal/" for ::1 at 2025-12-16 20:51:40 -0600
+Processing by Content::PagesController#show as HTML
+  Parameters: {"id" => "personal"}
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/_exclamation.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_banner_personal.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered shared/_post_list.html.erb (Duration: 40.0ms | GC: 7.6ms)
+  Rendered shared/_book_stars.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_post_list.html.erb (Duration: 34.5ms | GC: 5.0ms)
+  Rendered shared/_lang_ref_link_page.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered inline template (Duration: 120.5ms | GC: 14.3ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 122.7ms | GC: 14.3ms)
+  Rendered shared/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_nav.html.erb (Duration: 0.5ms | GC: 0.1ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 136.3ms | GC: 17.2ms)
+Completed 200 OK in 147ms (Views: 136.9ms | GC: 17.9ms)
+
+
+Started GET "/f74563f5" for ::1 at 2025-12-16 20:51:59 -0600
+Processing by Content::PagesController#show as HTML
+  Parameters: {"id" => "f74563f5"}
+Completed 500 Internal Server Error in 10ms (GC: 2.5ms)
+
+
+  
+Perron::Errors::ResourceNotFoundError (Resource not found with slug: f74563f5):
+  
+app/controllers/content/pages_controller.rb:7:in 'Content::PagesController#show'
+Started GET "/personal/" for ::1 at 2025-12-16 20:54:22 -0600
+Processing by Content::PagesController#show as HTML
+  Parameters: {"id" => "personal"}
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/_exclamation.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_banner_personal.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_post_list.html.erb (Duration: 29.6ms | GC: 1.6ms)
+  Rendered shared/_book_stars.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_post_list.html.erb (Duration: 28.9ms | GC: 0.9ms)
+  Rendered shared/_lang_ref_link_page.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered inline template (Duration: 81.7ms | GC: 3.8ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 83.7ms | GC: 3.8ms)
+  Rendered shared/_header.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 97.9ms | GC: 6.3ms)
+Completed 200 OK in 103ms (Views: 98.7ms | GC: 6.3ms)
+
+
+Started GET "/seccion-personal" for ::1 at 2025-12-16 20:54:26 -0600
+Processing by Content::PagesController#show as HTML
+  Parameters: {"id" => "seccion-personal"}
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/_exclamation.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_banner_personal.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_post_list.html.erb (Duration: 44.9ms | GC: 2.7ms)
+  Rendered shared/_post_list.html.erb (Duration: 25.9ms | GC: 0.6ms)
+  Rendered shared/_lang_ref_link_page.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered inline template (Duration: 101.4ms | GC: 4.8ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 104.1ms | GC: 5.8ms)
+  Rendered shared/_header.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 113.6ms | GC: 7.1ms)
+Completed 200 OK in 119ms (Views: 114.0ms | GC: 7.3ms)
+
+
+Started GET "/posts/lamento-que-uses-substack" for ::1 at 2025-12-16 20:54:37 -0600
+Processing by Content::PostsController#show as HTML
+  Parameters: {"id" => "lamento-que-uses-substack"}
+  Rendering layout layouts/application.html.erb
+  Rendering content/posts/show.html.erb within layouts/application
+  Rendered shared/_exclamation.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_banner_personal.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_lang_ref_link.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered content/posts/_post.html.erb (Duration: 47.5ms | GC: 0.8ms)
+  Rendered content/posts/show.html.erb within layouts/application (Duration: 49.3ms | GC: 1.0ms)
+  Rendered shared/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | GC: 3.5ms)
+Completed 200 OK in 80ms (Views: 69.2ms | GC: 3.8ms)
+
+
+Started GET "/seccion-personal/" for ::1 at 2025-12-16 20:55:00 -0600
+Processing by Content::PagesController#show as HTML
+  Parameters: {"id" => "seccion-personal"}
+  Rendering layout layouts/application.html.erb
+  Rendering content/pages/show.html.erb within layouts/application
+  Rendering inline template
+  Rendered shared/_exclamation.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_banner_personal.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_post_list.html.erb (Duration: 43.3ms | GC: 2.4ms)
+  Rendered shared/_post_list.html.erb (Duration: 25.6ms | GC: 0.7ms)
+  Rendered shared/_lang_ref_link_page.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered inline template (Duration: 100.5ms | GC: 4.6ms)
+  Rendered content/pages/show.html.erb within layouts/application (Duration: 102.2ms | GC: 4.6ms)
+  Rendered shared/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 112.5ms | GC: 6.5ms)
+Completed 200 OK in 121ms (Views: 113.1ms | GC: 6.5ms)
+
+
+Started GET "/posts/pasar-el-tiempo-sin-ropa" for ::1 at 2025-12-16 20:55:07 -0600
+Processing by Content::PostsController#show as HTML
+  Parameters: {"id" => "pasar-el-tiempo-sin-ropa"}
+  Rendering layout layouts/application.html.erb
+  Rendering content/posts/show.html.erb within layouts/application
+  Rendered shared/_exclamation.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_banner_personal.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_lang_ref_link.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered content/posts/_post.html.erb (Duration: 38.4ms | GC: 1.1ms)
+  Rendered content/posts/show.html.erb within layouts/application (Duration: 39.0ms | GC: 1.1ms)
+  Rendered shared/_header.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | GC: 1.1ms)
+Completed 200 OK in 61ms (Views: 53.9ms | GC: 1.3ms)
+
+

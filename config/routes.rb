@@ -1,14 +1,37 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
+  # Health check
   get "up" => "rails/health#show", as: :rails_health_check
 
-  # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
-  # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
-  # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
+  # Posts
+  resources :posts, module: :content, only: %w[index show]
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+  # Pages - with nested subcategories
+  resources :pages, module: :content, only: %w[show], path: ""
+
+  # Spanish home page
+  get "hogar", to: "content/pages#show", id: "hogar"
+
+  # Main section pages
+  get "business", to: "content/pages#show", id: "business"
+  get "negocios", to: "content/pages#show", id: "negocios"
+  get "personal", to: "content/pages#show", id: "personal"
+  get "seccion-personal", to: "content/pages#show", id: "seccion-personal"
+
+  # Subcategory pages
+  get "business/software", to: "content/pages#show", id: "business/software"
+  get "business/management", to: "content/pages#show", id: "business/management"
+  get "business/leadership", to: "content/pages#show", id: "business/leadership"
+  get "personal/books", to: "content/pages#show", id: "personal/books"
+  get "personal/society", to: "content/pages#show", id: "personal/society"
+  get "personal/recreation", to: "content/pages#show", id: "personal/recreation"
+  get "personal/learning", to: "content/pages#show", id: "personal/learning"
+
+  # Privacy page
+  get "privacy", to: "content/pages#show", id: "privacy"
+
+  # RSS Feed
+  get "feed.xml", to: "content/pages#show", id: "feed.xml", defaults: { format: :xml }
+
+  # Root
+  root to: "content/pages#root"
 end

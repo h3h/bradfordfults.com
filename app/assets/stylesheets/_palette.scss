@@ -1,0 +1,26 @@
+@use "sass:color";
+
+// https://coolors.co/090a0b-1e232c-702bf4-a374fb-0095d5-fb8b24-66727f-acc4dd-c6d9ec-ddeaf8
+
+$color-night: hsla(210, 10%, 4%, 1);
+$color-raisin-black: hsla(219, 19%, 15%, 1);
+$color-russian-violet: hsla(261, 73%, 16%, 1);
+$color-electric-indigo: hsla(261, 90%, 56%, 1);
+$color-tropical-indigo: hsla(261, 94%, 72%, 1);
+$color-celestial-blue: hsla(198, 100%, 42%, 1);
+$color-chartreuse: hsla(88, 96%, 56%, 1);
+$color-ut-orange: hsla(29, 96%, 56%, 1);
+$color-paynes-gray: hsla(211, 11%, 45%, 1);
+$color-powder-blue: hsla(211, 42%, 77%, 1);
+$color-columbia-blue: hsla(210, 50%, 85%, 1);
+$color-alice-blue: hsla(211, 66%, 92%, 1);
+
+/* $color-raisin-black-o50: transparentize($color-raisin-black, 0.5); */
+$color-raisin-black-o50: color.scale($color-raisin-black, $alpha: -50%);
+
+// Praxis Efficax
+$color-indigo-dye: hsla(204, 80%, 19%, 1);
+$color-celestial-blue: hsla(202, 100%, 50%, 1);
+$color-naples-yellow: hsla(48, 96%, 68%, 1);
+$color-near-black-mid-opaque: hsla(0, 95%, 5%, 0.5);
+$color-snow: hsla(0, 30%, 95%, 1);

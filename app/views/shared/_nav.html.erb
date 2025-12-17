@@ -1,0 +1,17 @@
+<nav class="main">
+  <p class="headshot">
+    <% if lang == "en" %>
+      <a href="/"><%= image_tag "headshot.jpg", alt: "Author headshot" %></a>
+    <% else %>
+      <a href="/hogar"><%= image_tag "headshot.jpg", alt: "La foto de rostro del autor" %></a>
+    <% end %>
+  </p>
+  <ul>
+    <li>
+      <a href="/<%= t("categories.business_url", locale: lang) %>/"><%= t("categories.business", locale: lang) %></a>
+    </li>
+    <li>
+      <a href="/<%= t("categories.personal_url", locale: lang) %>/"><%= t("categories.personal", locale: lang) %></a>
+    </li>
+  </ul>
+</nav>

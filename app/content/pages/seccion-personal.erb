@@ -1,0 +1,64 @@
+---
+title: Personal
+description: Escritos sobre ser una persona y ciudadano excéntrico y pensativo, y sobre vivir y opinar a mi manera particular.
+lang: es
+lang_ref: personal
+topic: personal
+body_class: personal-landing
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content post h-entry">
+  <div class="post-content">
+    <h2>Personal</h2>
+    <p>
+      Todos vivimos vidas complejas y multifacéticas. Muchos profesionales
+      mantienen una separación estricta de sus vidas personales de las
+      profesionales, y hay muchas buenas razones para eso. Yo tomo un enfoque
+      un poco más integrado, ofreciéndome como un todo a cualquiera que le
+      interese profundizar un poco más.
+    </p>
+    <p>
+      Como parte de revelar más de mi vida personal, busco mostrar la
+      consistencia de mis intentos de vivir una vida reflexiva y con principios
+      en todos los aspectos. También espero más madurez, reflexión y respeto por
+      los límites sociales de mis lectores. Me interesa discutir y aprender de
+      más perspectivas sobre los temas que escribo, pero también espero que
+      cualquier persona con incomodidad o diferencias de opinión pueda observar
+      adecuadamente los límites que nos permitan interactuar en el nivel que
+      hayamos elegido.
+    </p>
+    <p>
+      En consecuencia, encontrarás el siguiente aviso en las páginas personales
+      si eres nuevo en la sección:
+    </p>
+
+    <div class="banner-preview"><%= render "shared/banner_personal", lang: "es" %></div>
+
+    <p>
+      Estoy abierto a pensamientos y comentarios sobre lo que escribo, pero
+      tampoco necesito estar de acuerdo con todos en todos los temas. Respeto a
+      todos los que intentan sinceramente articular su posición sobre temas
+      sociales y de la sociedad. Gracias por tu respeto a cambio.
+    </p>
+
+    <div class="layout-2col split23">
+      <section class="col section-list essays">
+        <h3>Ensayos</h3>
+        <% essays = Content::Post.all.select { |p| p.published? && p.category == "personal" && p.essay? && p.lang == "es" }.sort_by(&:published_at).reverse %>
+        <%= render "shared/post_list", posts: essays, lang: "es" %>
+      </section>
+
+      <section class="col section-list asides">
+        <h3>Apartes</h3>
+        <% asides = Content::Post.all.select { |p| p.published? && p.category == "personal" && p.aside? && p.lang == "es" }.sort_by(&:published_at).reverse %>
+        <%= render "shared/post_list", posts: asides, lang: "es" %>
+      </section>
+    </div>
+
+    <% translated = Content::Page.all.find { |p| p.lang_ref == "personal" && p.lang == "en" } %>
+    <% if translated %>
+      <%= render "shared/lang_ref_link_page", other_page: translated, other_lang: "en" %>
+    <% end %>
+  </div>
+</article>

@@ -14,3 +14,7 @@ gem 'perron', '~> 0.14.0'
 
 # Markdown support
 gem "kramdown"
+gem "kramdown-parser-gfm"
+
+# SCSS support
+gem "dartsass-rails"

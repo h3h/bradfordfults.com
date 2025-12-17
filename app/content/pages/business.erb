@@ -1,0 +1,59 @@
+---
+title: Business
+description: Writings about being a manager, an organizational leader, a software engineer and many things between.
+lang: en
+lang_ref: business
+topic: business
+---
+
+<!-- h-entry microformat used: http://microformats.org/wiki/h-entry -->
+<article class="content post h-entry">
+  <div class="post-content">
+    <h2>Business</h2>
+    <p>
+      I have been working in the computer software (and hardware) industry
+      professionally since 1998. I have been a successful web app developer,
+      web UI engineer, systems administrator, distributed systems engineer,
+      software architect, product manager, team lead, chief of staff,
+      operations lead, engineering manager, engineering manager of managers,
+      and engineering department &amp; functional leader, several times over.
+    </p>
+    <p>
+      Through these many roles in different types of companies (B2B, B2C; tiny
+      startups, medium enterprises, and huge corporations), I have accumulated
+      experiences, observations, and lessons that I sometimes try to write
+      down, as much for my future self as for the benefit of others. This is
+      where that writing ends up.
+    </p>
+    <p>
+      You can expect essays (more or less timeless theses explored in some
+      depth) and asides (briefer thoughts that may be more attached to their
+      ephemeral context) on topics from across the tech industry broadly. My
+      perspective is of one who would like technology to be an occasional aid
+      and enhancement to life, but not one that should replace our fundamental
+      experiences.
+    </p>
+    <p>
+      I teach and practice patience, effectiveness, efficiency, balance, and
+      above all the necessity of being a human who cares for other humans
+      first. You could think of it as an anti-hustle.
+    </p>
+    <div class="layout-2col split23">
+      <section class="col essays">
+        <h3>Essays</h3>
+        <% essays = Content::Post.all.select { |p| p.published? && p.category == "business" && p.essay? && p.lang == "en" }.sort_by(&:published_at).reverse %>
+        <%= render "shared/post_list", posts: essays, lang: "en" %>
+      </section>
+      <section class="col asides">
+        <h3>Asides</h3>
+        <% asides = Content::Post.all.select { |p| p.published? && p.category == "business" && p.aside? && p.lang == "en" }.sort_by(&:published_at).reverse %>
+        <%= render "shared/post_list", posts: asides, lang: "en" %>
+      </section>
+    </div>
+  </div>
+
+  <% translated = Content::Page.all.find { |p| p.lang_ref == "business" && p.lang == "es" } %>
+  <% if translated %>
+    <%= render "shared/lang_ref_link_page", other_page: translated, other_lang: "es" %>
+  <% end %>
+</article>

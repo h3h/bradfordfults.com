@@ -1,0 +1,47 @@
+<article
+  class="post content"
+  itemscope
+  itemtype="http://schema.org/BlogPosting">
+  <% if post.category == "personal" %>
+    <%= render "shared/banner_personal", lang: post.lang %>
+  <% end %>
+  <div class="post-content" itemprop="articleBody">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><%= widont(post.title) %></h1>
+    </header>
+    <%= markdownify post.content %>
+  </div>
+
+  <% if post.translated_post.present? %>
+    <%= render "shared/lang_ref_link", other_post: post.translated_post, other_lang: post.english? ? "es" : "en" %>
+  <% end %>
+
+  <% other_posts_in_subcategory = Content::Post.all.select { |p| p.published? && p.subcategory == post.subcategory && p.lang == post.lang && p.id != post.id } %>
+  <% if other_posts_in_subcategory.any? %>
+    <div class="post-others-in-cat">
+      <% if post.english? %>
+        Read more posts about
+      <% else %>
+        Leer más posts de
+      <% end %>
+      <a href="/<%= post.category %>/<%= post.subcategory %>/"><%= t("categories.#{post.subcategory}", locale: post.lang) %></a>
+    </div>
+  <% end %>
+
+  <% if post.category == "business" %>
+    <%= render "shared/banner_praxis", lang: post.lang %>
+  <% end %>
+
+  <div class="post-meta">
+    <% if post.category.present? %>
+      <p>
+        <a href="/<%= t("categories.#{post.category}_url", locale: post.lang) %>/"><%= t("categories.#{post.category}", locale: post.lang) %></a>
+        <a href="/<%= post.category %>/<%= post.subcategory %>/"><%= t("categories.#{post.subcategory}", locale: post.lang) %></a>
+      </p>
+    <% end %>
+    <p>Bradford Fults</p>
+    <p>
+      <time datetime="<%= post.published_at.iso8601 %>" itemprop="datePublished"><%= post.published_at.strftime("%B %-d, %Y") %></time>
+    </p>
+  </div>
+</article>

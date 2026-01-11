@@ -6,6 +6,6 @@ class Content::PostsController < ApplicationController
   end
 
   def show
-    @resource = Content::Post.find(params[:id])
+    @resource = Content::Post.find(params[:id].force_encoding("UTF-8"))
   end
 end

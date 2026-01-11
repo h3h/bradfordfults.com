@@ -6,6 +6,10 @@ class Content::Post < Perron::Resource
     config.feeds.rss.enabled = true
     config.feeds.rss.path = "feed.xml"
     config.feeds.rss.max_items = 25
+    config.feeds.rss.author = {
+      name: "Bradford Fults",
+      email: "bfults@gmail.com"
+    }
 
     # Sitemap
     config.sitemap.enabled = true
@@ -14,6 +18,12 @@ class Content::Post < Perron::Resource
   end
 
   delegate :title, :description, :tag, :lang, :lang_ref, to: :metadata
+
+  # Return nil so the feed builder uses config.feeds.rss.author instead
+  # (metadata.author is a string, but feeds require a hash with :name/:email)
+  def author
+    nil
+  end
 
   # Book review specific fields
   delegate :book_name, :book_author, :book_rating, :book_spoilers, to: :metadata

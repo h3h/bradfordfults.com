@@ -1,5 +1,5 @@
 Perron.configure do |config|
-  config.output = "public"
+  config.output = "output"
 
   config.site_name = "Bradford Fults"
   config.site_description = "Texan sense and charm."
@@ -15,11 +15,6 @@ Perron.configure do |config|
 
   config.allowed_extensions = %w[erb md]
   config.view_unpublished = Rails.env.development?
-
-  # Sitemap
-  config.sitemap.enabled = true
-  config.sitemap.priority = 0.5
-  config.sitemap.change_frequency = :monthly
 
   # Markdown options for kramdown
   config.markdown_options = {

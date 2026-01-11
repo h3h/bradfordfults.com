@@ -1,6 +1,18 @@
 # frozen_string_literal: true
 
 class Content::Post < Perron::Resource
+  configure do |config|
+    # RSS Feed
+    config.feeds.rss.enabled = true
+    config.feeds.rss.path = "feed.xml"
+    config.feeds.rss.max_items = 25
+
+    # Sitemap
+    config.sitemap.enabled = true
+    config.sitemap.priority = 0.8
+    config.sitemap.change_frequency = :monthly
+  end
+
   delegate :title, :description, :tag, :lang, :lang_ref, to: :metadata
 
   # Book review specific fields

@@ -29,9 +29,6 @@ Rails.application.routes.draw do
   # Privacy page
   get "privacy", to: "content/pages#show", id: "privacy"
 
-  # RSS Feed
-  get "feed.xml", to: "content/pages#show", id: "feed.xml", defaults: { format: :xml }
-
   # Root
   root to: "content/pages#root"
 end

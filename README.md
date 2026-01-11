@@ -1,17 +1,23 @@
-# Bradfordfults Com
+# bradfordfults.com
 
-TBD
+The eponymous.
 
+## Dependencies
+
+This site is built with [Perron][PG] and only uses Rails to actively render
+the site in development. Perron has a task, `perron:build`, which compiles the
+site into static HTML files for deployment in production.
+
+ [PG]: https://github.com/Rails-Designer/perron
 
 ## Development
 
 ```
-bin/dev
+rails s
 ```
 
-
-## Deploy/publish
+## Static Site Compilation & Deployment
 
 ```
-RAILS_ENV=production rails perron:build
+rails perron:build && git push origin
 ```

@@ -23,7 +23,7 @@
     </div>
     <p>
       <% topic_url = lang == "en" ? topic : (topic == "business" ? "negocios" : "seccion-personal") %>
-      <a href="/<%= topic_url %>"><%= lang == "en" ? "Read more #{topic} posts..." : "Leer más posts de #{topic == 'business' ? 'negocios' : 'personal'}..." %></a>
+      <a href="/<%= topic_url %>/"><%= lang == "en" ? "Read more #{topic} posts..." : "Leer más posts de #{topic == 'business' ? 'negocios' : 'personal'}..." %></a>
     </p>
   </div>
 </article>

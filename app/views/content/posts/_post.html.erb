@@ -24,7 +24,7 @@
       <% else %>
         Leer más posts de
       <% end %>
-      <a href="/<%= post.category %>/<%= post.subcategory %>"><%= t("categories.#{post.subcategory}", locale: post.lang) %></a>
+      <a href="/<%= post.category %>/<%= post.subcategory %>/"><%= t("categories.#{post.subcategory}", locale: post.lang) %></a>
     </div>
   <% end %>
 
@@ -35,8 +35,8 @@
   <div class="post-meta">
     <% if post.category.present? %>
       <p>
-        <a href="/<%= t("categories.#{post.category}_url", locale: post.lang) %>"><%= t("categories.#{post.category}", locale: post.lang) %></a>
-        <a href="/<%= post.category %>/<%= post.subcategory %>"><%= t("categories.#{post.subcategory}", locale: post.lang) %></a>
+        <a href="/<%= t("categories.#{post.category}_url", locale: post.lang) %>/"><%= t("categories.#{post.category}", locale: post.lang) %></a>
+        <a href="/<%= post.category %>/<%= post.subcategory %>/"><%= t("categories.#{post.subcategory}", locale: post.lang) %></a>
       </p>
     <% end %>
     <p>Bradford Fults</p>

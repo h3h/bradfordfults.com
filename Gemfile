@@ -10,7 +10,7 @@ gem "propshaft"
 gem "puma", ">= 5.0"
 
 # Lovely static site generation
-gem 'perron', '~> 0.14.0'
+gem 'perron', '~> 0.16.0'
 
 # Markdown support
 gem "kramdown"

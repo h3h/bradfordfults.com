@@ -545,31 +545,6 @@ label:hover {
   }
 }
 
-.main-content ul.social-links {
-  display: flex;
-  list-style-type: none;
-  margin: 4rem auto 2rem;
-  max-width: 30rem;
-  padding-inline-start: 0;
-  padding: 0 1.5rem;
-
-  li {
-    flex: 1;
-  }
-
-  a:link {
-    color: $color-raisin-black;
-    transition: color 0.25s;
-  }
-  a:hover {
-    color: $color-tropical-indigo;
-  }
-  svg {
-    width: 32px;
-    height: 32px;
-  }
-}
-
 .main-content section.essays ul.post-index .published {
   display: none;
 }

@@ -10,7 +10,7 @@
     <% else %>
       <li>
         <%= link_to post.title, "/posts/#{post.slug}" %>
-        <a class="pill subcategory" href="/<%= post.category %>/<%= post.subcategory %>/"><%= post.subcategory %></a>
+        <a class="pill subcategory" href="/<%= post.subcategory %>/"><%= post.subcategory %></a>
         <% if post.translated_post.present? %>
           <a class="pill language" href="/posts/<%= post.translated_post.slug %>">
             <%= other_lang == "en" ? "inglés" : "español" %>

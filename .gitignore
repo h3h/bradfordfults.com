@@ -6,3 +6,7 @@
 
 log/
 tmp/
+
+# Nix / direnv
+/.direnv/
+/.gem/

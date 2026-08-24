@@ -27,7 +27,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.4.7"
+          ruby-version: "3.4.9"
           bundler-cache: true
 
       - name: Generate secret key base

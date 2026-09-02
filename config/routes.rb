@@ -29,6 +29,9 @@ Rails.application.routes.draw do
   # Privacy page
   get "privacy", to: "content/pages#show", id: "privacy"
 
+  # Minimal headshot homepage mockup
+  get "home", to: "content/pages#show", id: "home"
+
   # Root
   root to: "content/pages#root"
 end

@@ -5,5 +5,6 @@ class Content::PagesController < ApplicationController
 
   def show
     @resource = Content::Page.find(params[:id])
+    render layout: @resource.metadata.layout == "blank" ? "blank" : "application"
   end
 end

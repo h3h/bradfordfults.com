@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="<%= defined?(@resource) && @resource.respond_to?(:lang) && @resource.lang.present? ? @resource.lang : "en" %>">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= @resource.title %></title>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
